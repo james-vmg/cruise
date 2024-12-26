@@ -7,7 +7,7 @@
 	},
 	"name": "Cruise",
 	"description": "Cruise Development Package",
-	"ver": "24.12.26.1805",
+	"ver": "24.12.26.1827",
 	"enableCICD": true,
 	"apps": [
 		{
