@@ -1,0 +1,4 @@
+if (typeof CDSVIEW === "undefined" || CDSVIEW === null || CDSVIEW === "") { return; }  
+if (typeof VIEWNAME === "undefined" || VIEWNAME === null || VIEWNAME === "") { return; }  
+var formattedText = CDSVIEW + " - " + VIEWNAME; 
+return formattedText;

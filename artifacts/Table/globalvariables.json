@@ -1,0 +1,39 @@
+{
+	"id": "e4b2e725-3cc5-4f1a-af57-70efbdfaacc0",
+	"createdAt": "2024-07-05T21:00:54.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "8a67f93b-717a-4186-ac92-dfe5226ee3d3",
+			"fieldName": "VariableName",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Variable Name"
+		},
+		{
+			"id": "6f4385d0-04de-4daf-c687-7fbcd4c6ef27",
+			"fieldName": "AdditionalKey",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Unique Key",
+			"isNullable": true
+		},
+		{
+			"id": "75c06be3-ce42-4908-9bdb-953a3779bad2",
+			"fieldName": "VariableValue",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Variable Value"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "globalvariables",
+	"description": "To store Constant Variables that should be set by an administrator for use across apps and Scripts",
+	"ver": "24.07.06.2056",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,0 +1,29 @@
+{
+	"id": "045e68c4-766c-460b-94b1-bcca65de54a5",
+	"createdAt": "2024-11-05T19:30:37.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [
+		{
+			"id": "b7e17e8b-0f41-4098-b005-065af1a60550",
+			"parent": "157868a2-c79f-4a10-bc69-9c1a69988126",
+			"name": "/Search",
+			"contextname": "Search",
+			"method": "GET"
+		}
+	],
+	"name": "Search",
+	"ver": "24.11.05.1930",
+	"description": "Search",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": true,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "891f977a-4905-4a70-abfc-003cdc780ca4",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

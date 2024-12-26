@@ -1,0 +1,20 @@
+{
+	"id": "df3872dc-ffda-46b4-9717-493b75eb6963",
+	"createdAt": "2024-11-05T19:45:01.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"previewable": true,
+		"scriptSel": "e58849e9-6b16-44c1-9e28-f394187d09e3",
+		"scriptRun": "fa3beec7-59ea-4f8a-8d83-a014698f7c6b",
+		"hasDocumentation": false,
+		"overriddenFieldCatalog": false
+	},
+	"documentation": {},
+	"name": "employee_deon",
+	"description": "Deon Test Employee Connector",
+	"group": null,
+	"type": "S",
+	"ver": "24.11.05.2228",
+	"disabled": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

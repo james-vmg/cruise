@@ -1,0 +1,945 @@
+{
+	"id": "99efd010-c21c-4632-b297-4103d7f559b2",
+	"createdAt": "2024-06-16T19:12:31.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "27c42812-0bcf-406c-a116-975838912a43",
+			"path": "/search",
+			"method": "POST",
+			"responses": [
+				{
+					"status": "200",
+					"description": "Status 200",
+					"headers": [],
+					"content": [
+						{
+							"name": "postsearchResponse",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"status": "404",
+					"description": "Status 404",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"items": [
+								{
+									"id": "dff44b26-8256-47e7-82d4-50b85bd657e2",
+									"children": [],
+									"name": "ERROR_CODE",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Error Code"
+								},
+								{
+									"id": "2a5e588f-59f8-4006-b641-e16c2653772d",
+									"children": [],
+									"name": "ERROR_TEXT",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Description of the error"
+								}
+							]
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"id": "a6340dc0-0540-4a4e-9787-804b95e8163e",
+							"name": "MT_SEARCH_PARAMS",
+							"isParent": true,
+							"objectType": "array",
+							"children": [
+								{
+									"id": "083e25c1-25bc-4d07-b5cb-4888d1671f51",
+									"name": "",
+									"objectType": "object",
+									"parent": "a6340dc0-0540-4a4e-9787-804b95e8163e",
+									"isParent": true,
+									"children": [
+										{
+											"id": "1f81a63c-e369-4a67-b2cc-4928623c2797",
+											"children": [],
+											"name": "FIELD_NAME",
+											"objectType": "string",
+											"parent": "083e25c1-25bc-4d07-b5cb-4888d1671f51",
+											"isParent": false,
+											"required": false,
+											"maxLength": "",
+											"minLength": ""
+										},
+										{
+											"id": "7b773807-57db-437c-a78b-dd1222202d82",
+											"children": [],
+											"name": "FIELD_VALUE",
+											"objectType": "string",
+											"parent": "083e25c1-25bc-4d07-b5cb-4888d1671f51",
+											"isParent": false,
+											"required": false,
+											"maxLength": "",
+											"minLength": ""
+										}
+									],
+									"required": false,
+									"maxLength": "",
+									"minLength": ""
+								}
+							],
+							"required": false,
+							"parent": "",
+							"maxLength": "",
+							"minLength": ""
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "$select",
+					"description": "Select fieldnames to be returned. Separated by comma",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "sap-client",
+					"description": "SAP Client",
+					"required": true,
+					"inPath": false,
+					"example": "800",
+					"type": "string"
+				}
+			],
+			"endpoints": [],
+			"endpoint": ""
+		}
+	],
+	"definitions": [
+		{
+			"id": "e312d2a9-eec3-4a39-a173-15c6afb63fb6",
+			"name": "dataRequest",
+			"description": "Key Value Structure",
+			"type": "object",
+			"properties": [
+				{
+					"id": "c5bdaae0-b358-4261-8164-b1bfba09fddc",
+					"children": [],
+					"name": "KEY",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Name of dataset"
+				},
+				{
+					"id": "ccb94da9-c23e-4c52-82ad-66bc728a5b6a",
+					"children": [],
+					"name": "VALUE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "JSON String of dataset"
+				}
+			]
+		},
+		{
+			"id": "86f6fc5b-6cad-44d6-802e-4b2441472fa1",
+			"name": "errorResponse",
+			"description": "Error object returned from SAP",
+			"type": "object",
+			"properties": [
+				{
+					"id": "b935872d-8551-4290-9608-8545449f78a1",
+					"children": [],
+					"name": "ERROR_CODE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Error Code"
+				},
+				{
+					"id": "2c12800f-30c5-427c-9782-654ca2fd7186",
+					"children": [],
+					"name": "ERROR_TEXT",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Description of the error"
+				}
+			]
+		},
+		{
+			"id": "cb6f2fe2-3070-4bff-a8c3-35a1b397bedc",
+			"name": "postsearchResponse",
+			"type": "object",
+			"properties": [
+				{
+					"id": "cdda975b-744c-4446-b5ee-1ada001a186e",
+					"children": [
+						{
+							"id": "5724fde0-c5c9-4ef4-8d10-e50fc7a9b72f",
+							"name": "MT_LANGUAGES",
+							"isParent": true,
+							"objectType": "array",
+							"children": [
+								{
+									"id": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+									"name": "",
+									"objectType": "object",
+									"parent": "5724fde0-c5c9-4ef4-8d10-e50fc7a9b72f",
+									"isParent": true,
+									"children": [
+										{
+											"id": "610a6427-7026-4814-8dd4-d7a5fd78c9d9",
+											"children": [],
+											"name": "LANGUAGECODE",
+											"objectType": "string",
+											"parent": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+											"isParent": false,
+											"required": false,
+											"maxLength": "1",
+											"minLength": "",
+											"description": "Language Key"
+										},
+										{
+											"id": "d2d65b56-93a9-48a6-9989-d3d63ab79b5d",
+											"children": [],
+											"name": "LANGUAGENAME",
+											"objectType": "string",
+											"parent": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+											"isParent": false,
+											"required": false,
+											"maxLength": "16",
+											"minLength": "",
+											"description": "Name of Language"
+										}
+									],
+									"required": false,
+									"maxLength": "",
+									"minLength": ""
+								}
+							],
+							"required": false,
+							"parent": "cdda975b-744c-4446-b5ee-1ada001a186e",
+							"maxLength": "",
+							"minLength": ""
+						},
+						{
+							"id": "b5bd06a4-aeff-4a10-b7bb-b6227c47b590",
+							"name": "MT_MESSAGES",
+							"isParent": true,
+							"objectType": "array",
+							"children": [
+								{
+									"id": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"name": "",
+									"objectType": "object",
+									"parent": "b5bd06a4-aeff-4a10-b7bb-b6227c47b590",
+									"isParent": true,
+									"children": [
+										{
+											"id": "aa534a00-943d-4a46-b8fa-f7f2e82d2293",
+											"children": [],
+											"name": "FIELD_NAME",
+											"objectType": "string",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"description": "Field Name"
+										},
+										{
+											"id": "f3448513-9351-425f-bd52-3e8592bfa565",
+											"children": [],
+											"name": "TYPE",
+											"objectType": "string",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "1",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+										},
+										{
+											"id": "08db79b6-b478-4fb8-8289-9e0a31a90eab",
+											"children": [],
+											"name": "ID",
+											"objectType": "string",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "20",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Class"
+										},
+										{
+											"id": "f4aa7333-bc8d-4a64-ac86-ab3910c6b655",
+											"children": [],
+											"name": "NUMBER",
+											"objectType": "number",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "",
+											"minLength": "",
+											"description": "Message Number"
+										},
+										{
+											"id": "6582f7a6-f943-4acb-9743-98f75f494564",
+											"children": [],
+											"name": "MESSAGE",
+											"objectType": "string",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "220",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Text"
+										},
+										{
+											"id": "781db5e1-5574-4a11-bc6b-4898995d6abf",
+											"children": [],
+											"name": "MESSAGE_V1",
+											"objectType": "string",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "2dd0a984-f473-4197-a2f3-4a64732d10af",
+											"children": [],
+											"name": "MESSAGE_V2",
+											"objectType": "string",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "5e8f4d1f-cb8c-4485-86b7-f3fa03d3eaac",
+											"children": [],
+											"name": "MESSAGE_V3",
+											"objectType": "string",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "d5ac97d1-38d6-45e1-a51e-4101b14508ea",
+											"children": [],
+											"name": "MESSAGE_V4",
+											"objectType": "string",
+											"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										}
+									],
+									"required": false,
+									"maxLength": "",
+									"minLength": ""
+								}
+							],
+							"required": false,
+							"parent": "cdda975b-744c-4446-b5ee-1ada001a186e",
+							"maxLength": "",
+							"minLength": ""
+						},
+						{
+							"id": "d7173a31-a18c-48e4-b4fd-d9caf4023eb3",
+							"children": [],
+							"name": "MV_ERROR",
+							"objectType": "boolean",
+							"parent": "cdda975b-744c-4446-b5ee-1ada001a186e",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Boolean - Convert space/x to false/true"
+						}
+					],
+					"name": "result",
+					"objectType": "object",
+					"parent": "",
+					"isParent": true,
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "5724fde0-c5c9-4ef4-8d10-e50fc7a9b72f",
+					"name": "MT_LANGUAGES",
+					"isParent": true,
+					"objectType": "array",
+					"children": [
+						{
+							"id": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+							"name": "",
+							"objectType": "object",
+							"parent": "5724fde0-c5c9-4ef4-8d10-e50fc7a9b72f",
+							"isParent": true,
+							"children": [
+								{
+									"id": "610a6427-7026-4814-8dd4-d7a5fd78c9d9",
+									"children": [],
+									"name": "LANGUAGECODE",
+									"objectType": "string",
+									"parent": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+									"isParent": false,
+									"required": false,
+									"maxLength": "1",
+									"minLength": "",
+									"description": "Language Key"
+								},
+								{
+									"id": "d2d65b56-93a9-48a6-9989-d3d63ab79b5d",
+									"children": [],
+									"name": "LANGUAGENAME",
+									"objectType": "string",
+									"parent": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+									"isParent": false,
+									"required": false,
+									"maxLength": "16",
+									"minLength": "",
+									"description": "Name of Language"
+								}
+							],
+							"required": false,
+							"maxLength": "",
+							"minLength": ""
+						}
+					],
+					"required": false,
+					"parent": "cdda975b-744c-4446-b5ee-1ada001a186e",
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+					"name": "",
+					"objectType": "object",
+					"parent": "5724fde0-c5c9-4ef4-8d10-e50fc7a9b72f",
+					"isParent": true,
+					"children": [
+						{
+							"id": "610a6427-7026-4814-8dd4-d7a5fd78c9d9",
+							"children": [],
+							"name": "LANGUAGECODE",
+							"objectType": "string",
+							"parent": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+							"isParent": false,
+							"required": false,
+							"maxLength": "1",
+							"minLength": "",
+							"description": "Language Key"
+						},
+						{
+							"id": "d2d65b56-93a9-48a6-9989-d3d63ab79b5d",
+							"children": [],
+							"name": "LANGUAGENAME",
+							"objectType": "string",
+							"parent": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+							"isParent": false,
+							"required": false,
+							"maxLength": "16",
+							"minLength": "",
+							"description": "Name of Language"
+						}
+					],
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "610a6427-7026-4814-8dd4-d7a5fd78c9d9",
+					"children": [],
+					"name": "LANGUAGECODE",
+					"objectType": "string",
+					"parent": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+					"isParent": false,
+					"required": false,
+					"maxLength": "1",
+					"minLength": "",
+					"description": "Language Key"
+				},
+				{
+					"id": "d2d65b56-93a9-48a6-9989-d3d63ab79b5d",
+					"children": [],
+					"name": "LANGUAGENAME",
+					"objectType": "string",
+					"parent": "ac387e1b-48b7-4433-bfb1-c29b46d49a82",
+					"isParent": false,
+					"required": false,
+					"maxLength": "16",
+					"minLength": "",
+					"description": "Name of Language"
+				},
+				{
+					"id": "b5bd06a4-aeff-4a10-b7bb-b6227c47b590",
+					"name": "MT_MESSAGES",
+					"isParent": true,
+					"objectType": "array",
+					"children": [
+						{
+							"id": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"name": "",
+							"objectType": "object",
+							"parent": "b5bd06a4-aeff-4a10-b7bb-b6227c47b590",
+							"isParent": true,
+							"children": [
+								{
+									"id": "aa534a00-943d-4a46-b8fa-f7f2e82d2293",
+									"children": [],
+									"name": "FIELD_NAME",
+									"objectType": "string",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"description": "Field Name"
+								},
+								{
+									"id": "f3448513-9351-425f-bd52-3e8592bfa565",
+									"children": [],
+									"name": "TYPE",
+									"objectType": "string",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "1",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+								},
+								{
+									"id": "08db79b6-b478-4fb8-8289-9e0a31a90eab",
+									"children": [],
+									"name": "ID",
+									"objectType": "string",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "20",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Class"
+								},
+								{
+									"id": "f4aa7333-bc8d-4a64-ac86-ab3910c6b655",
+									"children": [],
+									"name": "NUMBER",
+									"objectType": "number",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Message Number"
+								},
+								{
+									"id": "6582f7a6-f943-4acb-9743-98f75f494564",
+									"children": [],
+									"name": "MESSAGE",
+									"objectType": "string",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "220",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Text"
+								},
+								{
+									"id": "781db5e1-5574-4a11-bc6b-4898995d6abf",
+									"children": [],
+									"name": "MESSAGE_V1",
+									"objectType": "string",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "2dd0a984-f473-4197-a2f3-4a64732d10af",
+									"children": [],
+									"name": "MESSAGE_V2",
+									"objectType": "string",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "5e8f4d1f-cb8c-4485-86b7-f3fa03d3eaac",
+									"children": [],
+									"name": "MESSAGE_V3",
+									"objectType": "string",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "d5ac97d1-38d6-45e1-a51e-4101b14508ea",
+									"children": [],
+									"name": "MESSAGE_V4",
+									"objectType": "string",
+									"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								}
+							],
+							"required": false,
+							"maxLength": "",
+							"minLength": ""
+						}
+					],
+					"required": false,
+					"parent": "cdda975b-744c-4446-b5ee-1ada001a186e",
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"name": "",
+					"objectType": "object",
+					"parent": "b5bd06a4-aeff-4a10-b7bb-b6227c47b590",
+					"isParent": true,
+					"children": [
+						{
+							"id": "aa534a00-943d-4a46-b8fa-f7f2e82d2293",
+							"children": [],
+							"name": "FIELD_NAME",
+							"objectType": "string",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"description": "Field Name"
+						},
+						{
+							"id": "f3448513-9351-425f-bd52-3e8592bfa565",
+							"children": [],
+							"name": "TYPE",
+							"objectType": "string",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "1",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+						},
+						{
+							"id": "08db79b6-b478-4fb8-8289-9e0a31a90eab",
+							"children": [],
+							"name": "ID",
+							"objectType": "string",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "20",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Class"
+						},
+						{
+							"id": "f4aa7333-bc8d-4a64-ac86-ab3910c6b655",
+							"children": [],
+							"name": "NUMBER",
+							"objectType": "number",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Message Number"
+						},
+						{
+							"id": "6582f7a6-f943-4acb-9743-98f75f494564",
+							"children": [],
+							"name": "MESSAGE",
+							"objectType": "string",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "220",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Text"
+						},
+						{
+							"id": "781db5e1-5574-4a11-bc6b-4898995d6abf",
+							"children": [],
+							"name": "MESSAGE_V1",
+							"objectType": "string",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "2dd0a984-f473-4197-a2f3-4a64732d10af",
+							"children": [],
+							"name": "MESSAGE_V2",
+							"objectType": "string",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "5e8f4d1f-cb8c-4485-86b7-f3fa03d3eaac",
+							"children": [],
+							"name": "MESSAGE_V3",
+							"objectType": "string",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "d5ac97d1-38d6-45e1-a51e-4101b14508ea",
+							"children": [],
+							"name": "MESSAGE_V4",
+							"objectType": "string",
+							"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						}
+					],
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "aa534a00-943d-4a46-b8fa-f7f2e82d2293",
+					"children": [],
+					"name": "FIELD_NAME",
+					"objectType": "string",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"description": "Field Name"
+				},
+				{
+					"id": "f3448513-9351-425f-bd52-3e8592bfa565",
+					"children": [],
+					"name": "TYPE",
+					"objectType": "string",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "1",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+				},
+				{
+					"id": "08db79b6-b478-4fb8-8289-9e0a31a90eab",
+					"children": [],
+					"name": "ID",
+					"objectType": "string",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "20",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Class"
+				},
+				{
+					"id": "f4aa7333-bc8d-4a64-ac86-ab3910c6b655",
+					"children": [],
+					"name": "NUMBER",
+					"objectType": "number",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Message Number"
+				},
+				{
+					"id": "6582f7a6-f943-4acb-9743-98f75f494564",
+					"children": [],
+					"name": "MESSAGE",
+					"objectType": "string",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "220",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Text"
+				},
+				{
+					"id": "781db5e1-5574-4a11-bc6b-4898995d6abf",
+					"children": [],
+					"name": "MESSAGE_V1",
+					"objectType": "string",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "2dd0a984-f473-4197-a2f3-4a64732d10af",
+					"children": [],
+					"name": "MESSAGE_V2",
+					"objectType": "string",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "5e8f4d1f-cb8c-4485-86b7-f3fa03d3eaac",
+					"children": [],
+					"name": "MESSAGE_V3",
+					"objectType": "string",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "d5ac97d1-38d6-45e1-a51e-4101b14508ea",
+					"children": [],
+					"name": "MESSAGE_V4",
+					"objectType": "string",
+					"parent": "025492ef-19a6-459e-bf60-73584e2a4c1c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "d7173a31-a18c-48e4-b4fd-d9caf4023eb3",
+					"children": [],
+					"name": "MV_ERROR",
+					"objectType": "boolean",
+					"parent": "cdda975b-744c-4446-b5ee-1ada001a186e",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Boolean - Convert space/x to false/true"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "LANGUAGES",
+	"endpoint": "http://vhcalabaci.saportals.com:50700/neptune/api/languages",
+	"ver": "24.07.03.1952",
+	"version": "1.0",
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": null,
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11",
+	"apiFormat": 1,
+	"roles": []
+}

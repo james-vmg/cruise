@@ -1,0 +1,22 @@
+let <Entity> = modelpage<Entity>DetailChange.oData;
+sap.m.MessageBox.show("Do you want to delete this entry?", {
+    icon: sap.m.MessageBox.Icon.WARNING,
+    title: "Delete",
+    actions: [sap.m.MessageBox.Action.YES, sap.m.MessageBox.Action.NO],
+    onClose: function (oAction) {
+        if (oAction === sap.m.MessageBox.Action.YES) {
+            delete<Entity>(<Entity>);
+        }
+    },
+});
+
+function delete<Entity>(<Entity>) {
+    var options = {
+        parameters: {
+            "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+            IV_PARAMS: JSON.stringify(<Entity>.result.MS_<Entity>),
+        },
+    };
+    BusyDialogDeleting.open();
+    api<Entity>Delete(options);
+}

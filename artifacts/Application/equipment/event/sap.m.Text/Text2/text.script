@@ -1,0 +1,4 @@
+if (typeof CURRENTPAGE === "undefined" || CURRENTPAGE === null || CURRENTPAGE === "") { return; }  
+if (typeof TOTALPAGES === "undefined" || TOTALPAGES === null || TOTALPAGES === "") { return; }  
+var formattedText = CURRENTPAGE + "/" + TOTALPAGES; 
+return formattedText;

@@ -1,0 +1,52 @@
+{
+	"id": "fa3beec7-59ea-4f8a-8d83-a014698f7c6b",
+	"createdAt": "2024-11-05T19:24:29.000Z",
+	"createdBy": "admin",
+	"globalScripts": [
+		{
+			"id": "6e63158b-bdd5-4bfc-8300-075d66929ee3",
+			"name": "Cruise - CruiseConfiguration",
+			"contextname": "CruiseConfiguration"
+		},
+		{
+			"id": "4f2b83c9-0536-4105-a145-5e05cb0c3e2b",
+			"name": "employee_deon - Delete",
+			"contextname": "Delete"
+		},
+		{
+			"id": "04bf1304-7020-4901-8416-0b11da110807",
+			"name": "employee_deon - Read",
+			"contextname": "Read"
+		},
+		{
+			"id": "045e68c4-766c-460b-94b1-bcca65de54a5",
+			"name": "employee_deon - Search",
+			"contextname": "Search"
+		},
+		{
+			"id": "bae2aa61-301f-49ad-ab65-b92489d14bd1",
+			"name": "employee_deon - Update",
+			"contextname": "Update"
+		},
+		{
+			"id": "751f5a3f-ad1d-4772-910f-849ec7b6771d",
+			"name": "employee_deon - metaData",
+			"contextname": "metaData"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "Cruise",
+	"ver": "24.11.05.1938",
+	"description": "Cruise",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "891f977a-4905-4a70-abfc-003cdc780ca4",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

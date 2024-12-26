@@ -1,0 +1,8 @@
+
+const binding = oEvent.getParameter("itemsBinding");
+const filterValue = oEvent.getParameter("value");
+
+const filterPLANT = new sap.ui.model.Filter("PLANT", "Contains", filterValue);
+const filterPLANTNAME = new sap.ui.model.Filter("PLANTNAME", "Contains", filterValue);
+const filterMain = new sap.ui.model.Filter([filterPLANT, filterPLANTNAME], false);
+binding.filter(filterMain);

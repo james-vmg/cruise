@@ -1,0 +1,95 @@
+{
+	"id": "2a9c25df-090f-4b86-9458-b35792c9f65c",
+	"createdAt": "2024-06-08T18:00:46.000Z",
+	"createdBy": "admin",
+	"translation": [],
+	"tilesOrder": [
+		"32f7997f-ebce-4aa0-b761-7f2c17d0ca29",
+		"0d1d589e-c90f-4056-ad4f-55ea8e343bd4",
+		"f10ead36-fd21-42f0-bd49-686a34e4ecb6"
+	],
+	"tilegroupsOrder": [],
+	"configMessage": {
+		"type": "None"
+	},
+	"title": "Equipment Management",
+	"subTitle": null,
+	"description": null,
+	"titleAlignment": null,
+	"enableFullScreen": null,
+	"hideHeader": null,
+	"backgroundType": "cards",
+	"backgroundColor": "",
+	"backgroundShade": null,
+	"type": null,
+	"image": null,
+	"icon": null,
+	"sort": null,
+	"inclFav": false,
+	"styleClass": null,
+	"enableScroll": false,
+	"enableShadeCalc": false,
+	"numTiles": null,
+	"enableMessage": false,
+	"ver": "24.08.31.1803",
+	"headColor": null,
+	"headTxtClr": null,
+	"subheadTxtClr": null,
+	"headBorderClr": null,
+	"headBorderWidth": null,
+	"imageTablet": null,
+	"imageMobile": null,
+	"imageCover": false,
+	"imageTabletCover": false,
+	"imageMobileCover": false,
+	"imageMobileHeight": null,
+	"imageTabletHeight": null,
+	"imageHeight": null,
+	"name": "Cruise Equipment",
+	"cardContentWidth": null,
+	"cardContentAlign": null,
+	"cardPerRow": null,
+	"cardStyle": null,
+	"cardHeightFit": false,
+	"imagePlacement": null,
+	"imageRepeat": null,
+	"imageSize": null,
+	"imageTabletPlacement": null,
+	"imageTabletRepeat": null,
+	"imageTabletSize": null,
+	"imageMobilePlacement": null,
+	"imageMobileRepeat": null,
+	"imageMobileSize": null,
+	"hideFromMenu": false,
+	"roleTag": null,
+	"cockpitTileGroup": null,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [
+		{
+			"id": "04a11f29-b278-4eb0-90f0-5fe5afe114f1",
+			"name": "Cruise Admin",
+			"ver": "24.07.06.2147"
+		}
+	],
+	"tiles": [
+		{
+			"id": "f10ead36-fd21-42f0-bd49-686a34e4ecb6",
+			"name": "Equipment - with Table",
+			"title": "Equipment Master",
+			"ver": "24.06.27.0809"
+		},
+		{
+			"id": "32f7997f-ebce-4aa0-b761-7f2c17d0ca29",
+			"name": "Equipment Adaptive List",
+			"title": "Equipment Management",
+			"ver": "24.08.02.1446"
+		},
+		{
+			"id": "0d1d589e-c90f-4056-ad4f-55ea8e343bd4",
+			"name": "Equipment",
+			"title": "Equipment Master",
+			"ver": "24.06.27.0819"
+		}
+	],
+	"tilegroups": []
+}

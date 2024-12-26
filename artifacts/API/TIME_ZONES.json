@@ -1,0 +1,949 @@
+{
+	"id": "0def8c9a-2181-419b-ba8e-f0320600772a",
+	"createdAt": "2024-06-16T19:13:38.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "258a7723-73ad-468e-9e81-e2e3273bbb68",
+			"path": "/search",
+			"method": "POST",
+			"responses": [
+				{
+					"status": "200",
+					"description": "Status 200",
+					"headers": [],
+					"content": [
+						{
+							"name": "postsearchResponse",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"status": "404",
+					"description": "Status 404",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"items": [
+								{
+									"id": "f6dd5b49-115a-4cd0-bd2f-b09f0bd98b3d",
+									"children": [],
+									"name": "ERROR_CODE",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Error Code"
+								},
+								{
+									"id": "beeb0a29-0dff-43f1-98a3-f9e9f50f93a7",
+									"children": [],
+									"name": "ERROR_TEXT",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Description of the error"
+								}
+							]
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"id": "72d95909-7fab-4a77-ada6-03668b428917",
+							"name": "MT_SEARCH_PARAMS",
+							"isParent": true,
+							"objectType": "array",
+							"children": [
+								{
+									"id": "9dddd35e-fcb3-4609-90cf-2dfff79b89ff",
+									"name": "",
+									"objectType": "object",
+									"parent": "72d95909-7fab-4a77-ada6-03668b428917",
+									"isParent": true,
+									"children": [
+										{
+											"id": "72398b15-8197-4e74-950b-a7f9f9be8bed",
+											"children": [],
+											"name": "FIELD_NAME",
+											"objectType": "string",
+											"parent": "9dddd35e-fcb3-4609-90cf-2dfff79b89ff",
+											"isParent": false,
+											"required": false,
+											"maxLength": "",
+											"minLength": ""
+										},
+										{
+											"id": "05b4fc33-b3ff-4940-8f9f-eb763c2ae89c",
+											"children": [],
+											"name": "FIELD_VALUE",
+											"objectType": "string",
+											"parent": "9dddd35e-fcb3-4609-90cf-2dfff79b89ff",
+											"isParent": false,
+											"required": false,
+											"maxLength": "",
+											"minLength": ""
+										}
+									],
+									"required": false,
+									"maxLength": "",
+									"minLength": ""
+								}
+							],
+							"required": false,
+							"parent": "",
+							"maxLength": "",
+							"minLength": ""
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "$select",
+					"description": "Select fieldnames to be returned. Separated by comma",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "sap-client",
+					"description": "SAP Client",
+					"required": true,
+					"inPath": false,
+					"example": "800",
+					"type": "string"
+				}
+			],
+			"endpoints": [],
+			"endpoint": ""
+		}
+	],
+	"definitions": [
+		{
+			"id": "d23985ff-12d9-4f2f-8d25-18555b31f28d",
+			"name": "dataRequest",
+			"description": "Key Value Structure",
+			"type": "object",
+			"properties": [
+				{
+					"id": "af2b4056-068d-4f2d-8943-2177cf4b12f9",
+					"children": [],
+					"name": "KEY",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Name of dataset"
+				},
+				{
+					"id": "18f97d50-27a3-4ab3-ad44-b7df334d9f8a",
+					"children": [],
+					"name": "VALUE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "JSON String of dataset"
+				}
+			]
+		},
+		{
+			"id": "c9761938-a12a-4e31-a33a-b10b72109ed2",
+			"name": "errorResponse",
+			"description": "Error object returned from SAP",
+			"type": "object",
+			"properties": [
+				{
+					"id": "605f06cb-e94c-4195-9513-a8bb2f9bfb06",
+					"children": [],
+					"name": "ERROR_CODE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Error Code"
+				},
+				{
+					"id": "27be8024-c8f7-4459-beec-4b17dddd6504",
+					"children": [],
+					"name": "ERROR_TEXT",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Description of the error"
+				}
+			]
+		},
+		{
+			"id": "2e7a9b55-5fe9-4b42-ad44-f21ff4e3f945",
+			"name": "postsearchResponse",
+			"type": "object",
+			"properties": [
+				{
+					"id": "bb8316de-a704-445e-b0f7-b94e3ecf025d",
+					"children": [
+						{
+							"id": "e0ccace9-e539-4341-8203-498e49748fbc",
+							"name": "MT_MESSAGES",
+							"isParent": true,
+							"objectType": "array",
+							"children": [
+								{
+									"id": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"name": "",
+									"objectType": "object",
+									"parent": "e0ccace9-e539-4341-8203-498e49748fbc",
+									"isParent": true,
+									"children": [
+										{
+											"id": "3c1e05bf-82df-48a8-a2d2-7795e9d21ca2",
+											"children": [],
+											"name": "FIELD_NAME",
+											"objectType": "string",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"description": "Field Name"
+										},
+										{
+											"id": "cd7de385-b99e-43b2-a502-37b84caed1b7",
+											"children": [],
+											"name": "TYPE",
+											"objectType": "string",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "1",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+										},
+										{
+											"id": "ddaf07a2-19a9-447b-bf7f-75771e7c2c59",
+											"children": [],
+											"name": "ID",
+											"objectType": "string",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "20",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Class"
+										},
+										{
+											"id": "2c7b066d-56ee-4414-8b8a-4a659f3a4e68",
+											"children": [],
+											"name": "NUMBER",
+											"objectType": "number",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "",
+											"minLength": "",
+											"description": "Message Number"
+										},
+										{
+											"id": "07bc0a25-23a7-45dd-ac44-69c9ceb3158c",
+											"children": [],
+											"name": "MESSAGE",
+											"objectType": "string",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "220",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Text"
+										},
+										{
+											"id": "978d4fc5-a57a-49f3-9bad-8d0779995de6",
+											"children": [],
+											"name": "MESSAGE_V1",
+											"objectType": "string",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "eab2fd98-aacc-4499-ae66-22f48bc94b4c",
+											"children": [],
+											"name": "MESSAGE_V2",
+											"objectType": "string",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "07ada8ee-3705-48ed-9fdb-47535f4ee24d",
+											"children": [],
+											"name": "MESSAGE_V3",
+											"objectType": "string",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "7ecf5d06-4de2-442e-8240-5ef00a50d039",
+											"children": [],
+											"name": "MESSAGE_V4",
+											"objectType": "string",
+											"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										}
+									],
+									"required": false,
+									"maxLength": "",
+									"minLength": ""
+								}
+							],
+							"required": false,
+							"parent": "bb8316de-a704-445e-b0f7-b94e3ecf025d",
+							"maxLength": "",
+							"minLength": ""
+						},
+						{
+							"id": "95779c83-8abe-40e6-a403-83b6fdbc06b2",
+							"name": "MT_TIMEZONES",
+							"isParent": true,
+							"objectType": "array",
+							"children": [
+								{
+									"id": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+									"name": "",
+									"objectType": "object",
+									"parent": "95779c83-8abe-40e6-a403-83b6fdbc06b2",
+									"isParent": true,
+									"children": [
+										{
+											"id": "aa90435d-404c-4237-939b-2c5c99156aa4",
+											"children": [],
+											"name": "TIMEZONEID",
+											"objectType": "string",
+											"parent": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+											"isParent": false,
+											"required": false,
+											"maxLength": "6",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Daylight Saving Time Rule"
+										},
+										{
+											"id": "9b3266f9-6c56-4200-b252-41a9ef361068",
+											"children": [],
+											"name": "TIMEZONETEXT",
+											"objectType": "string",
+											"parent": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+											"isParent": false,
+											"required": false,
+											"maxLength": "20",
+											"minLength": "",
+											"description": "Daylight Saving Time Rule"
+										}
+									],
+									"required": false,
+									"maxLength": "",
+									"minLength": ""
+								}
+							],
+							"required": false,
+							"parent": "bb8316de-a704-445e-b0f7-b94e3ecf025d",
+							"maxLength": "",
+							"minLength": ""
+						},
+						{
+							"id": "0b1ee6cc-4193-4ea4-aa30-fc78c491f66e",
+							"children": [],
+							"name": "MV_ERROR",
+							"objectType": "boolean",
+							"parent": "bb8316de-a704-445e-b0f7-b94e3ecf025d",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Boolean - Convert space/x to false/true"
+						}
+					],
+					"name": "result",
+					"objectType": "object",
+					"parent": "",
+					"isParent": true,
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "e0ccace9-e539-4341-8203-498e49748fbc",
+					"name": "MT_MESSAGES",
+					"isParent": true,
+					"objectType": "array",
+					"children": [
+						{
+							"id": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"name": "",
+							"objectType": "object",
+							"parent": "e0ccace9-e539-4341-8203-498e49748fbc",
+							"isParent": true,
+							"children": [
+								{
+									"id": "3c1e05bf-82df-48a8-a2d2-7795e9d21ca2",
+									"children": [],
+									"name": "FIELD_NAME",
+									"objectType": "string",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"description": "Field Name"
+								},
+								{
+									"id": "cd7de385-b99e-43b2-a502-37b84caed1b7",
+									"children": [],
+									"name": "TYPE",
+									"objectType": "string",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "1",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+								},
+								{
+									"id": "ddaf07a2-19a9-447b-bf7f-75771e7c2c59",
+									"children": [],
+									"name": "ID",
+									"objectType": "string",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "20",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Class"
+								},
+								{
+									"id": "2c7b066d-56ee-4414-8b8a-4a659f3a4e68",
+									"children": [],
+									"name": "NUMBER",
+									"objectType": "number",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Message Number"
+								},
+								{
+									"id": "07bc0a25-23a7-45dd-ac44-69c9ceb3158c",
+									"children": [],
+									"name": "MESSAGE",
+									"objectType": "string",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "220",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Text"
+								},
+								{
+									"id": "978d4fc5-a57a-49f3-9bad-8d0779995de6",
+									"children": [],
+									"name": "MESSAGE_V1",
+									"objectType": "string",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "eab2fd98-aacc-4499-ae66-22f48bc94b4c",
+									"children": [],
+									"name": "MESSAGE_V2",
+									"objectType": "string",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "07ada8ee-3705-48ed-9fdb-47535f4ee24d",
+									"children": [],
+									"name": "MESSAGE_V3",
+									"objectType": "string",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "7ecf5d06-4de2-442e-8240-5ef00a50d039",
+									"children": [],
+									"name": "MESSAGE_V4",
+									"objectType": "string",
+									"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								}
+							],
+							"required": false,
+							"maxLength": "",
+							"minLength": ""
+						}
+					],
+					"required": false,
+					"parent": "bb8316de-a704-445e-b0f7-b94e3ecf025d",
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"name": "",
+					"objectType": "object",
+					"parent": "e0ccace9-e539-4341-8203-498e49748fbc",
+					"isParent": true,
+					"children": [
+						{
+							"id": "3c1e05bf-82df-48a8-a2d2-7795e9d21ca2",
+							"children": [],
+							"name": "FIELD_NAME",
+							"objectType": "string",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"description": "Field Name"
+						},
+						{
+							"id": "cd7de385-b99e-43b2-a502-37b84caed1b7",
+							"children": [],
+							"name": "TYPE",
+							"objectType": "string",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "1",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+						},
+						{
+							"id": "ddaf07a2-19a9-447b-bf7f-75771e7c2c59",
+							"children": [],
+							"name": "ID",
+							"objectType": "string",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "20",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Class"
+						},
+						{
+							"id": "2c7b066d-56ee-4414-8b8a-4a659f3a4e68",
+							"children": [],
+							"name": "NUMBER",
+							"objectType": "number",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Message Number"
+						},
+						{
+							"id": "07bc0a25-23a7-45dd-ac44-69c9ceb3158c",
+							"children": [],
+							"name": "MESSAGE",
+							"objectType": "string",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "220",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Text"
+						},
+						{
+							"id": "978d4fc5-a57a-49f3-9bad-8d0779995de6",
+							"children": [],
+							"name": "MESSAGE_V1",
+							"objectType": "string",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "eab2fd98-aacc-4499-ae66-22f48bc94b4c",
+							"children": [],
+							"name": "MESSAGE_V2",
+							"objectType": "string",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "07ada8ee-3705-48ed-9fdb-47535f4ee24d",
+							"children": [],
+							"name": "MESSAGE_V3",
+							"objectType": "string",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "7ecf5d06-4de2-442e-8240-5ef00a50d039",
+							"children": [],
+							"name": "MESSAGE_V4",
+							"objectType": "string",
+							"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						}
+					],
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "3c1e05bf-82df-48a8-a2d2-7795e9d21ca2",
+					"children": [],
+					"name": "FIELD_NAME",
+					"objectType": "string",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"description": "Field Name"
+				},
+				{
+					"id": "cd7de385-b99e-43b2-a502-37b84caed1b7",
+					"children": [],
+					"name": "TYPE",
+					"objectType": "string",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "1",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+				},
+				{
+					"id": "ddaf07a2-19a9-447b-bf7f-75771e7c2c59",
+					"children": [],
+					"name": "ID",
+					"objectType": "string",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "20",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Class"
+				},
+				{
+					"id": "2c7b066d-56ee-4414-8b8a-4a659f3a4e68",
+					"children": [],
+					"name": "NUMBER",
+					"objectType": "number",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Message Number"
+				},
+				{
+					"id": "07bc0a25-23a7-45dd-ac44-69c9ceb3158c",
+					"children": [],
+					"name": "MESSAGE",
+					"objectType": "string",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "220",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Text"
+				},
+				{
+					"id": "978d4fc5-a57a-49f3-9bad-8d0779995de6",
+					"children": [],
+					"name": "MESSAGE_V1",
+					"objectType": "string",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "eab2fd98-aacc-4499-ae66-22f48bc94b4c",
+					"children": [],
+					"name": "MESSAGE_V2",
+					"objectType": "string",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "07ada8ee-3705-48ed-9fdb-47535f4ee24d",
+					"children": [],
+					"name": "MESSAGE_V3",
+					"objectType": "string",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "7ecf5d06-4de2-442e-8240-5ef00a50d039",
+					"children": [],
+					"name": "MESSAGE_V4",
+					"objectType": "string",
+					"parent": "faae57f8-4ff7-4086-b015-95000f79c016",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "95779c83-8abe-40e6-a403-83b6fdbc06b2",
+					"name": "MT_TIMEZONES",
+					"isParent": true,
+					"objectType": "array",
+					"children": [
+						{
+							"id": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+							"name": "",
+							"objectType": "object",
+							"parent": "95779c83-8abe-40e6-a403-83b6fdbc06b2",
+							"isParent": true,
+							"children": [
+								{
+									"id": "aa90435d-404c-4237-939b-2c5c99156aa4",
+									"children": [],
+									"name": "TIMEZONEID",
+									"objectType": "string",
+									"parent": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+									"isParent": false,
+									"required": false,
+									"maxLength": "6",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Daylight Saving Time Rule"
+								},
+								{
+									"id": "9b3266f9-6c56-4200-b252-41a9ef361068",
+									"children": [],
+									"name": "TIMEZONETEXT",
+									"objectType": "string",
+									"parent": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+									"isParent": false,
+									"required": false,
+									"maxLength": "20",
+									"minLength": "",
+									"description": "Daylight Saving Time Rule"
+								}
+							],
+							"required": false,
+							"maxLength": "",
+							"minLength": ""
+						}
+					],
+					"required": false,
+					"parent": "bb8316de-a704-445e-b0f7-b94e3ecf025d",
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+					"name": "",
+					"objectType": "object",
+					"parent": "95779c83-8abe-40e6-a403-83b6fdbc06b2",
+					"isParent": true,
+					"children": [
+						{
+							"id": "aa90435d-404c-4237-939b-2c5c99156aa4",
+							"children": [],
+							"name": "TIMEZONEID",
+							"objectType": "string",
+							"parent": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+							"isParent": false,
+							"required": false,
+							"maxLength": "6",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Daylight Saving Time Rule"
+						},
+						{
+							"id": "9b3266f9-6c56-4200-b252-41a9ef361068",
+							"children": [],
+							"name": "TIMEZONETEXT",
+							"objectType": "string",
+							"parent": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+							"isParent": false,
+							"required": false,
+							"maxLength": "20",
+							"minLength": "",
+							"description": "Daylight Saving Time Rule"
+						}
+					],
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "aa90435d-404c-4237-939b-2c5c99156aa4",
+					"children": [],
+					"name": "TIMEZONEID",
+					"objectType": "string",
+					"parent": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+					"isParent": false,
+					"required": false,
+					"maxLength": "6",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Daylight Saving Time Rule"
+				},
+				{
+					"id": "9b3266f9-6c56-4200-b252-41a9ef361068",
+					"children": [],
+					"name": "TIMEZONETEXT",
+					"objectType": "string",
+					"parent": "46c4e70a-d3ab-43d0-ad8b-ce996cc346da",
+					"isParent": false,
+					"required": false,
+					"maxLength": "20",
+					"minLength": "",
+					"description": "Daylight Saving Time Rule"
+				},
+				{
+					"id": "0b1ee6cc-4193-4ea4-aa30-fc78c491f66e",
+					"children": [],
+					"name": "MV_ERROR",
+					"objectType": "boolean",
+					"parent": "bb8316de-a704-445e-b0f7-b94e3ecf025d",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Boolean - Convert space/x to false/true"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "TIME_ZONES",
+	"endpoint": "http://vhcalabaci.saportals.com:50700/neptune/api/timezones",
+	"ver": "24.07.03.1952",
+	"version": "1.0",
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": null,
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11",
+	"apiFormat": 1,
+	"roles": []
+}

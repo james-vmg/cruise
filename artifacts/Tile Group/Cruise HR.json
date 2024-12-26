@@ -1,0 +1,88 @@
+{
+	"id": "f4354d4d-6a97-4acc-b0d8-44e65abc397e",
+	"createdAt": "2024-11-13T14:04:54.000Z",
+	"createdBy": "admin",
+	"translation": [],
+	"tilesOrder": [
+		"6efe818c-1c27-4a6d-89c5-8415d49d8215",
+		"b5484d9f-7f67-42ad-b91b-577bda05b3dd"
+	],
+	"tilegroupsOrder": [],
+	"configMessage": {
+		"type": "None"
+	},
+	"title": "H4S4 Management",
+	"subTitle": null,
+	"description": null,
+	"titleAlignment": null,
+	"enableFullScreen": null,
+	"hideHeader": null,
+	"backgroundType": "cards",
+	"backgroundColor": "",
+	"backgroundShade": null,
+	"type": null,
+	"image": null,
+	"icon": null,
+	"sort": null,
+	"inclFav": false,
+	"styleClass": null,
+	"enableScroll": false,
+	"enableShadeCalc": false,
+	"numTiles": null,
+	"enableMessage": false,
+	"ver": "24.11.13.1412",
+	"headColor": null,
+	"headTxtClr": null,
+	"subheadTxtClr": null,
+	"headBorderClr": null,
+	"headBorderWidth": null,
+	"imageTablet": null,
+	"imageMobile": null,
+	"imageCover": false,
+	"imageTabletCover": false,
+	"imageMobileCover": false,
+	"imageMobileHeight": null,
+	"imageTabletHeight": null,
+	"imageHeight": null,
+	"name": "Cruise HR",
+	"cardContentWidth": null,
+	"cardContentAlign": null,
+	"cardPerRow": null,
+	"cardStyle": null,
+	"cardHeightFit": false,
+	"imagePlacement": null,
+	"imageRepeat": null,
+	"imageSize": null,
+	"imageTabletPlacement": null,
+	"imageTabletRepeat": null,
+	"imageTabletSize": null,
+	"imageMobilePlacement": null,
+	"imageMobileRepeat": null,
+	"imageMobileSize": null,
+	"hideFromMenu": false,
+	"roleTag": null,
+	"cockpitTileGroup": null,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [
+		{
+			"id": "04a11f29-b278-4eb0-90f0-5fe5afe114f1",
+			"name": "Cruise Admin",
+			"ver": "24.07.06.2147"
+		}
+	],
+	"tiles": [
+		{
+			"id": "b5484d9f-7f67-42ad-b91b-577bda05b3dd",
+			"name": "Employee",
+			"title": "Employee",
+			"ver": "24.12.06.0603"
+		},
+		{
+			"id": "6efe818c-1c27-4a6d-89c5-8415d49d8215",
+			"name": "Org Structure",
+			"title": "Org Structure",
+			"ver": "24.11.13.1406"
+		}
+	],
+	"tilegroups": []
+}

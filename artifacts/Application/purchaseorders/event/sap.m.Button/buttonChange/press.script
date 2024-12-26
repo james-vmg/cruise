@@ -1,0 +1,3 @@
+
+modelpagePurchaseOrderDetailChange.setData(modelpagePurchaseOrderDetail.oData);
+splitApp.toDetail(pagePurchaseOrderDetailChange);

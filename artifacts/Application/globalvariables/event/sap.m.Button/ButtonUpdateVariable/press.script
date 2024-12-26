@@ -1,0 +1,7 @@
+
+var options = {
+    
+    data: modelDialogVariableDetail.oData
+};
+
+apisaveGlobalVariable(options);

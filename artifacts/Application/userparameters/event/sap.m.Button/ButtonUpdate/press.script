@@ -1,0 +1,14 @@
+
+var defaults = modelSimpleFormDefaults.oData;
+var logonData = {"TZONE": defaults.TZONE};
+var options = {
+    parameters: {
+        "$select": "", // Optional 
+        "sap-client": "800", // Required 
+        "IV_USER": "JAMES", // Required 
+        "IV_DESCRIPTION": "" // Required 
+    },
+    data: {"MS_DEFAULTS": defaults, "MS_LOGONDATA": logonData, "MT_USER_PARAM": modelMMUserDefaults.oData.result.MT_USER_PARAM}
+};
+
+apiupdateUserDefaults(options);

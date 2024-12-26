@@ -1,0 +1,27 @@
+{
+	"id": "e58849e9-6b16-44c1-9e28-f394187d09e3",
+	"createdAt": "2024-11-05T19:48:52.000Z",
+	"createdBy": "admin",
+	"globalScripts": [
+		{
+			"id": "751f5a3f-ad1d-4772-910f-849ec7b6771d",
+			"name": "employee_deon - metaData",
+			"contextname": "metaData"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "connectorMeta",
+	"ver": "24.11.05.2223",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "891f977a-4905-4a70-abfc-003cdc780ca4",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

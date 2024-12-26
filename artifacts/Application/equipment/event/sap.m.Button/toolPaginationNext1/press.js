@@ -1,0 +1,3 @@
+modelpageEquipmentList.oData.CURRENTPAGE++;
+
+fireEquipmentSearch();

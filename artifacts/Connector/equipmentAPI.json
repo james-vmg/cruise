@@ -1,0 +1,2411 @@
+{
+	"id": "9d1a122f-5fdf-4fc9-9fac-53bdffc09eda",
+	"createdAt": "2024-06-25T17:05:57.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"apis": {
+			"get": {
+				"api": "baf7b7e4-d0a6-4467-af19-d00249e1b3af",
+				"path": "8655ed8e-6bb5-4a4f-9b1d-f24ff6274ac5"
+			},
+			"list": {
+				"api": "baf7b7e4-d0a6-4467-af19-d00249e1b3af",
+				"path": "13de5ae8-bd6d-49d8-bc11-6a2dc007e840"
+			},
+			"save": {
+				"api": "baf7b7e4-d0a6-4467-af19-d00249e1b3af",
+				"path": "241e3f46-4a64-4375-9ba1-38c083c2e1ea"
+			},
+			"delete": {
+				"api": "baf7b7e4-d0a6-4467-af19-d00249e1b3af",
+				"path": "e8b5d82e-6325-4d33-ba89-e4d7b34c90f8"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "$select",
+				"label": "Select fieldnames to be returned. Separated by comma",
+				"type": "string",
+				"header": true,
+				"usage": "INPUT",
+				"mapping": {
+					"get": {
+						"input": "Parameters/$select",
+						"output": ""
+					},
+					"list": {
+						"input": "Parameters/$select",
+						"output": ""
+					},
+					"delete": {
+						"input": "Parameters/$select",
+						"output": ""
+					},
+					"save": {
+						"input": "Parameters/$select",
+						"output": ""
+					}
+				},
+				"originalName": "$select"
+			},
+			{
+				"name": "sap-client",
+				"label": "SAP Client",
+				"type": "string",
+				"required": true,
+				"header": true,
+				"usage": "INPUT",
+				"mapping": {
+					"get": {
+						"input": "Parameters/sap-client",
+						"output": ""
+					},
+					"list": {
+						"input": "Parameters/sap-client",
+						"output": ""
+					},
+					"delete": {
+						"input": "Parameters/sap-client",
+						"output": ""
+					},
+					"save": {
+						"input": "Parameters/sap-client",
+						"output": ""
+					}
+				},
+				"originalName": "sap-client"
+			},
+			{
+				"name": "IV_EQUIPMENT",
+				"label": "Search Parameters",
+				"type": "string",
+				"required": true,
+				"header": true,
+				"usage": "INPUT",
+				"mapping": {
+					"get": {
+						"input": "Parameters/IV_EQUIPMENT",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": ""
+					},
+					"delete": {
+						"input": "Parameters/IV_EQUIPMENT",
+						"output": ""
+					},
+					"save": {
+						"input": "Parameters/IV_EQUIPMENT",
+						"output": ""
+					}
+				},
+				"originalName": "IV_EQUIPMENT"
+			},
+			{
+				"name": "result",
+				"label": "result",
+				"type": "object",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result"
+					}
+				},
+				"originalName": "result"
+			},
+			{
+				"name": "MS_EQUIPMENT",
+				"label": "MS_EQUIPMENT",
+				"type": "object",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT"
+					},
+					"list": {
+						"input": "",
+						"output": ""
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MS_EQUIPMENT"
+			},
+			{
+				"name": "EQUIPMENT",
+				"label": "Equipment Number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/EQUIPMENT"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/EQUIPMENT"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "EQUIPMENT"
+			},
+			{
+				"name": "DESCRIPTION",
+				"label": "Description of Technical Object",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/DESCRIPTION"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/DESCRIPTION"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "DESCRIPTION"
+			},
+			{
+				"name": "EQUIPMENTCATEGORY",
+				"label": "Equipment category",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/EQUIPMENTCATEGORY"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/EQUIPMENTCATEGORY"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "EQUIPMENTCATEGORY"
+			},
+			{
+				"name": "TECHNICALOBJECTTYPE",
+				"label": "Type of Technical Object",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/TECHNICALOBJECTTYPE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/TECHNICALOBJECTTYPE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "TECHNICALOBJECTTYPE"
+			},
+			{
+				"name": "PLANT",
+				"label": "Plant",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/PLANT"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/PLANT"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "PLANT"
+			},
+			{
+				"name": "DIVISION",
+				"label": "Division",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/DIVISION"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/DIVISION"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "DIVISION"
+			},
+			{
+				"name": "STORAGELOCATION",
+				"label": "Storage Location",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/STORAGELOCATION"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/STORAGELOCATION"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "STORAGELOCATION"
+			},
+			{
+				"name": "CREATEDBYUSER",
+				"label": "Name of Person Who Created the Object",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CREATEDBYUSER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CREATEDBYUSER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "CREATEDBYUSER"
+			},
+			{
+				"name": "LASTCHANGEDBYUSER",
+				"label": "Name of person who changed object",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/LASTCHANGEDBYUSER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/LASTCHANGEDBYUSER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "LASTCHANGEDBYUSER"
+			},
+			{
+				"name": "CREATIONDATE",
+				"label": "Date on Which Record Was Created",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CREATIONDATE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CREATIONDATE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "CREATIONDATE"
+			},
+			{
+				"name": "LASTCHANGEDATE",
+				"label": "Date of Last Change",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/LASTCHANGEDATE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/LASTCHANGEDATE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "LASTCHANGEDATE"
+			},
+			{
+				"name": "ASSETMANUFACTURERNAME",
+				"label": "Manufacturer of asset",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/ASSETMANUFACTURERNAME"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/ASSETMANUFACTURERNAME"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "ASSETMANUFACTURERNAME"
+			},
+			{
+				"name": "MANUFACTURERPARTTYPENAME",
+				"label": "Manufacturer model number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/MANUFACTURERPARTTYPENAME"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/MANUFACTURERPARTTYPENAME"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MANUFACTURERPARTTYPENAME"
+			},
+			{
+				"name": "MANUFACTURERCOUNTRY",
+				"label": "Country of manufacture",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/MANUFACTURERCOUNTRY"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/MANUFACTURERCOUNTRY"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MANUFACTURERCOUNTRY"
+			},
+			{
+				"name": "CONSTRUCTIONYEAR",
+				"label": "Year of construction",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CONSTRUCTIONYEAR"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CONSTRUCTIONYEAR"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "CONSTRUCTIONYEAR"
+			},
+			{
+				"name": "CONSTRUCTIONMONTH",
+				"label": "Month of construction",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CONSTRUCTIONMONTH"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CONSTRUCTIONMONTH"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "CONSTRUCTIONMONTH"
+			},
+			{
+				"name": "ACQUISITIONDATE",
+				"label": "Date of Change of Address",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/ACQUISITIONDATE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/ACQUISITIONDATE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "ACQUISITIONDATE"
+			},
+			{
+				"name": "CURRENCY",
+				"label": "Currency Key",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CURRENCY"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CURRENCY"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "CURRENCY"
+			},
+			{
+				"name": "ACQUISITIONVALUE",
+				"label": "Acquisition Value",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/ACQUISITIONVALUE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/ACQUISITIONVALUE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "ACQUISITIONVALUE"
+			},
+			{
+				"name": "MAINTOBJECTINTERNALID",
+				"label": "Object number (forecast)",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/MAINTOBJECTINTERNALID"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/MAINTOBJECTINTERNALID"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MAINTOBJECTINTERNALID"
+			},
+			{
+				"name": "SERIALNUMBER",
+				"label": "BOM explosion number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/SERIALNUMBER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/SERIALNUMBER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "SERIALNUMBER"
+			},
+			{
+				"name": "EQUIPUSAGEPERIODSEQUENCENUMBER",
+				"label": "Consecutive numbering of EquipUsagePeriods on same day",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/EQUIPUSAGEPERIODSEQUENCENUMBER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/EQUIPUSAGEPERIODSEQUENCENUMBER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "EQUIPUSAGEPERIODSEQUENCENUMBER"
+			},
+			{
+				"name": "MATERIAL",
+				"label": "Material Number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/MATERIAL"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/MATERIAL"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MATERIAL"
+			},
+			{
+				"name": "CUSTOMER",
+				"label": "Sequential Reading of MSKU",
+				"type": "object",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "CUSTOMER"
+			},
+			{
+				"name": "MATNR",
+				"label": "Material Number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/MATNR"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/MATNR"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MATNR"
+			},
+			{
+				"name": "WERKS",
+				"label": "Plant",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/WERKS"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/WERKS"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "WERKS"
+			},
+			{
+				"name": "CHARG",
+				"label": "Batch Number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/CHARG"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/CHARG"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "CHARG"
+			},
+			{
+				"name": "SOBKZ",
+				"label": "Special Stock Indicator",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/SOBKZ"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/SOBKZ"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "SOBKZ"
+			},
+			{
+				"name": "KUNNR",
+				"label": "Customer Number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUNNR"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUNNR"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUNNR"
+			},
+			{
+				"name": "LFGJA",
+				"label": "Fiscal Year of Current Period",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/LFGJA"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/LFGJA"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "LFGJA"
+			},
+			{
+				"name": "LFMON",
+				"label": "Current period (posting period)",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/LFMON"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/LFMON"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "LFMON"
+			},
+			{
+				"name": "KUSPR",
+				"label": "Physical Inventory Blocking Indicator",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUSPR"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUSPR"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUSPR"
+			},
+			{
+				"name": "KULAB",
+				"label": "Valuated Unrestricted-Use Stock",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KULAB"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KULAB"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KULAB"
+			},
+			{
+				"name": "KUINS",
+				"label": "Stock in Quality Inspection",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUINS"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUINS"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUINS"
+			},
+			{
+				"name": "KUVLA",
+				"label": "Valuated unrestricted-use stock in previous period",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUVLA"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUVLA"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUVLA"
+			},
+			{
+				"name": "KUVIN",
+				"label": "Stock in Quality Inspection in Previous Period",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUVIN"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUVIN"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUVIN"
+			},
+			{
+				"name": "KUILL",
+				"label": "Physical inventory indicator for whse stock in current year",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUILL"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUILL"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUILL"
+			},
+			{
+				"name": "KUILQ",
+				"label": "Phys. inventory ind. f. stock in qual. insp. in current year",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUILQ"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUILQ"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUILQ"
+			},
+			{
+				"name": "KUVLL",
+				"label": "Physical inventory indicator for stock in previous year",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUVLL"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUVLL"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUVLL"
+			},
+			{
+				"name": "KUVLQ",
+				"label": "Phys. inventory ind. f. stock in qual. insp. in prev. period",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUVLQ"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUVLQ"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUVLQ"
+			},
+			{
+				"name": "KUFLL",
+				"label": "Physical inventory indicator for stock in following year",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUFLL"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUFLL"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUFLL"
+			},
+			{
+				"name": "KUFLQ",
+				"label": "Physical inventory indicator, quality insp.stck, follow.yr.",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/CUSTOMER/KUFLQ"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/CUSTOMER/KUFLQ"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "KUFLQ"
+			},
+			{
+				"name": "AUTHORIZATIONGROUP",
+				"label": "Authorization Group",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/AUTHORIZATIONGROUP"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/AUTHORIZATIONGROUP"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "AUTHORIZATIONGROUP"
+			},
+			{
+				"name": "MANUFACTURERSERIALNUMBER",
+				"label": "Manufacturer serial number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/MANUFACTURERSERIALNUMBER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/MANUFACTURERSERIALNUMBER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MANUFACTURERSERIALNUMBER"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIER",
+				"label": "Unique Item Identifier",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/UNIQUEITEMIDENTIFIER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/UNIQUEITEMIDENTIFIER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "UNIQUEITEMIDENTIFIER"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIERSTRUCTYPE",
+				"label": "Structure Type of UII",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/UNIQUEITEMIDENTIFIERSTRUCTYPE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/UNIQUEITEMIDENTIFIERSTRUCTYPE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "UNIQUEITEMIDENTIFIERSTRUCTYPE"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIERRESPPLANT",
+				"label": "Plant Responsible for UII",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/UNIQUEITEMIDENTIFIERRESPPLANT"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/UNIQUEITEMIDENTIFIERRESPPLANT"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "UNIQUEITEMIDENTIFIERRESPPLANT"
+			},
+			{
+				"name": "ASSETSYNCHRONIZATIONRULE",
+				"label": "Change Equipment Master when Changing Asset",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/ASSETSYNCHRONIZATIONRULE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/ASSETSYNCHRONIZATIONRULE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "ASSETSYNCHRONIZATIONRULE"
+			},
+			{
+				"name": "INVENTORYNUMBER",
+				"label": "Inventory number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/INVENTORYNUMBER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/INVENTORYNUMBER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "INVENTORYNUMBER"
+			},
+			{
+				"name": "GROSSWEIGHT",
+				"label": "Gross Weight",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/GROSSWEIGHT"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/GROSSWEIGHT"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "GROSSWEIGHT"
+			},
+			{
+				"name": "GROSSWEIGHTUNIT",
+				"label": "Weight Unit",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/GROSSWEIGHTUNIT"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/GROSSWEIGHTUNIT"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "GROSSWEIGHTUNIT"
+			},
+			{
+				"name": "SIZEORDIMENSIONTEXT",
+				"label": "Size/dimensions",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/SIZEORDIMENSIONTEXT"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/SIZEORDIMENSIONTEXT"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "SIZEORDIMENSIONTEXT"
+			},
+			{
+				"name": "BATCH",
+				"label": "Batch Number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/BATCH"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/BATCH"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "BATCH"
+			},
+			{
+				"name": "OPERATIONSTARTDATE",
+				"label": "First start-up date",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/OPERATIONSTARTDATE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/OPERATIONSTARTDATE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "OPERATIONSTARTDATE"
+			},
+			{
+				"name": "SUPPLIER",
+				"label": "Vendor number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/SUPPLIER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/SUPPLIER"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "SUPPLIER"
+			},
+			{
+				"name": "HASEQUIPMENTDATA",
+				"label": "Equipment data exists",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/HASEQUIPMENTDATA"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/HASEQUIPMENTDATA"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "HASEQUIPMENTDATA"
+			},
+			{
+				"name": "MASTERWARRANTY",
+				"label": "Master warranty number",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MS_EQUIPMENT/MASTERWARRANTY"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT/MASTERWARRANTY"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MASTERWARRANTY"
+			},
+			{
+				"name": "MT_MESSAGES",
+				"label": "MT_MESSAGES",
+				"type": "array",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES"
+					}
+				},
+				"originalName": "MT_MESSAGES"
+			},
+			{
+				"name": "FIELD_NAME",
+				"label": "Field Name",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/FIELD_NAME"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/FIELD_NAME"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/FIELD_NAME"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/FIELD_NAME"
+					}
+				},
+				"originalName": "FIELD_NAME"
+			},
+			{
+				"name": "TYPE",
+				"label": "Message type: S Success, E Error, W Warning, I Info, A Abort",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/TYPE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/TYPE"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/TYPE"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/TYPE"
+					}
+				},
+				"originalName": "TYPE"
+			},
+			{
+				"name": "ID",
+				"label": "Message Class",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/ID"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/ID"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/ID"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/ID"
+					}
+				},
+				"originalName": "ID"
+			},
+			{
+				"name": "NUMBER",
+				"label": "Message Number",
+				"type": "number",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/NUMBER"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/NUMBER"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/NUMBER"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/NUMBER"
+					}
+				},
+				"originalName": "NUMBER"
+			},
+			{
+				"name": "MESSAGE",
+				"label": "Message Text",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE"
+					}
+				},
+				"originalName": "MESSAGE"
+			},
+			{
+				"name": "MESSAGE_V1",
+				"label": "Message Variable",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V1"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V1"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V1"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V1"
+					}
+				},
+				"originalName": "MESSAGE_V1"
+			},
+			{
+				"name": "MESSAGE_V2",
+				"label": "Message Variable",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V2"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V2"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V2"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V2"
+					}
+				},
+				"originalName": "MESSAGE_V2"
+			},
+			{
+				"name": "MESSAGE_V3",
+				"label": "Message Variable",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V3"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V3"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V3"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V3"
+					}
+				},
+				"originalName": "MESSAGE_V3"
+			},
+			{
+				"name": "MESSAGE_V4",
+				"label": "Message Variable",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V4"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V4"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V4"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MT_MESSAGES/MESSAGE_V4"
+					}
+				},
+				"originalName": "MESSAGE_V4"
+			},
+			{
+				"name": "MV_ERROR",
+				"label": "Boolean - Convert space/x to false/true",
+				"type": "boolean",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "200/result/MV_ERROR"
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MV_ERROR"
+					},
+					"delete": {
+						"input": "",
+						"output": "200/result/MV_ERROR"
+					},
+					"save": {
+						"input": "",
+						"output": "200/result/MV_ERROR"
+					}
+				},
+				"originalName": "MV_ERROR"
+			},
+			{
+				"name": "ERROR_CODE",
+				"label": "Error Code",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "404/ERROR_CODE"
+					},
+					"list": {
+						"input": "",
+						"output": ""
+					},
+					"delete": {
+						"input": "",
+						"output": "404/ERROR_CODE"
+					},
+					"save": {
+						"input": "",
+						"output": "404/ERROR_CODE"
+					}
+				},
+				"originalName": "ERROR_CODE"
+			},
+			{
+				"name": "ERROR_TEXT",
+				"label": "Description of the error",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": "404/ERROR_TEXT"
+					},
+					"list": {
+						"input": "",
+						"output": ""
+					},
+					"delete": {
+						"input": "",
+						"output": "404/ERROR_TEXT"
+					},
+					"save": {
+						"input": "",
+						"output": "404/ERROR_TEXT"
+					}
+				},
+				"originalName": "ERROR_TEXT"
+			},
+			{
+				"name": "IV_PARAMS",
+				"label": "Search Paramers as a JSON Object",
+				"type": "string",
+				"header": true,
+				"usage": "INPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "Parameters/IV_PARAMS",
+						"output": ""
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "IV_PARAMS"
+			},
+			{
+				"name": "IV_SORTBY",
+				"label": "Sort Parameters as a JSON Array",
+				"type": "string",
+				"header": true,
+				"usage": "INPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "Parameters/IV_SORTBY",
+						"output": ""
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "IV_SORTBY"
+			},
+			{
+				"name": "IS_PAGING",
+				"label": "Pagination Data",
+				"type": "object",
+				"header": true,
+				"usage": "INPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "Parameters/IS_PAGING",
+						"output": ""
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "IS_PAGING"
+			},
+			{
+				"name": "MS_PAGING",
+				"label": "Pagination Data",
+				"type": "object",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MS_PAGING"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MS_PAGING"
+			},
+			{
+				"name": "PAGESIZE",
+				"label": "PAGESIZE",
+				"type": "integer",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MS_PAGING/PAGESIZE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "PAGESIZE"
+			},
+			{
+				"name": "CURRENTPAGE",
+				"label": "CURRENTPAGE",
+				"type": "integer",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MS_PAGING/CURRENTPAGE"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "CURRENTPAGE"
+			},
+			{
+				"name": "TOP",
+				"label": "TOP",
+				"type": "integer",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MS_PAGING/TOP"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "TOP"
+			},
+			{
+				"name": "BOTTOM",
+				"label": "BOTTOM",
+				"type": "integer",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MS_PAGING/BOTTOM"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "BOTTOM"
+			},
+			{
+				"name": "TOTALPAGES",
+				"label": "TOTALPAGES",
+				"type": "integer",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MS_PAGING/TOTALPAGES"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "TOTALPAGES"
+			},
+			{
+				"name": "TOTALRECORDS",
+				"label": "TOTALRECORDS",
+				"type": "integer",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MS_PAGING/TOTALRECORDS"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "TOTALRECORDS"
+			},
+			{
+				"name": "SORTBY",
+				"label": "JSON Array of Sort Criteria",
+				"type": "string",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MS_PAGING/SORTBY"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "SORTBY"
+			},
+			{
+				"name": "MT_EQUIPMENT",
+				"label": "MT_EQUIPMENT",
+				"type": "array",
+				"required": false,
+				"body": true,
+				"usage": "OUTPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": "200/result/MT_EQUIPMENT"
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "",
+						"output": ""
+					}
+				},
+				"originalName": "MT_EQUIPMENT"
+			},
+			{
+				"name": "IV_DESCRIPTION",
+				"label": "Description of Technical Object",
+				"type": "string",
+				"required": true,
+				"header": true,
+				"usage": "INPUT",
+				"mapping": {
+					"get": {
+						"input": "",
+						"output": ""
+					},
+					"list": {
+						"input": "",
+						"output": ""
+					},
+					"delete": {
+						"input": "",
+						"output": ""
+					},
+					"save": {
+						"input": "Parameters/IV_DESCRIPTION",
+						"output": ""
+					}
+				},
+				"originalName": "IV_DESCRIPTION"
+			}
+		],
+		"hasDocumentation": false,
+		"previewable": true
+	},
+	"documentation": {
+		"content": ""
+	},
+	"name": "equipmentAPI",
+	"description": null,
+	"group": null,
+	"type": "A",
+	"ver": "24.07.03.2006",
+	"disabled": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

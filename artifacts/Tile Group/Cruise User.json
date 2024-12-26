@@ -1,0 +1,81 @@
+{
+	"id": "484358d9-2a13-416b-97ca-06060db70b1e",
+	"createdAt": "2024-07-22T11:12:14.000Z",
+	"createdBy": "admin",
+	"translation": [],
+	"tilesOrder": [
+		"f972a00d-cf1b-4921-bace-e9b0797af2ac"
+	],
+	"tilegroupsOrder": [],
+	"configMessage": {
+		"type": "None"
+	},
+	"title": "Cruise User Defaults",
+	"subTitle": null,
+	"description": null,
+	"titleAlignment": null,
+	"enableFullScreen": null,
+	"hideHeader": null,
+	"backgroundType": "cards",
+	"backgroundColor": "",
+	"backgroundShade": null,
+	"type": null,
+	"image": null,
+	"icon": null,
+	"sort": null,
+	"inclFav": false,
+	"styleClass": null,
+	"enableScroll": false,
+	"enableShadeCalc": false,
+	"numTiles": null,
+	"enableMessage": false,
+	"ver": "24.08.31.1806",
+	"headColor": null,
+	"headTxtClr": null,
+	"subheadTxtClr": null,
+	"headBorderClr": null,
+	"headBorderWidth": null,
+	"imageTablet": null,
+	"imageMobile": null,
+	"imageCover": false,
+	"imageTabletCover": false,
+	"imageMobileCover": false,
+	"imageMobileHeight": null,
+	"imageTabletHeight": null,
+	"imageHeight": null,
+	"name": "Cruise User",
+	"cardContentWidth": null,
+	"cardContentAlign": null,
+	"cardPerRow": null,
+	"cardStyle": null,
+	"cardHeightFit": false,
+	"imagePlacement": null,
+	"imageRepeat": null,
+	"imageSize": null,
+	"imageTabletPlacement": null,
+	"imageTabletRepeat": null,
+	"imageTabletSize": null,
+	"imageMobilePlacement": null,
+	"imageMobileRepeat": null,
+	"imageMobileSize": null,
+	"hideFromMenu": false,
+	"roleTag": null,
+	"cockpitTileGroup": null,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [
+		{
+			"id": "04a11f29-b278-4eb0-90f0-5fe5afe114f1",
+			"name": "Cruise Admin",
+			"ver": "24.07.06.2147"
+		}
+	],
+	"tiles": [
+		{
+			"id": "f972a00d-cf1b-4921-bace-e9b0797af2ac",
+			"name": "User Settings",
+			"title": "User Parameters",
+			"ver": "24.06.27.0807"
+		}
+	],
+	"tilegroups": []
+}

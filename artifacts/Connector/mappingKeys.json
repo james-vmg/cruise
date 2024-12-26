@@ -1,0 +1,18 @@
+{
+	"id": "8a55e3d7-d738-4f97-a7f0-04c074001d25",
+	"createdAt": "2024-08-18T20:12:30.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"scriptRun": "1b669a9a-d20a-42a5-9ba6-72abee7792c3",
+		"scriptSel": "29886614-c2c6-4b8e-bb64-3a8b50700b41",
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "mappingKeys",
+	"description": null,
+	"group": null,
+	"type": "S",
+	"ver": "24.09.17.0140",
+	"disabled": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

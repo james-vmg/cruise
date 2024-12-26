@@ -1,0 +1,226 @@
+{
+	"id": "b338adfe-1bed-4e0a-9ce3-ae742b89dd1a",
+	"createdAt": "2024-08-02T11:24:52.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonSave": "",
+				"textButtonSave": "Save",
+				"textToastSave": "Saved",
+				"typeButtonSave": "Emphasized",
+				"iconButtonDelete": "",
+				"textButtonDelete": "Delete",
+				"textToastDelete": "Deleted",
+				"typeButtonDelete": "Reject",
+				"iconButtonAttachment": "",
+				"textButtonAttachment": "Add Attachment",
+				"typeButtonAttachment": "Transparent",
+				"tab0Text": "General",
+				"tabAText": "Specifications",
+				"tab1Text": "Drivers",
+				"tab2Text": "Tab 2",
+				"tab3Text": "Tab 3",
+				"tab4Text": "Tab 4",
+				"tab5Text": "Tab 5",
+				"enableClose": true,
+				"enableSave": true,
+				"enableDelete": false,
+				"enableAttachment": true,
+				"enableTab1": true,
+				"enableTab2": false,
+				"enableTab3": false,
+				"enableTab4": false,
+				"enableTab5": false,
+				"enableUppercase": false,
+				"enablePadding": true,
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete ",
+				"requiredFieldsToast": "Please fill in all the required fields",
+				"dynamicSubTitle": "EQUIPMENT",
+				"title": "Vehicle Detail",
+				"avatarIcon": "sap-icon://fa-solid/car",
+				"tab1Icon": "sap-icon://personnel-view",
+				"_tab1Nav": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "85bb454e-ddc5-409c-b296-1831c2a9520e",
+					"keyField": [
+						{
+							"fieldName": "Equipment",
+							"key": "EQUIPMENT",
+							"value": ""
+						}
+					]
+				},
+				"dynamicTitle": "DESCRIPTION"
+			},
+			"form": {
+				"enableCompact": true,
+				"enableCentered": true,
+				"formLayout": "ResponsiveGridLayout"
+			},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "DESCRIPTION",
+				"label": "Description of Technical Object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "ENGINE_TYPE",
+				"label": "Engine type",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EQUIPMENT",
+				"label": "Equipment Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EQUIPMENTCATEGORY",
+				"label": "Equipment category",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EXPIRY_DATE",
+				"label": "Validity end date",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IDENTIFICATION_NUMBER",
+				"label": "Identification number for fleet object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LANGUAGE",
+				"label": "Language Key",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LICENSE_PLATE",
+				"label": "License plate number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "OBJECTNUMBER",
+				"label": "Object number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRIMARY_FUEL",
+				"label": "Consumable Type of Primary Fuel",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "VALIDITYENDDATE",
+				"label": "Valid To Date",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "VEHICLE_TYPE",
+				"label": "Vehicle Type",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "DESCRIPTION",
+				"text": "Description",
+				"fieldPos": 1,
+				"columnLabel": "Vehicle Details"
+			},
+			{
+				"inputFormatter": "",
+				"editable": false,
+				"visible": true,
+				"name": "LICENSE_PLATE",
+				"text": "License #",
+				"fieldPos": 2
+			},
+			{
+				"inputFormatter": "",
+				"editable": false,
+				"visible": true,
+				"name": "EQUIPMENT",
+				"text": "SAP Equip #",
+				"fieldPos": 3,
+				"columnLabel": "SAP Details",
+				"enableNewForm": true,
+				"description": "Contact you SAP administrator to update this information"
+			},
+			{
+				"inputFormatter": "",
+				"editable": false,
+				"visible": true,
+				"name": "VEHICLE_TYPE",
+				"text": "Vehicle Type",
+				"fieldPos": 4
+			},
+			{
+				"inputFormatter": "",
+				"editable": false,
+				"visible": true,
+				"name": "PRIMARY_FUEL",
+				"text": "Fuel Type",
+				"fieldPos": 5
+			}
+		],
+		"fieldsRun": [
+			{
+				"name": "EQUIPMENT",
+				"text": "Equipment Number",
+				"fieldPos": 6
+			}
+		],
+		"defaultVariant": {
+			"id": "93838a9d-0da7-4481-862b-fe76cc78b305",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "fleet_edit",
+	"description": "Fleet Object Edit Form",
+	"group": "",
+	"type": "C",
+	"connectorid": "2da59e55-7f3a-4a72-91bc-db29b329557b",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.08.06.0705",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_edit",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

@@ -1,0 +1,313 @@
+{
+	"id": "9117e76f-3999-4fcd-b871-048074626c2d",
+	"createdAt": "2024-08-14T14:40:25.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"hideHeader": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonCreate": "",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"textButtonExport": "",
+				"typeButtonExport": "Transparent",
+				"iconButtonImport": "sap-icon://fa-solid/file-import",
+				"textButtonImport": "",
+				"typeButtonImport": "Transparent",
+				"iconButtonMultiSelect": "",
+				"textButtonMultiSelect": "MultiSelect",
+				"typeButtonMultiSelect": "Emphasized",
+				"iconButtonRun": "",
+				"textButtonRun": "Update",
+				"typeButtonRun": "Emphasized",
+				"enableRun": true,
+				"enableCreate": false,
+				"enableClose": true,
+				"enableDelete": false,
+				"enableExport": false,
+				"enableImport": false,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"autoRun": true,
+				"autoRunFocus": false,
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"requiredFieldsToast": "Please fill in all required fields",
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete",
+				"odataValueList": "Field does not have any OData ValueList reference",
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "f1d3d73a-457e-407b-89ab-c886806732bb",
+					"keyField": [
+						{
+							"fieldName": "PURCHASEORDER",
+							"key": "PURCHASEORDER",
+							"value": ""
+						}
+					]
+				},
+				"title": "Purchase Orders",
+				"avatarIcon": "sap-icon://fa-solid/shopping-cart"
+			},
+			"form": {
+				"enableCompact": false,
+				"headerExpanded": true,
+				"headerPreserveState": false
+			},
+			"table": {
+				"enablePagination": true,
+				"paginationShowSelection": false,
+				"paginationRows": 25,
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"fixedLayout": false,
+				"inset": false,
+				"enableCompact": false,
+				"enableAutoPopin": false,
+				"enableAction1": false,
+				"enableAction2": false,
+				"enableAction3": false,
+				"enableAction4": false,
+				"enableAction5": false,
+				"action1Text": "",
+				"action1Type": "Transparent",
+				"action2Text": "",
+				"action2Type": "Transparent",
+				"action3Text": "",
+				"action3Type": "Transparent",
+				"action4Text": "",
+				"action4Type": "Transparent",
+				"action5Text": "",
+				"action5Type": "Transparent"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "COMPANYCODE",
+				"label": "Company Code",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CORRESPNCEXTERNALREFERENCE",
+				"label": "Your Reference",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CREATEDBYUSER",
+				"label": "Name of Person Who Created the Object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CREATIONDATE",
+				"label": "Date on Which Record Was Created",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LANGUAGE",
+				"label": "Language Key",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PAYMENTTERMS",
+				"label": "Terms of Payment Key",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDER",
+				"label": "Purchasing Document Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDERTYPE",
+				"label": "Purchasing Document Type",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASINGDOCUMENTDELETIONCODE",
+				"label": "Deletion indicator in purchasing document",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASINGGROUP",
+				"label": "Purchasing Group",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASINGORGANIZATION",
+				"label": "Purchasing Organization",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASINGPROCESSINGSTATUS",
+				"label": "Purchasing document processing state",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "RELEASEISNOTCOMPLETED",
+				"label": "Release Not Yet Completely Effected",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "SUPPLIER",
+				"label": "Vendor's account number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "VALIDITYENDDATE",
+				"label": "End of Validity Period",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "VALIDITYSTARTDATE",
+				"label": "Start of Validity Period",
+				"type": "date",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"visible": true,
+				"name": "PURCHASINGGROUP",
+				"text": "Purchasing Group",
+				"fieldPos": 1
+			},
+			{
+				"visible": true,
+				"name": "PURCHASINGORGANIZATION",
+				"text": "Purchasing Organization",
+				"fieldPos": 2
+			},
+			{
+				"visible": true,
+				"name": "SUPPLIER",
+				"text": "Vendor's account number",
+				"fieldPos": 3
+			},
+			{
+				"visible": true,
+				"name": "COMPANYCODE",
+				"text": "Company Code",
+				"fieldPos": 4
+			}
+		],
+		"fieldsRun": [
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "PURCHASEORDER",
+				"text": "Purchasing Document Number",
+				"fieldPos": 5,
+				"width": "100px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "PURCHASINGGROUP",
+				"text": "Purchasing Group",
+				"fieldPos": 6,
+				"width": "100px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "PURCHASINGORGANIZATION",
+				"text": "Purchasing Organization",
+				"fieldPos": 7,
+				"width": "100px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "SUPPLIER",
+				"text": "Vendor's account number",
+				"fieldPos": 8,
+				"width": "150px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "CREATIONDATE",
+				"text": "Creation Date",
+				"fieldPos": 9,
+				"formatter": "sapdate01",
+				"width": "100px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "COMPANYCODE",
+				"text": "Company Code",
+				"fieldPos": 10
+			}
+		],
+		"defaultVariant": {
+			"id": "117e1ea1-adf3-44a7-d65f-334c6110362d",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "purchaseOrder_list",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "adfee73a-eb8f-45d8-a628-b442a55e3794",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.09.17.0301",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_list",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

@@ -1,0 +1,2 @@
+//
+SplitApp.backDetailToPage(pageMappingHeadDetail);

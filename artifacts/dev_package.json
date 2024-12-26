@@ -1,0 +1,947 @@
+{
+	"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"createdAt": "2024-06-11T14:12:42.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/james-vmg/cruise"
+	},
+	"name": "Cruise",
+	"description": "Cruise Development Package",
+	"ver": "24.12.26.1805",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "fe43b9e6-f6f5-459e-aefd-7d958ceb84d8",
+			"application": "pagination",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "ef790076-0bfd-454f-ba6b-70f7c5ff5f1f",
+			"application": "purchaseorders",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "e768477d-654b-49e1-923e-571f73ee6020",
+			"application": "cruisemapping",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "e4c47109-b38d-4f8d-be3f-77716e89f23d",
+			"application": "userparameters",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "ca076f01-d69e-485d-aac2-8f66d455ec39",
+			"application": "globalvariables",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "9df316a6-bfc7-4675-b50c-31db3fe3ab1b",
+			"application": "templates_simpleapp",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "9019d8a3-f4c0-47c3-aa69-7ebdbc72a330",
+			"application": "cruisemappingcopy",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "82664b7e-0846-4130-b73a-2429c8f1f06c",
+			"application": "splitapptemplate",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "7a42d923-7e90-43db-a302-9d70a7123971",
+			"application": "employee",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "681cf3f7-013f-4218-9fc3-35069240dae3",
+			"application": "cruise_plants_bb",
+			"title": "Plant Master Data",
+			"description": "Plant",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "42c6c86d-0d93-47b1-b958-3f4ae920f6de",
+			"application": "functionallocation",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "31352821-208a-4428-832a-f9255c094649",
+			"application": "employee_split",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "24d09175-a3b2-4730-a71c-176a04082101",
+			"application": "equipment",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "109d2767-4689-4301-bebe-3794cabb20f6",
+			"application": "orgstructure",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		},
+		{
+			"id": "0ed063c4-ea78-4b5a-9ce2-bd61d929a9b8",
+			"application": "cruise_pagingbar",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+			}
+		}
+	],
+	"api": [
+		{
+			"id": "fa5cd427-4601-41e3-9874-8ab7edb9ee92",
+			"name": "Fleet",
+			"description": "Fleet Management",
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "e1ecdd65-3ac6-4fd2-987f-b64a436dbf01",
+			"name": "DECIMAL_FORMATS",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "de016acd-06eb-444c-9d9e-c03f8395292a",
+			"name": "CruiseMappingHead",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "d9b6949f-87ca-4e50-8c29-9bd79e6975b7",
+			"name": "CRUISE_ABAP_OBJECTS",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "d7cf8741-a3e5-499b-aa8f-24a755658791",
+			"name": "CruiseMappingKeys",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "cf537ac3-e57b-41a1-998f-90b8e2c4098b",
+			"name": "CruiseMappingDetail",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "ce78cc3e-c5be-47f5-badc-bcb91e34f2a0",
+			"name": "CRUISE_COMPANY",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "c1de7d77-044a-43a0-8209-50295dbbcf26",
+			"name": "plant",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "baf7b7e4-d0a6-4467-af19-d00249e1b3af",
+			"name": "Equipment",
+			"description": "Equipment Cruise",
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "b613c4e6-1b6b-4a28-95eb-9a20c55d8938",
+			"name": "DATE_FORMATS",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "9eeea024-f8f1-4924-9013-fd8a8d654151",
+			"name": "PurchaseOrderItem",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "9b880d57-9d96-49ce-91a2-aaf65d401066",
+			"name": "EMPLOYEE",
+			"description": "Employee ",
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "99efd010-c21c-4632-b297-4103d7f559b2",
+			"name": "LANGUAGES",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "7b09fa46-aba9-4f65-bb06-157aa87fa39f",
+			"name": "TIME_FORMATS",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "74b3371e-33d2-49ad-8c06-bbbe075fef20",
+			"name": "CRUISE_ENTITY_STATUS",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "72b44d28-76c3-4251-8542-2ed6d51a9c4b",
+			"name": "FUNCTIONALLOCATION",
+			"description": "Functional Location",
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "669ed2b6-90f6-4847-b197-2d8c04c1cb93",
+			"name": "PurchaseOrder",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "5d589e01-87cc-43a5-a9f2-5087456578dd",
+			"name": "USER_PARAMETERS",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "5b660f07-45cf-40f5-bd9b-b7a7a44b120d",
+			"name": "globalvariables",
+			"description": "Read and Update Global Variables",
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "2568d810-c21d-4512-8adc-b5fb04e9efe7",
+			"name": "CRUISE_UTILITES",
+			"description": "Utilities for General TADIR type oprations",
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "157868a2-c79f-4a10-bc69-9c1a69988126",
+			"name": "EMPLOYEE_DEON",
+			"description": "Employee API",
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "0def8c9a-2181-419b-ba8e-f0320600772a",
+			"name": "TIME_ZONES",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "0b7581eb-ab98-403c-8203-9d3933cd8fed",
+			"name": "CRUISE_RESTAPI",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "0b463ce2-4f1e-4d6d-a45c-f95d9a897ece",
+			"name": "Org Structure",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "e4b2e725-3cc5-4f1a-af57-70efbdfaacc0",
+			"name": "globalvariables",
+			"description": "To store Constant Variables that should be set by an administrator for use across apps and Scripts"
+		}
+	],
+	"jsclass": [
+		{
+			"id": "fae2cd5d-d91e-4ef6-a96e-c4a55034ab5d",
+			"name": "Search",
+			"description": "Call the Search API"
+		},
+		{
+			"id": "fa3beec7-59ea-4f8a-8d83-a014698f7c6b",
+			"name": "Cruise",
+			"description": "Cruise"
+		},
+		{
+			"id": "f62a0717-080a-485a-b918-41d5957c446d",
+			"name": "Cruise",
+			"description": "Cruise Job"
+		},
+		{
+			"id": "eaa038ed-cfa5-4648-a4e2-b168da9684c3",
+			"name": "Dates",
+			"description": "Common Date Utilities"
+		},
+		{
+			"id": "e77d55b7-38b8-4cc0-8fb9-d95c9c5f5687",
+			"name": "Cruise",
+			"description": null
+		},
+		{
+			"id": "e73c02b4-668a-453a-8021-b9e78097c2e9",
+			"name": "connectorMeta",
+			"description": "Get the MetaData for Adaptive Connector"
+		},
+		{
+			"id": "e58849e9-6b16-44c1-9e28-f394187d09e3",
+			"name": "connectorMeta",
+			"description": null
+		},
+		{
+			"id": "db64fc87-f5ee-4752-8301-73d420a3898c",
+			"name": "Delete",
+			"description": null
+		},
+		{
+			"id": "d5acd975-9120-4d4b-902c-d5c64f2e82a7",
+			"name": "connectorMetadata",
+			"description": null
+		},
+		{
+			"id": "d0570915-2d61-4b04-8489-ff66b200ddc9",
+			"name": "plantSearchScript",
+			"description": "Plant search script"
+		},
+		{
+			"id": "cd8ce9db-995c-4ffd-8e55-7ae48c917bba",
+			"name": "Update",
+			"description": "Call the Update API"
+		},
+		{
+			"id": "cb1aa287-4810-47e4-9599-13522817c011",
+			"name": "metaData",
+			"description": null
+		},
+		{
+			"id": "c2944029-5047-4190-847c-325e9ca556c4",
+			"name": "Delete",
+			"description": null
+		},
+		{
+			"id": "c1316ef1-8538-4715-aece-adc01f8ce872",
+			"name": "Cruise",
+			"description": "Cruise Operations"
+		},
+		{
+			"id": "bbcfcf13-cb61-403c-8259-dbb65be3610a",
+			"name": "metaData",
+			"description": null
+		},
+		{
+			"id": "bae2aa61-301f-49ad-ab65-b92489d14bd1",
+			"name": "Update",
+			"description": "Update"
+		},
+		{
+			"id": "ba300561-651e-44f9-a74d-4295185a6d45",
+			"name": "Search",
+			"description": "Call the Search API"
+		},
+		{
+			"id": "b13b0f19-1a73-4e47-ba27-2f0451ad9b1d",
+			"name": "Search",
+			"description": null
+		},
+		{
+			"id": "a7e80364-d26d-4421-a933-0774389348b0",
+			"name": "Search",
+			"description": null
+		},
+		{
+			"id": "a6258195-493d-49c1-a04d-2b3c48d26b41",
+			"name": "Search",
+			"description": "Search"
+		},
+		{
+			"id": "a14dc4c3-5ba3-4ec2-8000-7a1005d55476",
+			"name": "connectorMeta",
+			"description": null
+		},
+		{
+			"id": "9f1e326f-9f09-4bac-9b58-a667280afb35",
+			"name": "Search",
+			"description": null
+		},
+		{
+			"id": "9beb7d96-7346-45e6-8a7d-f0214703333a",
+			"name": "Read",
+			"description": "Call the Read API"
+		},
+		{
+			"id": "9a11e66b-d18f-4e5a-a409-66249e0523f1",
+			"name": "Search",
+			"description": null
+		},
+		{
+			"id": "99566840-c15f-45b7-a18a-d0f9dca2f253",
+			"name": "Cruise",
+			"description": "Main Cruise Orchestrator Script"
+		},
+		{
+			"id": "9801488d-4cb6-4d57-9dfb-7afa7a620c39",
+			"name": "Update",
+			"description": "Call the Update or Create API"
+		},
+		{
+			"id": "948b0f31-73d1-41cb-9589-7802bc364eaa",
+			"name": "metaData",
+			"description": "Call the MetaData API"
+		},
+		{
+			"id": "91114d43-674b-4ddf-9bd8-35c62adf742b",
+			"name": "Read",
+			"description": null
+		},
+		{
+			"id": "8bd0e2fa-2443-4108-9216-55082b295a5c",
+			"name": "Delete",
+			"description": "Delete"
+		},
+		{
+			"id": "89658506-d5d7-4165-a234-e640075b9e72",
+			"name": "Read",
+			"description": null
+		},
+		{
+			"id": "838d2cce-d4e9-486a-a62c-91999d538475",
+			"name": "metaData",
+			"description": "Call the MetaData API"
+		},
+		{
+			"id": "813639c6-8145-4cb1-a56d-63969f098016",
+			"name": "metaData",
+			"description": "Get the MetaData from the API"
+		},
+		{
+			"id": "81092e04-ec5e-4d9f-ada4-413fdf4a2379",
+			"name": "Read",
+			"description": "Call the Read API"
+		},
+		{
+			"id": "751f5a3f-ad1d-4772-910f-849ec7b6771d",
+			"name": "metaData",
+			"description": "metaData"
+		},
+		{
+			"id": "6eda5920-a914-436e-9b51-43343b82e07c",
+			"name": "metadataScript",
+			"description": null
+		},
+		{
+			"id": "6e63158b-bdd5-4bfc-8300-075d66929ee3",
+			"name": "CruiseConfiguration",
+			"description": "Cruise setting and defaults"
+		},
+		{
+			"id": "6915763f-ad82-438b-a0e8-f6f859e4a77c",
+			"name": "Cruise",
+			"description": null
+		},
+		{
+			"id": "614deb4f-487d-47bc-bad3-74ea5db3f114",
+			"name": "CreateconnectorMeta",
+			"description": "CreateconnectorMeta"
+		},
+		{
+			"id": "5cadb7a8-3e0c-4ffc-a974-4c0b6314e1d0",
+			"name": "metaData",
+			"description": "Global Meta Data with the API call"
+		},
+		{
+			"id": "54c11839-48f9-4b94-854e-c78f08b6eb0d",
+			"name": "Delete",
+			"description": "Call the Delete API"
+		},
+		{
+			"id": "53afee9f-3bbd-4c0b-aea3-af8d4b206c23",
+			"name": "Delete",
+			"description": "Call the Delete API"
+		},
+		{
+			"id": "53086b16-5f38-46ad-86da-7724215fe713",
+			"name": "metaData",
+			"description": "metaData"
+		},
+		{
+			"id": "4f2b83c9-0536-4105-a145-5e05cb0c3e2b",
+			"name": "Delete",
+			"description": "Delete"
+		},
+		{
+			"id": "4ef769b2-73f6-4292-b54b-f0827377ef3c",
+			"name": "Booleans",
+			"description": null
+		},
+		{
+			"id": "4aff9876-a315-49bd-87fa-f6e33f7cee9f",
+			"name": "Read",
+			"description": "Read"
+		},
+		{
+			"id": "46f06e78-88c1-4871-aa4b-4eca787fd38f",
+			"name": "Update",
+			"description": "Call the Update API"
+		},
+		{
+			"id": "46e179d4-c301-43e5-89b6-678c24726810",
+			"name": "Search",
+			"description": null
+		},
+		{
+			"id": "3e3a3cd7-b954-4fd8-8b19-22f4c1352047",
+			"name": "Update",
+			"description": null
+		},
+		{
+			"id": "39de195f-d060-4a0e-8a0c-6b722c23737a",
+			"name": "Read",
+			"description": "Call the Read API"
+		},
+		{
+			"id": "3621ec33-c7d2-41aa-ab40-4c0b8bd740bb",
+			"name": "Read",
+			"description": "Call the Read API"
+		},
+		{
+			"id": "351ca89a-9294-4a7d-90e5-dfee6c8c4c74",
+			"name": "connectorMeta",
+			"description": "Provide MetaData Field Catalog for the Adaptive Connector"
+		},
+		{
+			"id": "32cd9be9-25d7-4b0a-82d6-745ea4ad5001",
+			"name": "metaData",
+			"description": null
+		},
+		{
+			"id": "29886614-c2c6-4b8e-bb64-3a8b50700b41",
+			"name": "connectorMeta",
+			"description": null
+		},
+		{
+			"id": "291c8980-441e-4e9c-a0a9-169f3ad1893e",
+			"name": "Read",
+			"description": null
+		},
+		{
+			"id": "28bafa43-ccfe-4df6-8227-8cc7c6f4250e",
+			"name": "Cruise",
+			"description": "Main Orchestrator"
+		},
+		{
+			"id": "229e137a-02dd-49cd-b872-8899fdfeb39d",
+			"name": "metaData",
+			"description": null
+		},
+		{
+			"id": "1ee6cdb9-8f75-4553-815c-b3fb79bfebca",
+			"name": "Update",
+			"description": "Update"
+		},
+		{
+			"id": "1b669a9a-d20a-42a5-9ba6-72abee7792c3",
+			"name": "Cruise",
+			"description": null
+		},
+		{
+			"id": "1a4ded40-9ede-4abe-8cc5-5f9f614924bf",
+			"name": "Filters",
+			"description": "Filter Objects according to Meta Data"
+		},
+		{
+			"id": "19d72415-a21c-46c6-b32d-4f0f5ff3d330",
+			"name": "connectorMeta",
+			"description": null
+		},
+		{
+			"id": "13c77ae1-b8c1-413f-b8ac-9798b91bcbca",
+			"name": "Search",
+			"description": "Call the Search API"
+		},
+		{
+			"id": "10832a97-fc07-4e88-bc6d-943f1ff75ad0",
+			"name": "Delete",
+			"description": "Call the Delete API"
+		},
+		{
+			"id": "0f175e55-cf68-47c4-a1cc-a3e39eafa21e",
+			"name": "Cruise",
+			"description": "Main Orchestrator"
+		},
+		{
+			"id": "0a1995a9-9072-4fc4-b46b-14cd7f97ddee",
+			"name": "Update",
+			"description": null
+		},
+		{
+			"id": "05d4fb0c-f5cb-400f-8157-bdfd75746f3a",
+			"name": "Read",
+			"description": null
+		},
+		{
+			"id": "04bf1304-7020-4901-8416-0b11da110807",
+			"name": "Read",
+			"description": "Read"
+		},
+		{
+			"id": "045e68c4-766c-460b-94b1-bcca65de54a5",
+			"name": "Search",
+			"description": "Search"
+		},
+		{
+			"id": "041b1c83-59e7-4abd-8d43-bc1485a9f8e6",
+			"name": "plantMetadata",
+			"description": "plant meta data script"
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "fd51522f-2738-4434-bddb-6f8ed02c2b5d",
+			"name": "cruise_mapping_keys",
+			"description": "Cruise Mapping Keys"
+		},
+		{
+			"id": "de102f87-1bf9-4254-8211-7b2e3b9c2edc",
+			"name": "cruise_utilities",
+			"description": "Common Utility Functions - Global"
+		},
+		{
+			"id": "a1ca28dd-33a1-4774-8ef2-2c20d316664e",
+			"name": "cruise_job",
+			"description": "Cruise Jobs"
+		},
+		{
+			"id": "8edf4d5e-4eba-4ebd-8b2d-4e78e861479a",
+			"name": "cruise_plant",
+			"description": "Cruise Plant"
+		},
+		{
+			"id": "89572514-3078-4fb8-9ca9-a2faa620ba15",
+			"name": "Cruise",
+			"description": "global variable script"
+		},
+		{
+			"id": "891f977a-4905-4a70-abfc-003cdc780ca4",
+			"name": "employee_deon",
+			"description": "Employee Deon"
+		},
+		{
+			"id": "535746ca-330d-4181-be89-5870c7541d24",
+			"name": "cruise_equipment",
+			"description": "Cruise Equipment"
+		},
+		{
+			"id": "47a439ac-fa32-4fc3-8caf-748be19bca80",
+			"name": "cruise_purchorditems",
+			"description": "Cruise Purchase Order Items"
+		},
+		{
+			"id": "3ac00222-ed28-4088-a8be-693ddaff9b21",
+			"name": "cruise_purchords",
+			"description": "Cruise Purchase Orders"
+		},
+		{
+			"id": "320a47c8-2902-49e5-9f39-0d5a523bec96",
+			"name": "cruise_company",
+			"description": ""
+		},
+		{
+			"id": "2a5e69ac-9f20-42cd-93d2-7d120fc448c1",
+			"name": "cruise_fleet",
+			"description": "Fleet Management"
+		},
+		{
+			"id": "1158ed89-e00c-422e-848a-b3ef3666bc55",
+			"name": "cruise_employee",
+			"description": "Employee"
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [
+		{
+			"id": "fb9f6c1d-bd95-4155-a6f0-7b39f74cab02",
+			"name": "equipmentListAPI",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		},
+		{
+			"id": "f79bf608-5b0c-48b4-bef0-6d6be4d8771a",
+			"name": "purchaseorderitems_list",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		},
+		{
+			"id": "f6945003-5525-448e-b37f-98fa424380db",
+			"name": "equipment_list",
+			"description": "Equipment List",
+			"application": "planet9_adaptive_list"
+		},
+		{
+			"id": "dee8c1fc-f938-4066-9403-bad3f68b9056",
+			"name": "purchaseOrderItem_edit",
+			"description": "",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "c2fdad13-ea13-43e7-8ed9-bea0ec9542f2",
+			"name": "equipment_edit",
+			"description": "Equipment Detail",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "b338adfe-1bed-4e0a-9ce3-ae742b89dd1a",
+			"name": "fleet_edit",
+			"description": "Fleet Object Edit Form",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "9117e76f-3999-4fcd-b871-048074626c2d",
+			"name": "purchaseOrder_list",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		},
+		{
+			"id": "80c79131-f79a-40de-af89-0c67dcaa86c6",
+			"name": "cruiseKeysEdit",
+			"description": "",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "79c26fda-4f1d-404c-af0f-2efc8447ef52",
+			"name": "fleet_list",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		}
+	],
+	"api_authentication": [],
+	"api_group": [
+		{
+			"id": "debc080f-650e-4db0-8446-b6c36ccfdd11",
+			"name": "Cruise",
+			"description": "Cruise APIs"
+		}
+	],
+	"tile": [
+		{
+			"id": "f972a00d-cf1b-4921-bace-e9b0797af2ac",
+			"description": "Manage preferences and defaults from SAP",
+			"name": "User Settings"
+		},
+		{
+			"id": "f4e0a0bd-91fa-41cb-b190-4fab32707245",
+			"description": "Maintain Mapping between CDS View Names and ECC and generate class and APIs",
+			"name": "Maintain Mapping Parameters"
+		},
+		{
+			"id": "f10ead36-fd21-42f0-bd49-686a34e4ecb6",
+			"description": "To showcase Sorting with Pagination",
+			"name": "Equipment - with Table"
+		},
+		{
+			"id": "e6a9cf65-6eb9-445a-bdb6-eddda970cc95",
+			"description": null,
+			"name": "Purchase Orders Adaptive Designer"
+		},
+		{
+			"id": "b5484d9f-7f67-42ad-b91b-577bda05b3dd",
+			"description": "SplitApp example with REST API",
+			"name": "Employee"
+		},
+		{
+			"id": "9fe22c2e-5afc-4c19-b3bc-c22a597ae58b",
+			"description": null,
+			"name": "Purchase Orders"
+		},
+		{
+			"id": "7c8f00e9-68f8-4704-a4c8-5a212e2eba2d",
+			"description": "Variables for Use in Apps and Scripts",
+			"name": "Maintain Global Variables"
+		},
+		{
+			"id": "6efe818c-1c27-4a6d-89c5-8415d49d8215",
+			"description": "SplitApp example with REST API",
+			"name": "Org Structure"
+		},
+		{
+			"id": "642d8cdc-f5cb-4031-ad1c-9c6ca809d8bd",
+			"description": "Keep core master data in SAP, use trxn IE36/IE37",
+			"name": "Fleet Adaptive List"
+		},
+		{
+			"id": "3c20f651-77ad-4f73-909e-2e214546eefb",
+			"description": "Maintain Mapping between CDS View Names and ECC and generate class and APIs",
+			"name": "Maintain Mapping Parameters - Copy"
+		},
+		{
+			"id": "32f7997f-ebce-4aa0-b761-7f2c17d0ca29",
+			"description": "Keep your master data in SAP, but engage your users with enhanced features",
+			"name": "Equipment Adaptive List"
+		},
+		{
+			"id": "0d1d589e-c90f-4056-ad4f-55ea8e343bd4",
+			"description": "SplitApp example with REST API",
+			"name": "Equipment"
+		}
+	],
+	"category": [
+		{
+			"id": "f4354d4d-6a97-4acc-b0d8-44e65abc397e",
+			"description": null,
+			"name": "Cruise HR"
+		},
+		{
+			"id": "d74cbe21-eec4-4882-9cce-6eb1a02624c7",
+			"description": null,
+			"name": "Cruise Administration"
+		},
+		{
+			"id": "a457e931-8cf8-4014-aadd-244fda0e4634",
+			"description": null,
+			"name": "Cruise Administration - Copy"
+		},
+		{
+			"id": "484358d9-2a13-416b-97ca-06060db70b1e",
+			"description": null,
+			"name": "Cruise User"
+		},
+		{
+			"id": "424ca336-699d-451f-b3e4-028412bbf960",
+			"description": null,
+			"name": "Cruise Framework"
+		},
+		{
+			"id": "2acb6057-9d5f-4148-9e3a-ce68c812fc87",
+			"description": null,
+			"name": "Cruise Purchase Orders"
+		},
+		{
+			"id": "2a9c25df-090f-4b86-9458-b35792c9f65c",
+			"description": null,
+			"name": "Cruise Equipment"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "ecf49c42-d62f-48f4-be86-feea405b0dfe",
+			"name": "VMG Cruise Demo",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [
+		{
+			"id": "04a11f29-b278-4eb0-90f0-5fe5afe114f1",
+			"name": "Cruise Admin",
+			"description": "Admin Functions for Cruise"
+		}
+	],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [
+		{
+			"id": "e9401f34-2fd9-4c9f-b859-17fce5c888c0",
+			"name": "equipment",
+			"description": "cruise equipment"
+		},
+		{
+			"id": "df3872dc-ffda-46b4-9717-493b75eb6963",
+			"name": "employee_deon",
+			"description": "Deon Test Employee Connector"
+		},
+		{
+			"id": "adfee73a-eb8f-45d8-a628-b442a55e3794",
+			"name": "purchaseOrder",
+			"description": "Connector for Adaptive Framework Purchase Order Apps"
+		},
+		{
+			"id": "9d1a122f-5fdf-4fc9-9fac-53bdffc09eda",
+			"name": "equipmentAPI",
+			"description": null
+		},
+		{
+			"id": "8ead6e36-0ee2-434b-ab27-8a9ba5c5d905",
+			"name": "employee",
+			"description": "Cruise employee"
+		},
+		{
+			"id": "8a55e3d7-d738-4f97-a7f0-04c074001d25",
+			"name": "mappingKeys",
+			"description": null
+		},
+		{
+			"id": "57f0cb8f-663c-49d8-9e57-6eee2f47c9bc",
+			"name": "purchaseOrderItems",
+			"description": "Purchase Order Items"
+		},
+		{
+			"id": "2da59e55-7f3a-4a72-91bc-db29b329557b",
+			"name": "fleet",
+			"description": "Fleet Management Connector"
+		}
+	],
+	"events": [],
+	"code_snippets": [
+		{
+			"id": "6784938c-cc6f-430b-8bb9-0dfca88de264",
+			"name": "MessageBox with confirmation",
+			"description": "Programatic Message Box"
+		}
+	],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

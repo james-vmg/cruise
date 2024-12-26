@@ -1,0 +1,3 @@
+
+modelpageEquipmentDetailChange.setData(modelpageEquipmentDetail.oData);
+splitApp.toDetail(pageEquipmentDetailChange);

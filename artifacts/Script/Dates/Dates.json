@@ -1,0 +1,21 @@
+{
+	"id": "eaa038ed-cfa5-4648-a4e2-b168da9684c3",
+	"createdAt": "2024-08-16T12:00:13.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "Dates",
+	"ver": "24.08.17.1659",
+	"description": "Common Date Utilities",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": true,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "de102f87-1bf9-4254-8211-7b2e3b9c2edc",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

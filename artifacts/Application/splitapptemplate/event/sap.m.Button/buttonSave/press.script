@@ -1,0 +1,10 @@
+let <Entity> = modelpage<Entity>DetailChange.oData;
+var options = {
+    parameters: {
+        "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+        IV_PARAMS: JSON.stringify(<Entity>.result.MS_<Entity>),
+    },
+};
+
+BusyDialogUpdating.open();
+api<Entity>Update(options);

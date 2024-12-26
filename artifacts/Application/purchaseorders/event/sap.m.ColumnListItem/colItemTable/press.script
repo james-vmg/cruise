@@ -1,0 +1,14 @@
+const context = oEvent.oSource.getBindingContext();  
+
+const data = context.getObject();
+
+var params = {"PURCHASEORDER":data.PURCHASEORDER,"PURCHASEORDERITEM":data.PURCHASEORDERITEM}
+var options = {
+    parameters: {
+        "$select": "", // Optional 
+        "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required 
+          "IV_PARAMS": JSON.stringify(params) // Required 
+  }
+};
+BusyDialogReadingItem.open();
+apiPurchaseOrderItemRead(options);

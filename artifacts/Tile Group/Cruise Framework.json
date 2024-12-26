@@ -1,0 +1,110 @@
+{
+	"id": "424ca336-699d-451f-b3e4-028412bbf960",
+	"createdAt": "2024-08-31T18:05:55.000Z",
+	"createdBy": "admin",
+	"translation": [],
+	"tilesOrder": [],
+	"tilegroupsOrder": [
+		"2a9c25df-090f-4b86-9458-b35792c9f65c",
+		"ad0602f0-4ef2-4ad1-bb75-da113ac5d8d8",
+		"2acb6057-9d5f-4148-9e3a-ce68c812fc87",
+		"f4354d4d-6a97-4acc-b0d8-44e65abc397e",
+		"d74cbe21-eec4-4882-9cce-6eb1a02624c7",
+		"484358d9-2a13-416b-97ca-06060db70b1e"
+	],
+	"configMessage": {
+		"type": "None"
+	},
+	"title": "Cruise Framework",
+	"subTitle": null,
+	"description": null,
+	"titleAlignment": null,
+	"enableFullScreen": null,
+	"hideHeader": null,
+	"backgroundType": "cards",
+	"backgroundColor": "",
+	"backgroundShade": null,
+	"type": null,
+	"image": null,
+	"icon": null,
+	"sort": null,
+	"inclFav": false,
+	"styleClass": null,
+	"enableScroll": false,
+	"enableShadeCalc": false,
+	"numTiles": null,
+	"enableMessage": false,
+	"ver": "24.11.13.1407",
+	"headColor": null,
+	"headTxtClr": null,
+	"subheadTxtClr": null,
+	"headBorderClr": null,
+	"headBorderWidth": null,
+	"imageTablet": null,
+	"imageMobile": null,
+	"imageCover": false,
+	"imageTabletCover": false,
+	"imageMobileCover": false,
+	"imageMobileHeight": null,
+	"imageTabletHeight": null,
+	"imageHeight": null,
+	"name": "Cruise Framework",
+	"cardContentWidth": null,
+	"cardContentAlign": null,
+	"cardPerRow": null,
+	"cardStyle": null,
+	"cardHeightFit": false,
+	"imagePlacement": null,
+	"imageRepeat": null,
+	"imageSize": null,
+	"imageTabletPlacement": null,
+	"imageTabletRepeat": null,
+	"imageTabletSize": null,
+	"imageMobilePlacement": null,
+	"imageMobileRepeat": null,
+	"imageMobileSize": null,
+	"hideFromMenu": false,
+	"roleTag": null,
+	"cockpitTileGroup": null,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"tiles": [],
+	"tilegroups": [
+		{
+			"id": "f4354d4d-6a97-4acc-b0d8-44e65abc397e",
+			"name": "Cruise HR",
+			"title": "H4S4 Management",
+			"ver": "24.11.13.1412"
+		},
+		{
+			"id": "d74cbe21-eec4-4882-9cce-6eb1a02624c7",
+			"name": "Cruise Administration",
+			"title": "Cruise Administration",
+			"ver": "24.11.27.1121"
+		},
+		{
+			"id": "ad0602f0-4ef2-4ad1-bb75-da113ac5d8d8",
+			"name": "Cruise Fleet Demo",
+			"title": "Fleet Management",
+			"ver": "24.09.18.0913"
+		},
+		{
+			"id": "484358d9-2a13-416b-97ca-06060db70b1e",
+			"name": "Cruise User",
+			"title": "Cruise User Defaults",
+			"ver": "24.08.31.1806"
+		},
+		{
+			"id": "2acb6057-9d5f-4148-9e3a-ce68c812fc87",
+			"name": "Cruise Purchase Orders",
+			"title": "Purchasing",
+			"ver": "24.08.15.1812"
+		},
+		{
+			"id": "2a9c25df-090f-4b86-9458-b35792c9f65c",
+			"name": "Cruise Equipment",
+			"title": "Equipment Management",
+			"ver": "24.08.31.1803"
+		}
+	]
+}

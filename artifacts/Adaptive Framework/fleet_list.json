@@ -1,0 +1,262 @@
+{
+	"id": "79c26fda-4f1d-404c-af0f-2efc8447ef52",
+	"createdAt": "2024-08-02T08:22:03.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"hideHeader": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonCreate": "",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"textButtonExport": "",
+				"typeButtonExport": "Transparent",
+				"iconButtonImport": "sap-icon://fa-solid/file-import",
+				"textButtonImport": "",
+				"typeButtonImport": "Transparent",
+				"iconButtonMultiSelect": "",
+				"textButtonMultiSelect": "MultiSelect",
+				"typeButtonMultiSelect": "Emphasized",
+				"iconButtonRun": "sap-icon://refresh",
+				"textButtonRun": "Refresh",
+				"typeButtonRun": "Emphasized",
+				"enableRun": true,
+				"enableCreate": false,
+				"enableClose": true,
+				"enableDelete": false,
+				"enableExport": true,
+				"enableImport": false,
+				"enableMultiSelect": false,
+				"enableVariant": true,
+				"autoRun": true,
+				"autoRunFocus": false,
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"requiredFieldsToast": "Please fill in all required fields",
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete",
+				"odataValueList": "Field does not have any OData ValueList reference",
+				"title": "Fleet Management",
+				"subTitle": "Vehicle Manager",
+				"avatarIcon": "sap-icon://car-rental",
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "b338adfe-1bed-4e0a-9ce3-ae742b89dd1a",
+					"keyField": []
+				}
+			},
+			"form": {
+				"enableCompact": true,
+				"headerExpanded": true,
+				"headerPreserveState": false
+			},
+			"table": {
+				"enablePagination": true,
+				"paginationShowSelection": true,
+				"paginationRows": 25,
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"fixedLayout": false,
+				"inset": false,
+				"enableCompact": false,
+				"enableAutoPopin": false,
+				"enableAction1": false,
+				"enableAction2": false,
+				"enableAction3": false,
+				"enableAction4": false,
+				"enableAction5": false,
+				"action1Text": "",
+				"action1Type": "Transparent",
+				"action2Text": "",
+				"action2Type": "Transparent",
+				"action3Text": "",
+				"action3Type": "Transparent",
+				"action4Text": "",
+				"action4Type": "Transparent",
+				"action5Text": "",
+				"action5Type": "Transparent"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "PRIMARY_FUEL",
+				"label": "Consumable Type of Primary Fuel",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DESCRIPTION",
+				"label": "Description of Technical Object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "ENGINE_TYPE",
+				"label": "Engine type",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EQUIPMENT",
+				"label": "Equipment Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EQUIPMENTCATEGORY",
+				"label": "Equipment category",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IDENTIFICATION_NUMBER",
+				"label": "Identification number for fleet object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LANGUAGE",
+				"label": "Language Key",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LICENSE_PLATE",
+				"label": "License plate number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MODEL NUMBER",
+				"label": "MODEL NUMBER",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "OBJECTNUMBER",
+				"label": "Object number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "VALIDITYENDDATE",
+				"label": "Valid To Date",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EXPIRY_DATE",
+				"label": "Validity end date",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "VEHICLE_TYPE",
+				"label": "Vehicle Type",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"visible": true,
+				"name": "DESCRIPTION",
+				"text": "Description",
+				"fieldPos": 1
+			}
+		],
+		"fieldsRun": [
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "EQUIPMENT",
+				"text": "Equipment Number",
+				"fieldPos": 2,
+				"formatter": "zero",
+				"width": "200px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "VEHICLE_TYPE",
+				"text": "Vehicle Type",
+				"fieldPos": 3,
+				"enableGroup": false,
+				"width": "75px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "DESCRIPTION",
+				"text": "Description",
+				"fieldPos": 4,
+				"width": "300px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "LICENSE_PLATE",
+				"text": "License Number",
+				"fieldPos": 5,
+				"width": "150px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "PRIMARY_FUEL",
+				"text": "Fuel",
+				"fieldPos": 6
+			}
+		],
+		"defaultVariant": {
+			"id": "02dd50a7-41b5-417a-9745-5000973feb88",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "fleet_list",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "2da59e55-7f3a-4a72-91bc-db29b329557b",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.08.27.1427",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_list",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

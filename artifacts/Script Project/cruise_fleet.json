@@ -1,0 +1,9 @@
+{
+	"id": "2a5e69ac-9f20-42cd-93d2-7d120fc448c1",
+	"createdAt": "2024-08-02T06:59:13.000Z",
+	"createdBy": "admin",
+	"name": "cruise_fleet",
+	"description": "Fleet Management",
+	"ver": "24.10.18.0218",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

@@ -1,0 +1,12 @@
+let mappingKey = modelpageMappingKeyCreate.oData;
+mappingKey = convertBooleanFieldsToString(mappingKey);
+var options = {
+    parameters: {
+        $select: "", // Optional
+        "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+ //       IV_PARAMS: JSON.stringify(mappingKey), // Required
+    },
+    data: {MS_MAPPING_K: mappingKey},
+};
+BusyDialogCreating.open();
+apiMappingKeyCreate(options);

@@ -1,0 +1,18 @@
+let mapping = modelpageMappingHeadDetail.oData.result.MS_MAPPING_H;
+if (mapping.LOGGINGACTIVE ===true && (mapping.LOGOBJECT == "" || mapping.LOGSUBOBJECT == "")) {
+    sap.m.MessageToast.show(txtTranslateLogObjectsNotMaintained.getText());
+    return;
+}
+mapping = convertBooleanFieldsToString(mapping);
+let details = modelTableMapDetailsChange.oData;
+var options = {
+    parameters: {
+        "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+ //       IV_PARAMS: JSON.stringify(mapping),
+    },
+    data: { MS_MAPPING_H: mapping,
+            MT_MAPPING_D: details },
+};
+
+BusyDialogUpdating.open();
+apiMappingHeadUpdate(options);

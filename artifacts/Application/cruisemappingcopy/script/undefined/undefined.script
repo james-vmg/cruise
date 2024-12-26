@@ -1,0 +1,7 @@
+.warning {
+  color: red;
+}
+
+.greenRow {
+  background-color: #d4edda; /* Light green background */
+}

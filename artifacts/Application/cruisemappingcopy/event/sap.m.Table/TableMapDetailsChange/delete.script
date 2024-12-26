@@ -1,0 +1,5 @@
+const deleteItem = oEvent.getParameter("listItem");
+const context = deleteItem.getBindingContext();
+const mappingDetail = context.getObject();
+
+ModelData.Delete(TableMapDetailsChange, ["CRUISE_KEY", "CDSVIEW", "VIEWFIELD"], [mappingDetail.CRUISE_KEY, mappingDetail.CDSVIEW, mappingDetail.VIEWFIELD ]);

@@ -1,0 +1,18 @@
+{
+	"id": "8ead6e36-0ee2-434b-ab27-8a9ba5c5d905",
+	"createdAt": "2024-10-08T18:05:12.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"scriptSel": "d5acd975-9120-4d4b-902c-d5c64f2e82a7",
+		"scriptRun": "6915763f-ad82-438b-a0e8-f6f859e4a77c",
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "employee",
+	"description": "Cruise employee",
+	"group": null,
+	"type": "S",
+	"ver": "24.10.08.1805",
+	"disabled": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

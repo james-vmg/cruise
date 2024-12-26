@@ -1,0 +1,2 @@
+modelDialogVariableDetail.setData({});
+DialogVariableDetail.open();

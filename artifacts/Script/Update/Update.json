@@ -1,0 +1,29 @@
+{
+	"id": "bae2aa61-301f-49ad-ab65-b92489d14bd1",
+	"createdAt": "2024-11-05T19:31:19.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [
+		{
+			"id": "23caba27-f5b8-4fd3-a531-ba257648ff1b",
+			"parent": "157868a2-c79f-4a10-bc69-9c1a69988126",
+			"name": "/Update",
+			"contextname": "Update",
+			"method": "PUT"
+		}
+	],
+	"name": "Update",
+	"ver": "24.11.05.1931",
+	"description": "Update",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": true,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "891f977a-4905-4a70-abfc-003cdc780ca4",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

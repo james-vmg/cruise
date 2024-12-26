@@ -1,0 +1,687 @@
+{
+	"id": "fb9f6c1d-bd95-4155-a6f0-7b39f74cab02",
+	"createdAt": "2024-07-07T22:24:57.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"hideHeader": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonCreate": "",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"textButtonExport": "",
+				"typeButtonExport": "Transparent",
+				"iconButtonImport": "sap-icon://fa-solid/file-import",
+				"textButtonImport": "",
+				"typeButtonImport": "Transparent",
+				"iconButtonMultiSelect": "",
+				"textButtonMultiSelect": "MultiSelect",
+				"typeButtonMultiSelect": "Emphasized",
+				"iconButtonRun": "",
+				"textButtonRun": "Update",
+				"typeButtonRun": "Emphasized",
+				"enableRun": true,
+				"enableCreate": false,
+				"enableClose": false,
+				"enableDelete": false,
+				"enableExport": false,
+				"enableImport": false,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"autoRun": false,
+				"autoRunFocus": false,
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"requiredFieldsToast": "Please fill in all required fields",
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete",
+				"odataValueList": "Field does not have any OData ValueList reference"
+			},
+			"form": {
+				"enableCompact": false,
+				"headerExpanded": true,
+				"headerPreserveState": false
+			},
+			"table": {
+				"enablePagination": true,
+				"paginationShowSelection": false,
+				"paginationRows": 25,
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"fixedLayout": false,
+				"inset": false,
+				"enableCompact": false,
+				"enableAutoPopin": false,
+				"enableAction1": false,
+				"enableAction2": false,
+				"enableAction3": false,
+				"enableAction4": false,
+				"enableAction5": false,
+				"action1Text": "",
+				"action1Type": "Transparent",
+				"action2Text": "",
+				"action2Type": "Transparent",
+				"action3Text": "",
+				"action3Type": "Transparent",
+				"action4Text": "",
+				"action4Type": "Transparent",
+				"action5Text": "",
+				"action5Type": "Transparent"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "ACQUISITIONVALUE",
+				"label": "Acquisition Value",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "AUTHORIZATIONGROUP",
+				"label": "Authorization Group",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "SERIALNUMBER",
+				"label": "BOM explosion number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "BOTTOM",
+				"label": "BOTTOM",
+				"type": "integer",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "CHARG",
+				"label": "Batch Number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "BATCH",
+				"label": "Batch Number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MV_ERROR",
+				"label": "Boolean - Convert space/x to false/true",
+				"type": "boolean",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "CURRENTPAGE",
+				"label": "CURRENTPAGE",
+				"type": "integer",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "ASSETSYNCHRONIZATIONRULE",
+				"label": "Change Equipment Master when Changing Asset",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "EQUIPUSAGEPERIODSEQUENCENUMBER",
+				"label": "Consecutive numbering of EquipUsagePeriods on same day",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MANUFACTURERCOUNTRY",
+				"label": "Country of manufacture",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "CURRENCY",
+				"label": "Currency Key",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "LFMON",
+				"label": "Current period (posting period)",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUNNR",
+				"label": "Customer Number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "ACQUISITIONDATE",
+				"label": "Date of Change of Address",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "LASTCHANGEDATE",
+				"label": "Date of Last Change",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "CREATIONDATE",
+				"label": "Date on Which Record Was Created",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "DESCRIPTION",
+				"label": "Description of Technical Object",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "IV_DESCRIPTION",
+				"label": "Description of Technical Object",
+				"type": "string",
+				"usage": "INPUT"
+			},
+			{
+				"name": "ERROR_TEXT",
+				"label": "Description of the error",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "DIVISION",
+				"label": "Division",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "EQUIPMENT",
+				"label": "Equipment Number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "EQUIPMENTCATEGORY",
+				"label": "Equipment category",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "HASEQUIPMENTDATA",
+				"label": "Equipment data exists",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "ERROR_CODE",
+				"label": "Error Code",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "FIELD_NAME",
+				"label": "Field Name",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "OPERATIONSTARTDATE",
+				"label": "First start-up date",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "LFGJA",
+				"label": "Fiscal Year of Current Period",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "GROSSWEIGHT",
+				"label": "Gross Weight",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "INVENTORYNUMBER",
+				"label": "Inventory number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "SORTBY",
+				"label": "JSON Array of Sort Criteria",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MS_EQUIPMENT",
+				"label": "MS_EQUIPMENT",
+				"type": "object",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MT_EQUIPMENT",
+				"label": "MT_EQUIPMENT",
+				"type": "array",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MT_MESSAGES",
+				"label": "MT_MESSAGES",
+				"type": "array",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MANUFACTURERPARTTYPENAME",
+				"label": "Manufacturer model number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "ASSETMANUFACTURERNAME",
+				"label": "Manufacturer of asset",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MANUFACTURERSERIALNUMBER",
+				"label": "Manufacturer serial number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MASTERWARRANTY",
+				"label": "Master warranty number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MATERIAL",
+				"label": "Material Number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MATNR",
+				"label": "Material Number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "ID",
+				"label": "Message Class",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "NUMBER",
+				"label": "Message Number",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MESSAGE",
+				"label": "Message Text",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MESSAGE_V1",
+				"label": "Message Variable",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MESSAGE_V2",
+				"label": "Message Variable",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MESSAGE_V3",
+				"label": "Message Variable",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MESSAGE_V4",
+				"label": "Message Variable",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "TYPE",
+				"label": "Message type: S Success, E Error, W Warning, I Info, A Abort",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "CONSTRUCTIONMONTH",
+				"label": "Month of construction",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "CREATEDBYUSER",
+				"label": "Name of Person Who Created the Object",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "LASTCHANGEDBYUSER",
+				"label": "Name of person who changed object",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "MAINTOBJECTINTERNALID",
+				"label": "Object number (forecast)",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "PAGESIZE",
+				"label": "PAGESIZE",
+				"type": "integer",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "IS_PAGING",
+				"label": "Pagination Data",
+				"type": "object",
+				"usage": "INPUT"
+			},
+			{
+				"name": "MS_PAGING",
+				"label": "Pagination Data",
+				"type": "object",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUILQ",
+				"label": "Phys. inventory ind. f. stock in qual. insp. in current year",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUVLQ",
+				"label": "Phys. inventory ind. f. stock in qual. insp. in prev. period",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUSPR",
+				"label": "Physical Inventory Blocking Indicator",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUFLL",
+				"label": "Physical inventory indicator for stock in following year",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUVLL",
+				"label": "Physical inventory indicator for stock in previous year",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUILL",
+				"label": "Physical inventory indicator for whse stock in current year",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUFLQ",
+				"label": "Physical inventory indicator, quality insp.stck, follow.yr.",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "PLANT",
+				"label": "Plant",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "WERKS",
+				"label": "Plant",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIERRESPPLANT",
+				"label": "Plant Responsible for UII",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "sap-client",
+				"label": "SAP Client",
+				"type": "string",
+				"usage": "INPUT"
+			},
+			{
+				"name": "IV_PARAMS",
+				"label": "Search Paramers as a JSON Object",
+				"type": "string",
+				"usage": "INPUT"
+			},
+			{
+				"name": "IV_EQUIPMENT",
+				"label": "Search Parameters",
+				"type": "string",
+				"usage": "INPUT"
+			},
+			{
+				"name": "$select",
+				"label": "Select fieldnames to be returned. Separated by comma",
+				"type": "string",
+				"usage": "INPUT"
+			},
+			{
+				"name": "CUSTOMER",
+				"label": "Sequential Reading of MSKU",
+				"type": "object",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "SIZEORDIMENSIONTEXT",
+				"label": "Size/dimensions",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "IV_SORTBY",
+				"label": "Sort Parameters as a JSON Array",
+				"type": "string",
+				"usage": "INPUT"
+			},
+			{
+				"name": "SOBKZ",
+				"label": "Special Stock Indicator",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUINS",
+				"label": "Stock in Quality Inspection",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUVIN",
+				"label": "Stock in Quality Inspection in Previous Period",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "STORAGELOCATION",
+				"label": "Storage Location",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIERSTRUCTYPE",
+				"label": "Structure Type of UII",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "TOP",
+				"label": "TOP",
+				"type": "integer",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "TOTALPAGES",
+				"label": "TOTALPAGES",
+				"type": "integer",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "TOTALRECORDS",
+				"label": "TOTALRECORDS",
+				"type": "integer",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "TECHNICALOBJECTTYPE",
+				"label": "Type of Technical Object",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIER",
+				"label": "Unique Item Identifier",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KULAB",
+				"label": "Valuated Unrestricted-Use Stock",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "KUVLA",
+				"label": "Valuated unrestricted-use stock in previous period",
+				"type": "number",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "SUPPLIER",
+				"label": "Vendor number",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "GROSSWEIGHTUNIT",
+				"label": "Weight Unit",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "CONSTRUCTIONYEAR",
+				"label": "Year of construction",
+				"type": "string",
+				"usage": "OUTPUT"
+			},
+			{
+				"name": "result",
+				"label": "result",
+				"type": "object",
+				"usage": "OUTPUT"
+			}
+		],
+		"fieldsSel": [
+			{
+				"visible": true,
+				"name": "IS_PAGING",
+				"text": "Pagination Data",
+				"fieldPos": 1
+			}
+		],
+		"fieldsRun": [
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "EQUIPMENT",
+				"text": "Equipment Number",
+				"fieldPos": 2,
+				"formatter": "zero"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "DESCRIPTION",
+				"text": "Description of Technical Object",
+				"fieldPos": 3
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "EQUIPMENTCATEGORY",
+				"text": "Equipment category",
+				"fieldPos": 4
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "MATNR",
+				"text": "Material Number",
+				"fieldPos": 5
+			}
+		],
+		"defaultVariant": {
+			"id": "abe489c8-7ada-4979-96e5-d1aadfd2aff0",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "equipmentListAPI",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "9d1a122f-5fdf-4fc9-9fac-53bdffc09eda",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.07.08.2227",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_list",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

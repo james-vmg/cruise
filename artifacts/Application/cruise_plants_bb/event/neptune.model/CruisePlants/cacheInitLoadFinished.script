@@ -1,0 +1,11 @@
+
+var options = {
+    parameters: {
+        "$select": "", // Optional 
+        "sap-client": "800" // Required 
+    },
+    data: {}
+};
+
+apiCRUISEplantSearch(options);
+

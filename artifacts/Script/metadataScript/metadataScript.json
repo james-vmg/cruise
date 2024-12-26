@@ -1,0 +1,40 @@
+{
+	"id": "6eda5920-a914-436e-9b51-43343b82e07c",
+	"createdAt": "2024-08-02T07:41:47.000Z",
+	"createdBy": "admin",
+	"globalScripts": [
+		{
+			"id": "6e63158b-bdd5-4bfc-8300-075d66929ee3",
+			"name": "Cruise - CruiseConfiguration",
+			"contextname": "CruiseConfiguration"
+		},
+		{
+			"id": "bbcfcf13-cb61-403c-8259-dbb65be3610a",
+			"name": "cruise_fleet - metaData",
+			"contextname": "metaData"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [
+		{
+			"id": "7616f854-e0c6-4f5e-be92-7051cfc6df6a",
+			"parent": "fa5cd427-4601-41e3-9874-8ab7edb9ee92",
+			"name": "/MetaData",
+			"contextname": "MetaData",
+			"method": "GET"
+		}
+	],
+	"name": "metadataScript",
+	"ver": "24.09.17.0119",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "2a5e69ac-9f20-42cd-93d2-7d120fc448c1",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

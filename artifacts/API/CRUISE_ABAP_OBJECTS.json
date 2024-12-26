@@ -1,0 +1,506 @@
+{
+	"id": "d9b6949f-87ca-4e50-8c29-9bd79e6975b7",
+	"createdAt": "2024-09-19T02:19:11.000Z",
+	"createdBy": "admin",
+	"auth": [
+		{
+			"role": "DEF",
+			"apiAuth": "47e30929-4309-4946-8519-afa72dee8911",
+			"authName": "vmgJames",
+			"authDesc": "",
+			"id": "1d8121d9-8570-4d99-bdcf-86398f7ca1cb"
+		}
+	],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "71c54af7-3095-456d-90aa-724d3412b406",
+			"path": "/Create",
+			"method": "POST",
+			"responses": [
+				{
+					"status": "200",
+					"description": "Status 200",
+					"headers": [],
+					"content": [
+						{
+							"name": "postCreateResponse",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"status": "404",
+					"description": "Status 404",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"items": [
+								{
+									"id": "227ca5ab-8db3-453e-a8ad-7a0954fb7f83",
+									"children": [],
+									"name": "ERROR_CODE",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Error Code"
+								},
+								{
+									"id": "471960e6-be2f-4472-a0c1-aa5f560cf5d8",
+									"children": [],
+									"name": "ERROR_TEXT",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Description of the error"
+								}
+							]
+						}
+					]
+				}
+			],
+			"content": [],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "$select",
+					"description": "Select fieldnames to be returned. Separated by comma",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "sap-client",
+					"description": "SAP Client",
+					"required": true,
+					"inPath": false,
+					"example": "800",
+					"type": "string"
+				},
+				{
+					"name": "IV_CRUISE_KEY",
+					"description": "CRUISE Class Key",
+					"required": true,
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "IV_SUPERCLASS",
+					"description": "Object Type Name",
+					"required": true,
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "IV_CREATE_STRUCTURE",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"required": true,
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_CREATE_TABLETYPE",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"required": true,
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_CREATE_CLASS",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"required": true,
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_SIMULATION",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"required": true,
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_CREATE_PACKAGE",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"required": true,
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_TRANSPORT",
+					"description": "Request/Task",
+					"required": true,
+					"inPath": false,
+					"type": "string"
+				}
+			],
+			"endpoints": [],
+			"endpoint": ""
+		},
+		{
+			"id": "b3b1157c-ba8c-466a-ac03-314072825808",
+			"path": "/Delete",
+			"method": "DELETE",
+			"responses": [
+				{
+					"status": "200",
+					"description": "Status 200",
+					"headers": [],
+					"content": [
+						{
+							"name": "deleteDeleteResponse",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"status": "404",
+					"description": "Status 404",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"items": [
+								{
+									"id": "f00292eb-bf90-4e2c-a716-6b1251fe9984",
+									"children": [],
+									"name": "ERROR_CODE",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Error Code"
+								},
+								{
+									"id": "1e8e7ad5-26a5-4fca-ba59-58abb2b64924",
+									"children": [],
+									"name": "ERROR_TEXT",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Description of the error"
+								}
+							]
+						}
+					]
+				}
+			],
+			"content": [],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "$select",
+					"description": "Select fieldnames to be returned. Separated by comma",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "sap-client",
+					"description": "SAP Client",
+					"required": true,
+					"inPath": false,
+					"example": "800",
+					"type": "string"
+				},
+				{
+					"name": "IV_CRUISE_KEY",
+					"description": "CRUISE Class Key",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "IV_CLASS_NAME",
+					"description": "Key structure of a class",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "IV_DELETE_PACKAGE",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_DELETE_STRUCTURE",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_DELETE_TABLETYPE",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_DELETE_CLASS",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)",
+					"inPath": false,
+					"type": "boolean"
+				},
+				{
+					"name": "IV_STRUCT_NAME",
+					"description": "Name of ABAP Dictionary Object",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "IV_TABLETYPE_NAME",
+					"description": "Name of ABAP Dictionary Object",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "IV_TRANSPORT",
+					"description": "Request/Task",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "IV_PACKAGE_NAME",
+					"description": "Package",
+					"inPath": false,
+					"type": "string"
+				}
+			],
+			"endpoints": [],
+			"endpoint": ""
+		}
+	],
+	"definitions": [
+		{
+			"id": "55f114d4-b1a0-4ef0-ac0b-8d5cf86f9761",
+			"name": "dataRequest",
+			"description": "Key Value Structure",
+			"type": "object",
+			"properties": [
+				{
+					"id": "4f570ef8-fb33-43bb-963f-5868a937fa36",
+					"children": [],
+					"name": "KEY",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Name of dataset"
+				},
+				{
+					"id": "8d437310-9879-4923-9860-6e1fe8af98b2",
+					"children": [],
+					"name": "VALUE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "JSON String of dataset"
+				}
+			]
+		},
+		{
+			"id": "9d2a43c3-5c9c-4f6f-bf2a-f4544d13c716",
+			"name": "errorResponse",
+			"description": "Error object returned from SAP",
+			"type": "object",
+			"properties": [
+				{
+					"id": "bb034789-3464-4d65-aaac-4c9e1dbe14c9",
+					"children": [],
+					"name": "ERROR_CODE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Error Code"
+				},
+				{
+					"id": "cb3e697c-cac7-4ef5-a967-eccc10ebb9b7",
+					"children": [],
+					"name": "ERROR_TEXT",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Description of the error"
+				}
+			]
+		},
+		{
+			"id": "2081c0f8-85ed-4b5e-9914-3a699c3cfb8e",
+			"name": "postCreateResponse",
+			"type": "object",
+			"properties": [
+				{
+					"id": "eaa2e247-c1d2-4ff7-8566-ea94f6772765",
+					"children": [
+						{
+							"id": "7cb2f25d-15b9-42fa-ac4d-ed910132bd42",
+							"children": [],
+							"name": "GV_CLASS_CREATED",
+							"objectType": "boolean",
+							"parent": "eaa2e247-c1d2-4ff7-8566-ea94f6772765",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Boolean Variable (X=true, -=false, space=unknown)"
+						},
+						{
+							"id": "b1b36d9b-a913-4567-bef6-1067fd19fb8b",
+							"children": [],
+							"name": "GV_STRUCTURE_CREATED",
+							"objectType": "boolean",
+							"parent": "eaa2e247-c1d2-4ff7-8566-ea94f6772765",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Boolean Variable (X=true, -=false, space=unknown)"
+						},
+						{
+							"id": "44298f37-221d-4096-9c2c-92c129ae3625",
+							"children": [],
+							"name": "GV_TTY_CREATED",
+							"objectType": "boolean",
+							"parent": "eaa2e247-c1d2-4ff7-8566-ea94f6772765",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Boolean Variable (X=true, -=false, space=unknown)"
+						}
+					],
+					"name": "result",
+					"objectType": "object",
+					"parent": "",
+					"isParent": true,
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "7cb2f25d-15b9-42fa-ac4d-ed910132bd42",
+					"children": [],
+					"name": "GV_CLASS_CREATED",
+					"objectType": "boolean",
+					"parent": "eaa2e247-c1d2-4ff7-8566-ea94f6772765",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)"
+				},
+				{
+					"id": "b1b36d9b-a913-4567-bef6-1067fd19fb8b",
+					"children": [],
+					"name": "GV_STRUCTURE_CREATED",
+					"objectType": "boolean",
+					"parent": "eaa2e247-c1d2-4ff7-8566-ea94f6772765",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)"
+				},
+				{
+					"id": "44298f37-221d-4096-9c2c-92c129ae3625",
+					"children": [],
+					"name": "GV_TTY_CREATED",
+					"objectType": "boolean",
+					"parent": "eaa2e247-c1d2-4ff7-8566-ea94f6772765",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)"
+				}
+			]
+		},
+		{
+			"id": "7a8e1b60-33b1-432d-b029-5828284fd55d",
+			"name": "deleteDeleteResponse",
+			"type": "object",
+			"properties": [
+				{
+					"id": "8db8c553-f509-452c-a0ea-8124ed2e067c",
+					"children": [
+						{
+							"id": "9a36d291-4a6b-421f-bb87-c8fff9cf7411",
+							"children": [],
+							"name": "GV_CLASS_CREATED",
+							"objectType": "boolean",
+							"parent": "8db8c553-f509-452c-a0ea-8124ed2e067c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Boolean Variable (X=true, -=false, space=unknown)"
+						}
+					],
+					"name": "result",
+					"objectType": "object",
+					"parent": "",
+					"isParent": true,
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "9a36d291-4a6b-421f-bb87-c8fff9cf7411",
+					"children": [],
+					"name": "GV_CLASS_CREATED",
+					"objectType": "boolean",
+					"parent": "8db8c553-f509-452c-a0ea-8124ed2e067c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Boolean Variable (X=true, -=false, space=unknown)"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CRUISE_ABAP_OBJECTS",
+	"endpoint": "http://vhcalabaci.saportals.com:50700/neptune/api/cruiseabapobjects",
+	"ver": "24.10.16.0225",
+	"version": "1.0",
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": null,
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11",
+	"apiFormat": 1,
+	"roles": []
+}

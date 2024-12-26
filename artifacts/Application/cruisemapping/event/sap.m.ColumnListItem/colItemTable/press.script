@@ -1,0 +1,6 @@
+const context = oEvent.oSource.getBindingContext("MultiModelKeys");  
+
+// Get Entire Model
+const data = context.getObject();
+modelpageMappingHeadList.setData(data);
+fireMappingHeadSearch();

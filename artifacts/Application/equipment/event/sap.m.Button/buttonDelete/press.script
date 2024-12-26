@@ -1,0 +1,22 @@
+let equipment = modelpageEquipmentDetailChange.oData;
+sap.m.MessageBox.show("Do you want to delete this entry?", {
+    icon: sap.m.MessageBox.Icon.WARNING,
+    title: "Delete",
+    actions: [sap.m.MessageBox.Action.YES, sap.m.MessageBox.Action.NO],
+    onClose: function (oAction) {
+        if (oAction === sap.m.MessageBox.Action.YES) {
+            deleteEquipment(equipment);
+        }
+    },
+});
+
+function deleteEquipment(equipment) {
+    var options = {
+        parameters: {
+            "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+            IV_PARAMS: JSON.stringify(equipment.result.MS_EQUIPMENT),
+        },
+    };
+    BusyDialogDeleting.open();
+    apiequipmentDelete(options);
+}

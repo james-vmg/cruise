@@ -1,0 +1,29 @@
+{
+	"id": "04bf1304-7020-4901-8416-0b11da110807",
+	"createdAt": "2024-11-05T19:26:55.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [
+		{
+			"id": "c168400c-5146-4567-8c56-28d1841ab428",
+			"parent": "157868a2-c79f-4a10-bc69-9c1a69988126",
+			"name": "/Read",
+			"contextname": "Read",
+			"method": "GET"
+		}
+	],
+	"name": "Read",
+	"ver": "24.11.05.1928",
+	"description": "Read",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": true,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "891f977a-4905-4a70-abfc-003cdc780ca4",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

@@ -1,0 +1,10 @@
+const expr = oEvent.getParameter("selectedKey");
+
+switch (expr) {
+    case "PROGRESS":
+        fireStatusGet();
+        break;
+
+    default:
+        break;
+}

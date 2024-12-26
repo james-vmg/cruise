@@ -1,0 +1,22 @@
+const selectedItems = TableVariables.getSelectedItems();
+let options = {};
+if (selectedItems && selectedItems.length > 0) {
+    jQuery.sap.require("sap.m.MessageBox");
+    sap.m.MessageBox.confirm(TextTranslateConfirmDelete.getText(), {
+        actions: ["Yes", "No"],
+        onClose: function (oEvent) {
+            if (oEvent === "Yes") {
+                for (i = 0; i < selectedItems.length; i++) {
+                    const context = selectedItems[i].getBindingContext();
+                    const id = context.getProperty("id");
+                    options = {
+                        parameters: {
+                            where: JSON.stringify({ "id":  id }),
+                        },
+                    };
+                    apideleteGlobalVariable(options);
+                }
+            }
+        },
+    });
+}

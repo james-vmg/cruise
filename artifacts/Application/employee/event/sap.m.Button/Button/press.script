@@ -1,0 +1,34 @@
+/**
+ * Name: EMPLOYEE
+ * Description: Employee 
+ * 
+ * Path: /Search
+ * Method: GET
+ * 
+ * Parameters:
+ * $select - Optional parameter 
+ * Description: Select fieldnames to be returned. Separated by comma
+ * sap-client - Required parameter 
+ * Description: SAP Client
+ * Example: 800
+ * IV_PARAMS - Optional parameter 
+ * Description: Search Paramers as a JSON Object
+ * IV_SORTBY - Optional parameter 
+ * Description: Sort Parameters as a JSON Array
+ * IS_PAGING - Optional parameter 
+ * Description: Pagination Data
+ * 
+ */
+var params = {"EMPLOYEENUMBER": "10"};
+
+var options = {
+    parameters: {
+        "$select": "", // Optional 
+        "sap-client": "800", // Required 
+        "IV_PARAMS": JSON.stringify(params), // Optional 
+        "IV_SORTBY": "", // Optional 
+        "IS_PAGING": "" // Optional 
+    }
+};
+
+apiRestAPIEmployee(options);

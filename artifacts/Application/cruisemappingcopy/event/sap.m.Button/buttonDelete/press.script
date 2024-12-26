@@ -1,0 +1,22 @@
+let Mapping = modelpageMappingHeadDetail.oData;
+sap.m.MessageBox.show(txtTranslateConfirmDelete.getText(), {
+    icon: sap.m.MessageBox.Icon.WARNING,
+    title: "Delete",
+    actions: [sap.m.MessageBox.Action.YES, sap.m.MessageBox.Action.NO],
+    onClose: function (oAction) {
+        if (oAction === sap.m.MessageBox.Action.YES) {
+            deleteMapping(Mapping);
+        }
+    },
+});
+
+function deleteMapping(Mapping) {
+    var options = {
+        parameters: {
+            "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+            IV_PARAMS: JSON.stringify(Mapping.result.MS_MAPPING_H),
+        },
+    };
+    BusyDialogDeleting.open();
+    apiMappingHeadDelete(options);
+}

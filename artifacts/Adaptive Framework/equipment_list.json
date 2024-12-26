@@ -1,0 +1,473 @@
+{
+	"id": "f6945003-5525-448e-b37f-98fa424380db",
+	"createdAt": "2024-05-29T13:34:01.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"hideHeader": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonCreate": "",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"textButtonExport": "",
+				"typeButtonExport": "Transparent",
+				"iconButtonImport": "sap-icon://fa-solid/file-import",
+				"textButtonImport": "",
+				"typeButtonImport": "Transparent",
+				"iconButtonMultiSelect": "",
+				"textButtonMultiSelect": "MultiSelect",
+				"typeButtonMultiSelect": "Emphasized",
+				"iconButtonRun": "",
+				"textButtonRun": "Refresh",
+				"typeButtonRun": "Emphasized",
+				"enableRun": true,
+				"enableCreate": true,
+				"enableClose": true,
+				"enableDelete": false,
+				"enableExport": true,
+				"enableImport": false,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"autoRun": true,
+				"autoRunFocus": false,
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"requiredFieldsToast": "Please fill in all required fields",
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete",
+				"odataValueList": "Field does not have any OData ValueList reference",
+				"title": "Equipment",
+				"subTitle": "SAP Equipment",
+				"avatarIcon": "sap-icon://machine",
+				"avatarBackgroundColor": "Accent10",
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "c2fdad13-ea13-43e7-8ed9-bea0ec9542f2",
+					"keyField": [
+						{
+							"fieldName": "EQUIPMENT",
+							"key": "EQUIPMENT",
+							"value": ""
+						},
+						{
+							"fieldName": "id",
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"_navigationCreate": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "c2fdad13-ea13-43e7-8ed9-bea0ec9542f2",
+					"keyField": [
+						{
+							"fieldName": "id",
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"form": {
+				"enableCompact": false,
+				"headerExpanded": true,
+				"headerPreserveState": false
+			},
+			"table": {
+				"enablePagination": true,
+				"paginationShowSelection": true,
+				"paginationRows": "10",
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"fixedLayout": false,
+				"inset": false,
+				"enableCompact": false,
+				"enableAutoPopin": false,
+				"enableAction1": false,
+				"enableAction2": false,
+				"enableAction3": false,
+				"enableAction4": false,
+				"enableAction5": false,
+				"action1Text": "",
+				"action1Type": "Transparent",
+				"action2Text": "",
+				"action2Type": "Transparent",
+				"action3Text": "",
+				"action3Type": "Transparent",
+				"action4Text": "",
+				"action4Type": "Transparent",
+				"action5Text": "",
+				"action5Type": "Transparent"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "BATCH",
+				"label": "Batch Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EQUIPUSAGEPERIODSEQUENCENUMBER",
+				"label": "Consecutive numbering of EquipUsagePeriods on same day",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MANUFACTURERCOUNTRY",
+				"label": "Country of manufacture",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CURRENCY",
+				"label": "Currency Key",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CUSTOMER",
+				"label": "Customer to Whom Serial Number was Delivered",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LASTCHANGEDATE",
+				"label": "Date of Last Change",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CREATIONDATE",
+				"label": "Date on Which Record Was Created",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DESCRIPTION",
+				"label": "Description of Technical Object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DIVISION",
+				"label": "Division",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EQUIPMENT",
+				"label": "Equipment Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EQUIPMENTCATEGORY",
+				"label": "Equipment category",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "HASEQUIPMENTDATA",
+				"label": "Equipment data exists",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "INVENTORYNUMBER",
+				"label": "Inventory number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LASTCHANGEDATETIME",
+				"label": "LASTCHANGEDATETIME",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LANGUAGE",
+				"label": "Language Key",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MANUFACTURERPARTTYPENAME",
+				"label": "Manufacturer model number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MANUFACTURERSERIALNUMBER",
+				"label": "Manufacturer serial number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MASTERWARRANTY",
+				"label": "Master warranty number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MATERIAL",
+				"label": "Material Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CONSTRUCTIONMONTH",
+				"label": "Month of construction",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CREATEDBYUSER",
+				"label": "Name of Person Who Created the Object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LASTCHANGEDBYUSER",
+				"label": "Name of person who changed object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MAINTOBJECTINTERNALID",
+				"label": "Object number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PLANT",
+				"label": "Plant",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIERRESPPLANT",
+				"label": "Plant Responsible for UII",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "SERIALNUMBER",
+				"label": "Serial Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "SIZEORDIMENSIONTEXT",
+				"label": "Size/dimension",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "OPERATIONSTARTDATE",
+				"label": "Start-up Date of the Technical Object",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "STORAGELOCATION",
+				"label": "Storage Location",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIERSTRUCTYPE",
+				"label": "Structure Type of UII",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "AUTHORIZATIONGROUP",
+				"label": "Technical object authorization group",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "TECHNICALOBJECTTYPE",
+				"label": "Type of Technical Object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIER",
+				"label": "Unique Item Identifier",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "GROSSWEIGHTUNIT",
+				"label": "Unit of weight",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "VALIDITYENDDATE",
+				"label": "Valid To Date",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "SUPPLIER",
+				"label": "Vendor number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "GROSSWEIGHT",
+				"label": "Weight of object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CONSTRUCTIONYEAR",
+				"label": "Year of construction",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"visible": true,
+				"name": "EQUIPMENT",
+				"text": "Equipment Number",
+				"fieldPos": 1
+			},
+			{
+				"visible": true,
+				"name": "DESCRIPTION",
+				"text": "Equipment Description",
+				"fieldPos": 2
+			}
+		],
+		"fieldsRun": [
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "EQUIPMENT",
+				"text": "Equipment Number",
+				"fieldPos": 3,
+				"width": "100px",
+				"formatter": "zero"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "SUPPLIER",
+				"text": "Vendor number",
+				"fieldPos": 4
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "DESCRIPTION",
+				"text": "Description",
+				"fieldPos": 5,
+				"width": "250px"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "PLANT",
+				"text": "Plant",
+				"fieldPos": 6
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "LASTCHANGEDATE",
+				"text": "Date of Last Change",
+				"fieldPos": 7
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "EQUIPMENTCATEGORY",
+				"text": "Category",
+				"fieldPos": 8,
+				"valueType": "Rule",
+				"demandPopin": false,
+				"valueRule": "79a84bd5-6fa2-44e0-bc6d-7724bb5cd493"
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "CREATEDBYUSER",
+				"text": "Created By User",
+				"fieldPos": 9
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "MATERIAL",
+				"text": "Material",
+				"fieldPos": 10
+			}
+		],
+		"defaultVariant": {
+			"id": "cd995b67-575b-4395-d182-6e687b28aee8",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "equipment_list",
+	"description": "Equipment List",
+	"group": "",
+	"type": "C",
+	"connectorid": "e9401f34-2fd9-4c9f-b859-17fce5c888c0",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.10.10.1429",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_list",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

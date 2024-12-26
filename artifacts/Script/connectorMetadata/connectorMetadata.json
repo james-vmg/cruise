@@ -1,0 +1,27 @@
+{
+	"id": "d5acd975-9120-4d4b-902c-d5c64f2e82a7",
+	"createdAt": "2024-10-08T17:21:34.000Z",
+	"createdBy": "admin",
+	"globalScripts": [
+		{
+			"id": "229e137a-02dd-49cd-b872-8899fdfeb39d",
+			"name": "cruise_employee - metaData",
+			"contextname": "metaData"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "connectorMetadata",
+	"ver": "24.10.08.1759",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "1158ed89-e00c-422e-848a-b3ef3666bc55",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

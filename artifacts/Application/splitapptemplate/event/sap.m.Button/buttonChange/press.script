@@ -1,0 +1,3 @@
+
+modelpage<Entity>DetailChange.setData(modelpage<Entity>Detail.oData);
+splitApp.toDetail(page<Entity>DetailChange);

@@ -1,0 +1,8 @@
+.widerPage {
+  width: 700px;
+}
+
+.centeredToolbar {
+  display: flex;
+  justify-content: center;
+}

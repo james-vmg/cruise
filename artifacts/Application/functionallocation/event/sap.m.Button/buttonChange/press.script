@@ -1,0 +1,2 @@
+modelpageFunctLocDetailChange.setData(modelpageFunctLocDetail.oData);
+App.to(pageFunctLocDetailChange);

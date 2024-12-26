@@ -1,0 +1,13 @@
+let equipment = modelpageEquipmentDetailCreate.oData;
+var options = {
+    parameters: {
+        "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+    //    IV_PARAMS: JSON.stringify(equipment),
+    },
+    data: {
+    MS_EQUIPMENT: equipment
+    }
+};
+
+BusyDialogCreating.open();
+apiequipmentCreate(options);

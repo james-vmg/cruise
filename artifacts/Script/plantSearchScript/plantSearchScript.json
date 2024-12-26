@@ -1,0 +1,36 @@
+{
+	"id": "d0570915-2d61-4b04-8489-ff66b200ddc9",
+	"createdAt": "2024-06-27T09:42:47.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [
+		{
+			"id": "8c95c40d-2c39-4688-9eac-c7e23026e07f",
+			"parent": "c1de7d77-044a-43a0-8209-50295dbbcf26",
+			"name": "/Search",
+			"contextname": "Search",
+			"method": "POST"
+		},
+		{
+			"id": "776209f2-6248-4218-a198-9cdec092b4c3",
+			"parent": "c1de7d77-044a-43a0-8209-50295dbbcf26",
+			"name": "/Read",
+			"contextname": "Read",
+			"method": "GET"
+		}
+	],
+	"name": "plantSearchScript",
+	"ver": "24.06.27.0950",
+	"description": "Plant search script",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "8edf4d5e-4eba-4ebd-8b2d-4e78e861479a",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

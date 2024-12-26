@@ -1,0 +1,193 @@
+{
+	"id": "dee8c1fc-f938-4066-9403-bad3f68b9056",
+	"createdAt": "2024-08-16T01:15:31.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonSave": "",
+				"textButtonSave": "Save",
+				"textToastSave": "Saved",
+				"typeButtonSave": "Emphasized",
+				"iconButtonDelete": "",
+				"textButtonDelete": "Delete",
+				"textToastDelete": "Deleted",
+				"typeButtonDelete": "Reject",
+				"iconButtonAttachment": "",
+				"textButtonAttachment": "Add Attachment",
+				"typeButtonAttachment": "Transparent",
+				"tab0Text": "General",
+				"tabAText": "Attachment",
+				"tab1Text": "Tab 1",
+				"tab2Text": "Tab 2",
+				"tab3Text": "Tab 3",
+				"tab4Text": "Tab 4",
+				"tab5Text": "Tab 5",
+				"enableClose": true,
+				"enableSave": false,
+				"enableDelete": false,
+				"enableAttachment": false,
+				"enableTab1": false,
+				"enableTab2": false,
+				"enableTab3": false,
+				"enableTab4": false,
+				"enableTab5": false,
+				"enableUppercase": false,
+				"enablePadding": true,
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete ",
+				"requiredFieldsToast": "Please fill in all the required fields",
+				"dynamicTitle": "",
+				"dynamicSubTitle": "",
+				"title": "Purchase Order Item",
+				"avatarIcon": "sap-icon://cart-4"
+			},
+			"form": {
+				"enableCompact": false,
+				"enableCentered": true
+			},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "PURCHASEORDERITEM",
+				"label": "Item Number of Purchasing Document",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDERITEMCATEGORY",
+				"label": "Item category in purchasing document",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MATERIALGROUP",
+				"label": "Material Group",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MATERIAL",
+				"label": "Material Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MATERIALTYPE",
+				"label": "Material Type",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDER",
+				"label": "Purchasing Document Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDERITEMTEXT",
+				"label": "Short Text",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "PURCHASEORDER",
+				"text": "Purchasing Document Number",
+				"fieldPos": 1,
+				"type": "Text"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "PURCHASEORDERITEM",
+				"text": "Item Number of Purchasing Document",
+				"fieldPos": 2,
+				"type": "Text"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "PURCHASEORDERITEMCATEGORY",
+				"text": "Item category in purchasing document",
+				"fieldPos": 3,
+				"type": "Text"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "MATERIAL",
+				"text": "Material Number",
+				"fieldPos": 4,
+				"type": "Text"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "MATERIALGROUP",
+				"text": "Material Group",
+				"fieldPos": 5,
+				"type": "Text"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "MATERIALTYPE",
+				"text": "Material Type",
+				"fieldPos": 6,
+				"type": "Text"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "PURCHASEORDERITEMTEXT",
+				"text": "Short Text",
+				"fieldPos": 7
+			}
+		],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "e2d541f8-4ada-484c-a153-0bf257019b06",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "purchaseOrderItem_edit",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "57f0cb8f-663c-49d8-9e57-6eee2f47c9bc",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.08.16.0130",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_edit",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

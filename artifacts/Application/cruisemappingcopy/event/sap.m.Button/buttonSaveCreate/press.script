@@ -1,0 +1,11 @@
+let mapping = convertBooleanFieldsToString(modelpageMappingHeadDetailCreate.oData.result.MS_MAPPING_H);
+var options = {
+    parameters: {
+        "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+ //       IV_PARAMS: JSON.stringify(mapping),
+    },
+    data: {MS_MAPPING_H: mapping}
+};
+
+BusyDialogCreating.open();
+apiMappingHeadCreate(options);

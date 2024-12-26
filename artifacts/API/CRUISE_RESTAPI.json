@@ -1,0 +1,1402 @@
+{
+	"id": "0b7581eb-ab98-403c-8203-9d3933cd8fed",
+	"createdAt": "2024-09-23T02:00:23.000Z",
+	"createdBy": "admin",
+	"auth": [
+		{
+			"role": "DEF",
+			"apiAuth": "47e30929-4309-4946-8519-afa72dee8911",
+			"authName": "vmgJames",
+			"authDesc": "",
+			"id": "fcf6345b-b0e0-4bbc-e790-d97fc3c6165b"
+		}
+	],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "b2ce3eef-ddbc-4473-9436-c513616409bc",
+			"path": "/Create",
+			"method": "PUT",
+			"responses": [
+				{
+					"status": "200",
+					"description": "Status 200",
+					"headers": [],
+					"content": [
+						{
+							"name": "putCreateResponse",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"status": "404",
+					"description": "Status 404",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"items": [
+								{
+									"id": "c8fe6458-c60a-42bd-a0ff-11fdc921b886",
+									"children": [],
+									"name": "ERROR_CODE",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Error Code"
+								},
+								{
+									"id": "67927b65-3f75-4f36-972f-dcdd246a1825",
+									"children": [],
+									"name": "ERROR_TEXT",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Description of the error"
+								}
+							]
+						}
+					]
+				}
+			],
+			"content": [],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "$select",
+					"description": "Select fieldnames to be returned. Separated by comma",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "sap-client",
+					"description": "SAP Client",
+					"required": true,
+					"inPath": false,
+					"example": "800",
+					"type": "string"
+				},
+				{
+					"name": "IV_CRUISE_KEY",
+					"description": "CRUISE Class Key",
+					"required": true,
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "IV_TRANSPORT",
+					"description": "Request/Task",
+					"inPath": false,
+					"type": "string"
+				}
+			],
+			"endpoints": [],
+			"endpoint": ""
+		},
+		{
+			"id": "5bd9f0e8-3634-4877-8151-c05dc5d7140b",
+			"path": "/Delete",
+			"method": "DELETE",
+			"responses": [
+				{
+					"status": "200",
+					"description": "Status 200",
+					"headers": [],
+					"content": [
+						{
+							"name": "deleteDeleteResponse",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"status": "404",
+					"description": "Status 404",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"items": [
+								{
+									"id": "a9e05b2d-a04f-456a-97dc-748cac42dd9c",
+									"children": [],
+									"name": "ERROR_CODE",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Error Code"
+								},
+								{
+									"id": "f50e7ed0-42d0-443c-b140-fd65fca8f83e",
+									"children": [],
+									"name": "ERROR_TEXT",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Description of the error"
+								}
+							]
+						}
+					]
+				}
+			],
+			"content": [],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "$select",
+					"description": "Select fieldnames to be returned. Separated by comma",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "sap-client",
+					"description": "SAP Client",
+					"required": true,
+					"inPath": false,
+					"example": "800",
+					"type": "string"
+				},
+				{
+					"name": "IV_NAME",
+					"description": "Value",
+					"required": true,
+					"inPath": false,
+					"type": "string"
+				}
+			],
+			"endpoints": [],
+			"endpoint": ""
+		}
+	],
+	"definitions": [
+		{
+			"id": "054caca8-f234-4f46-96f3-2a4ea703a0a9",
+			"name": "dataRequest",
+			"description": "Key Value Structure",
+			"type": "object",
+			"properties": [
+				{
+					"id": "1af1b082-6580-4489-9b8e-cc4a91579f8e",
+					"children": [],
+					"name": "KEY",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Name of dataset"
+				},
+				{
+					"id": "fd520dec-6436-4fd6-a0a5-98e16e5b0c1d",
+					"children": [],
+					"name": "VALUE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "JSON String of dataset"
+				}
+			]
+		},
+		{
+			"id": "405678a2-1db5-42d9-b2ae-f75301220a59",
+			"name": "errorResponse",
+			"description": "Error object returned from SAP",
+			"type": "object",
+			"properties": [
+				{
+					"id": "d316c562-3e4b-44f9-b121-4d8c5a0df30b",
+					"children": [],
+					"name": "ERROR_CODE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Error Code"
+				},
+				{
+					"id": "f85bbee7-bb4e-4584-bca9-c58cca6d5950",
+					"children": [],
+					"name": "ERROR_TEXT",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Description of the error"
+				}
+			]
+		},
+		{
+			"id": "f40f5e90-3b84-435b-ae27-d25e7e75c55a",
+			"name": "putCreateResponse",
+			"type": "object",
+			"properties": [
+				{
+					"id": "863ac13c-d9e7-4a5b-beb6-a0798c4883e1",
+					"children": [
+						{
+							"id": "331a7ade-92d8-4cca-a0c7-b5796a7f7cd2",
+							"name": "MT_MESSAGES",
+							"isParent": true,
+							"objectType": "array",
+							"children": [
+								{
+									"id": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"name": "",
+									"objectType": "object",
+									"parent": "331a7ade-92d8-4cca-a0c7-b5796a7f7cd2",
+									"isParent": true,
+									"children": [
+										{
+											"id": "b717970d-6664-421e-9dd3-dd97b343ba04",
+											"children": [],
+											"name": "FIELD_NAME",
+											"objectType": "string",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"description": "Field Name"
+										},
+										{
+											"id": "d16a1b79-53ba-4056-bc86-55bc69b9711c",
+											"children": [],
+											"name": "TYPE",
+											"objectType": "string",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "1",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+										},
+										{
+											"id": "5932392e-ef11-4c27-b6f9-840322896e2b",
+											"children": [],
+											"name": "ID",
+											"objectType": "string",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "20",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Class"
+										},
+										{
+											"id": "60cf9a17-3e8f-4516-ac1f-7cbe4545d5c5",
+											"children": [],
+											"name": "NUMBER",
+											"objectType": "number",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "",
+											"minLength": "",
+											"description": "Message Number"
+										},
+										{
+											"id": "5ac6ca37-174e-42aa-a163-b00fa0da9829",
+											"children": [],
+											"name": "MESSAGE",
+											"objectType": "string",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "220",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Text"
+										},
+										{
+											"id": "b83bad61-e2b8-41e2-8921-068a0d7c18d0",
+											"children": [],
+											"name": "MESSAGE_V1",
+											"objectType": "string",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "104f8e70-4ec2-4008-8ded-bb511def2a08",
+											"children": [],
+											"name": "MESSAGE_V2",
+											"objectType": "string",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "a74e2d9b-8e3a-4299-99ab-86cefcda25dc",
+											"children": [],
+											"name": "MESSAGE_V3",
+											"objectType": "string",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "8fa085c3-4f57-4282-acea-cbc89ad58006",
+											"children": [],
+											"name": "MESSAGE_V4",
+											"objectType": "string",
+											"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										}
+									],
+									"required": false,
+									"maxLength": "",
+									"minLength": ""
+								}
+							],
+							"required": false,
+							"parent": "863ac13c-d9e7-4a5b-beb6-a0798c4883e1",
+							"maxLength": "",
+							"minLength": ""
+						},
+						{
+							"id": "dec0cb44-48c2-4735-97f9-1cc3b73cb95e",
+							"children": [],
+							"name": "MV_ERROR",
+							"objectType": "boolean",
+							"parent": "863ac13c-d9e7-4a5b-beb6-a0798c4883e1",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Boolean - Convert space/x to false/true"
+						}
+					],
+					"name": "result",
+					"objectType": "object",
+					"parent": "",
+					"isParent": true,
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "331a7ade-92d8-4cca-a0c7-b5796a7f7cd2",
+					"name": "MT_MESSAGES",
+					"isParent": true,
+					"objectType": "array",
+					"children": [
+						{
+							"id": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"name": "",
+							"objectType": "object",
+							"parent": "331a7ade-92d8-4cca-a0c7-b5796a7f7cd2",
+							"isParent": true,
+							"children": [
+								{
+									"id": "b717970d-6664-421e-9dd3-dd97b343ba04",
+									"children": [],
+									"name": "FIELD_NAME",
+									"objectType": "string",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"description": "Field Name"
+								},
+								{
+									"id": "d16a1b79-53ba-4056-bc86-55bc69b9711c",
+									"children": [],
+									"name": "TYPE",
+									"objectType": "string",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "1",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+								},
+								{
+									"id": "5932392e-ef11-4c27-b6f9-840322896e2b",
+									"children": [],
+									"name": "ID",
+									"objectType": "string",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "20",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Class"
+								},
+								{
+									"id": "60cf9a17-3e8f-4516-ac1f-7cbe4545d5c5",
+									"children": [],
+									"name": "NUMBER",
+									"objectType": "number",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Message Number"
+								},
+								{
+									"id": "5ac6ca37-174e-42aa-a163-b00fa0da9829",
+									"children": [],
+									"name": "MESSAGE",
+									"objectType": "string",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "220",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Text"
+								},
+								{
+									"id": "b83bad61-e2b8-41e2-8921-068a0d7c18d0",
+									"children": [],
+									"name": "MESSAGE_V1",
+									"objectType": "string",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "104f8e70-4ec2-4008-8ded-bb511def2a08",
+									"children": [],
+									"name": "MESSAGE_V2",
+									"objectType": "string",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "a74e2d9b-8e3a-4299-99ab-86cefcda25dc",
+									"children": [],
+									"name": "MESSAGE_V3",
+									"objectType": "string",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "8fa085c3-4f57-4282-acea-cbc89ad58006",
+									"children": [],
+									"name": "MESSAGE_V4",
+									"objectType": "string",
+									"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								}
+							],
+							"required": false,
+							"maxLength": "",
+							"minLength": ""
+						}
+					],
+					"required": false,
+					"parent": "863ac13c-d9e7-4a5b-beb6-a0798c4883e1",
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"name": "",
+					"objectType": "object",
+					"parent": "331a7ade-92d8-4cca-a0c7-b5796a7f7cd2",
+					"isParent": true,
+					"children": [
+						{
+							"id": "b717970d-6664-421e-9dd3-dd97b343ba04",
+							"children": [],
+							"name": "FIELD_NAME",
+							"objectType": "string",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"description": "Field Name"
+						},
+						{
+							"id": "d16a1b79-53ba-4056-bc86-55bc69b9711c",
+							"children": [],
+							"name": "TYPE",
+							"objectType": "string",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "1",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+						},
+						{
+							"id": "5932392e-ef11-4c27-b6f9-840322896e2b",
+							"children": [],
+							"name": "ID",
+							"objectType": "string",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "20",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Class"
+						},
+						{
+							"id": "60cf9a17-3e8f-4516-ac1f-7cbe4545d5c5",
+							"children": [],
+							"name": "NUMBER",
+							"objectType": "number",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Message Number"
+						},
+						{
+							"id": "5ac6ca37-174e-42aa-a163-b00fa0da9829",
+							"children": [],
+							"name": "MESSAGE",
+							"objectType": "string",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "220",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Text"
+						},
+						{
+							"id": "b83bad61-e2b8-41e2-8921-068a0d7c18d0",
+							"children": [],
+							"name": "MESSAGE_V1",
+							"objectType": "string",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "104f8e70-4ec2-4008-8ded-bb511def2a08",
+							"children": [],
+							"name": "MESSAGE_V2",
+							"objectType": "string",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "a74e2d9b-8e3a-4299-99ab-86cefcda25dc",
+							"children": [],
+							"name": "MESSAGE_V3",
+							"objectType": "string",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "8fa085c3-4f57-4282-acea-cbc89ad58006",
+							"children": [],
+							"name": "MESSAGE_V4",
+							"objectType": "string",
+							"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						}
+					],
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "b717970d-6664-421e-9dd3-dd97b343ba04",
+					"children": [],
+					"name": "FIELD_NAME",
+					"objectType": "string",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"description": "Field Name"
+				},
+				{
+					"id": "d16a1b79-53ba-4056-bc86-55bc69b9711c",
+					"children": [],
+					"name": "TYPE",
+					"objectType": "string",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "1",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+				},
+				{
+					"id": "5932392e-ef11-4c27-b6f9-840322896e2b",
+					"children": [],
+					"name": "ID",
+					"objectType": "string",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "20",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Class"
+				},
+				{
+					"id": "60cf9a17-3e8f-4516-ac1f-7cbe4545d5c5",
+					"children": [],
+					"name": "NUMBER",
+					"objectType": "number",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Message Number"
+				},
+				{
+					"id": "5ac6ca37-174e-42aa-a163-b00fa0da9829",
+					"children": [],
+					"name": "MESSAGE",
+					"objectType": "string",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "220",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Text"
+				},
+				{
+					"id": "b83bad61-e2b8-41e2-8921-068a0d7c18d0",
+					"children": [],
+					"name": "MESSAGE_V1",
+					"objectType": "string",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "104f8e70-4ec2-4008-8ded-bb511def2a08",
+					"children": [],
+					"name": "MESSAGE_V2",
+					"objectType": "string",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "a74e2d9b-8e3a-4299-99ab-86cefcda25dc",
+					"children": [],
+					"name": "MESSAGE_V3",
+					"objectType": "string",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "8fa085c3-4f57-4282-acea-cbc89ad58006",
+					"children": [],
+					"name": "MESSAGE_V4",
+					"objectType": "string",
+					"parent": "e0daba7a-6782-487d-8d2a-995e359059af",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "dec0cb44-48c2-4735-97f9-1cc3b73cb95e",
+					"children": [],
+					"name": "MV_ERROR",
+					"objectType": "boolean",
+					"parent": "863ac13c-d9e7-4a5b-beb6-a0798c4883e1",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Boolean - Convert space/x to false/true"
+				}
+			]
+		},
+		{
+			"id": "62703144-4e3b-4e81-be87-f48a3a40249b",
+			"name": "deleteDeleteResponse",
+			"type": "object",
+			"properties": [
+				{
+					"id": "38861043-72f9-42dd-ab75-45e3f0b04e0c",
+					"children": [
+						{
+							"id": "1002070a-1096-4787-a961-3f4212bfde44",
+							"name": "MT_MESSAGES",
+							"isParent": true,
+							"objectType": "array",
+							"children": [
+								{
+									"id": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"name": "",
+									"objectType": "object",
+									"parent": "1002070a-1096-4787-a961-3f4212bfde44",
+									"isParent": true,
+									"children": [
+										{
+											"id": "c6d1ac82-76d0-4632-9218-a2f464b4bee5",
+											"children": [],
+											"name": "FIELD_NAME",
+											"objectType": "string",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"description": "Field Name"
+										},
+										{
+											"id": "e55fabcc-8550-4555-9963-ef223730c303",
+											"children": [],
+											"name": "TYPE",
+											"objectType": "string",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "1",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+										},
+										{
+											"id": "9626b915-d754-43d5-8a7b-dfc83302115f",
+											"children": [],
+											"name": "ID",
+											"objectType": "string",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "20",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Class"
+										},
+										{
+											"id": "b7ed0d3f-bca0-45be-9843-ece7f3164734",
+											"children": [],
+											"name": "NUMBER",
+											"objectType": "number",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "",
+											"minLength": "",
+											"description": "Message Number"
+										},
+										{
+											"id": "0d5225f9-bd6a-4a4b-af5f-9908121b3c9a",
+											"children": [],
+											"name": "MESSAGE",
+											"objectType": "string",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "220",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Text"
+										},
+										{
+											"id": "69788d67-9154-4d5c-aa3c-f406f86189df",
+											"children": [],
+											"name": "MESSAGE_V1",
+											"objectType": "string",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "39c17960-01dc-4986-8d49-19dbefe346a2",
+											"children": [],
+											"name": "MESSAGE_V2",
+											"objectType": "string",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "b47083e1-f61b-4f8c-adba-ffdc9f607d5d",
+											"children": [],
+											"name": "MESSAGE_V3",
+											"objectType": "string",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										},
+										{
+											"id": "e13429c8-57c1-456f-9e92-6beac6520091",
+											"children": [],
+											"name": "MESSAGE_V4",
+											"objectType": "string",
+											"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+											"isParent": false,
+											"required": false,
+											"maxLength": "50",
+											"minLength": "",
+											"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+											"description": "Message Variable"
+										}
+									],
+									"required": false,
+									"maxLength": "",
+									"minLength": ""
+								}
+							],
+							"required": false,
+							"parent": "38861043-72f9-42dd-ab75-45e3f0b04e0c",
+							"maxLength": "",
+							"minLength": ""
+						},
+						{
+							"id": "539f5e0b-eaf3-4299-910d-74fbb768c63f",
+							"children": [],
+							"name": "MV_ERROR",
+							"objectType": "boolean",
+							"parent": "38861043-72f9-42dd-ab75-45e3f0b04e0c",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Boolean - Convert space/x to false/true"
+						}
+					],
+					"name": "result",
+					"objectType": "object",
+					"parent": "",
+					"isParent": true,
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "1002070a-1096-4787-a961-3f4212bfde44",
+					"name": "MT_MESSAGES",
+					"isParent": true,
+					"objectType": "array",
+					"children": [
+						{
+							"id": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"name": "",
+							"objectType": "object",
+							"parent": "1002070a-1096-4787-a961-3f4212bfde44",
+							"isParent": true,
+							"children": [
+								{
+									"id": "c6d1ac82-76d0-4632-9218-a2f464b4bee5",
+									"children": [],
+									"name": "FIELD_NAME",
+									"objectType": "string",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"description": "Field Name"
+								},
+								{
+									"id": "e55fabcc-8550-4555-9963-ef223730c303",
+									"children": [],
+									"name": "TYPE",
+									"objectType": "string",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "1",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+								},
+								{
+									"id": "9626b915-d754-43d5-8a7b-dfc83302115f",
+									"children": [],
+									"name": "ID",
+									"objectType": "string",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "20",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Class"
+								},
+								{
+									"id": "b7ed0d3f-bca0-45be-9843-ece7f3164734",
+									"children": [],
+									"name": "NUMBER",
+									"objectType": "number",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Message Number"
+								},
+								{
+									"id": "0d5225f9-bd6a-4a4b-af5f-9908121b3c9a",
+									"children": [],
+									"name": "MESSAGE",
+									"objectType": "string",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "220",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Text"
+								},
+								{
+									"id": "69788d67-9154-4d5c-aa3c-f406f86189df",
+									"children": [],
+									"name": "MESSAGE_V1",
+									"objectType": "string",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "39c17960-01dc-4986-8d49-19dbefe346a2",
+									"children": [],
+									"name": "MESSAGE_V2",
+									"objectType": "string",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "b47083e1-f61b-4f8c-adba-ffdc9f607d5d",
+									"children": [],
+									"name": "MESSAGE_V3",
+									"objectType": "string",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								},
+								{
+									"id": "e13429c8-57c1-456f-9e92-6beac6520091",
+									"children": [],
+									"name": "MESSAGE_V4",
+									"objectType": "string",
+									"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+									"isParent": false,
+									"required": false,
+									"maxLength": "50",
+									"minLength": "",
+									"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+									"description": "Message Variable"
+								}
+							],
+							"required": false,
+							"maxLength": "",
+							"minLength": ""
+						}
+					],
+					"required": false,
+					"parent": "38861043-72f9-42dd-ab75-45e3f0b04e0c",
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"name": "",
+					"objectType": "object",
+					"parent": "1002070a-1096-4787-a961-3f4212bfde44",
+					"isParent": true,
+					"children": [
+						{
+							"id": "c6d1ac82-76d0-4632-9218-a2f464b4bee5",
+							"children": [],
+							"name": "FIELD_NAME",
+							"objectType": "string",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"description": "Field Name"
+						},
+						{
+							"id": "e55fabcc-8550-4555-9963-ef223730c303",
+							"children": [],
+							"name": "TYPE",
+							"objectType": "string",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "1",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+						},
+						{
+							"id": "9626b915-d754-43d5-8a7b-dfc83302115f",
+							"children": [],
+							"name": "ID",
+							"objectType": "string",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "20",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Class"
+						},
+						{
+							"id": "b7ed0d3f-bca0-45be-9843-ece7f3164734",
+							"children": [],
+							"name": "NUMBER",
+							"objectType": "number",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "",
+							"minLength": "",
+							"description": "Message Number"
+						},
+						{
+							"id": "0d5225f9-bd6a-4a4b-af5f-9908121b3c9a",
+							"children": [],
+							"name": "MESSAGE",
+							"objectType": "string",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "220",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Text"
+						},
+						{
+							"id": "69788d67-9154-4d5c-aa3c-f406f86189df",
+							"children": [],
+							"name": "MESSAGE_V1",
+							"objectType": "string",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "39c17960-01dc-4986-8d49-19dbefe346a2",
+							"children": [],
+							"name": "MESSAGE_V2",
+							"objectType": "string",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "b47083e1-f61b-4f8c-adba-ffdc9f607d5d",
+							"children": [],
+							"name": "MESSAGE_V3",
+							"objectType": "string",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						},
+						{
+							"id": "e13429c8-57c1-456f-9e92-6beac6520091",
+							"children": [],
+							"name": "MESSAGE_V4",
+							"objectType": "string",
+							"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+							"isParent": false,
+							"required": false,
+							"maxLength": "50",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Message Variable"
+						}
+					],
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "c6d1ac82-76d0-4632-9218-a2f464b4bee5",
+					"children": [],
+					"name": "FIELD_NAME",
+					"objectType": "string",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"description": "Field Name"
+				},
+				{
+					"id": "e55fabcc-8550-4555-9963-ef223730c303",
+					"children": [],
+					"name": "TYPE",
+					"objectType": "string",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "1",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message type: S Success, E Error, W Warning, I Info, A Abort"
+				},
+				{
+					"id": "9626b915-d754-43d5-8a7b-dfc83302115f",
+					"children": [],
+					"name": "ID",
+					"objectType": "string",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "20",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Class"
+				},
+				{
+					"id": "b7ed0d3f-bca0-45be-9843-ece7f3164734",
+					"children": [],
+					"name": "NUMBER",
+					"objectType": "number",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Message Number"
+				},
+				{
+					"id": "0d5225f9-bd6a-4a4b-af5f-9908121b3c9a",
+					"children": [],
+					"name": "MESSAGE",
+					"objectType": "string",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "220",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Text"
+				},
+				{
+					"id": "69788d67-9154-4d5c-aa3c-f406f86189df",
+					"children": [],
+					"name": "MESSAGE_V1",
+					"objectType": "string",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "39c17960-01dc-4986-8d49-19dbefe346a2",
+					"children": [],
+					"name": "MESSAGE_V2",
+					"objectType": "string",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "b47083e1-f61b-4f8c-adba-ffdc9f607d5d",
+					"children": [],
+					"name": "MESSAGE_V3",
+					"objectType": "string",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "e13429c8-57c1-456f-9e92-6beac6520091",
+					"children": [],
+					"name": "MESSAGE_V4",
+					"objectType": "string",
+					"parent": "12ab234c-c68e-4d3e-b5b4-d33cf884e7ec",
+					"isParent": false,
+					"required": false,
+					"maxLength": "50",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Message Variable"
+				},
+				{
+					"id": "539f5e0b-eaf3-4299-910d-74fbb768c63f",
+					"children": [],
+					"name": "MV_ERROR",
+					"objectType": "boolean",
+					"parent": "38861043-72f9-42dd-ab75-45e3f0b04e0c",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Boolean - Convert space/x to false/true"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "CRUISE_RESTAPI",
+	"endpoint": "http://vhcalabaci.saportals.com:50700/neptune/api/cruiserestapi",
+	"ver": "24.10.13.1443",
+	"version": "1.0",
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": null,
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

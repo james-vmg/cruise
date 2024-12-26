@@ -1,0 +1,13 @@
+
+const selectedItem = oEvent.oSource;
+
+if (selectedItem) {
+    
+    const context = selectedItem.getBindingContext(); // Multimodel, remember name of model
+
+    // Get Entire Model
+    const data = context.getObject();
+    modelDialogVariableDetail.setData(data);
+    DialogVariableDetail.open();
+
+}

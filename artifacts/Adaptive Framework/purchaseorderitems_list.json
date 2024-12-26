@@ -1,0 +1,211 @@
+{
+	"id": "f79bf608-5b0c-48b4-bef0-6d6be4d8771a",
+	"createdAt": "2024-08-15T11:50:30.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"hideHeader": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonCreate": "",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"textButtonExport": "",
+				"typeButtonExport": "Transparent",
+				"iconButtonImport": "sap-icon://fa-solid/file-import",
+				"textButtonImport": "",
+				"typeButtonImport": "Transparent",
+				"iconButtonMultiSelect": "",
+				"textButtonMultiSelect": "MultiSelect",
+				"typeButtonMultiSelect": "Emphasized",
+				"iconButtonRun": "",
+				"textButtonRun": "Update",
+				"typeButtonRun": "Emphasized",
+				"enableRun": true,
+				"enableCreate": false,
+				"enableClose": false,
+				"enableDelete": false,
+				"enableExport": false,
+				"enableImport": false,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"autoRun": true,
+				"autoRunFocus": false,
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"requiredFieldsToast": "Please fill in all required fields",
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete",
+				"odataValueList": "Field does not have any OData ValueList reference",
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "dee8c1fc-f938-4066-9403-bad3f68b9056",
+					"keyField": [
+						{
+							"fieldName": "PURCHASEORDERITEM",
+							"key": "PURCHASEORDERITEM",
+							"value": ""
+						},
+						{
+							"fieldName": "PURCHASEORDER",
+							"key": "PURCHASEORDER",
+							"value": ""
+						}
+					]
+				}
+			},
+			"form": {
+				"enableCompact": false,
+				"headerExpanded": true,
+				"headerPreserveState": false
+			},
+			"table": {
+				"enablePagination": false,
+				"paginationShowSelection": false,
+				"paginationRows": 25,
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"fixedLayout": false,
+				"inset": false,
+				"enableCompact": false,
+				"enableAutoPopin": false,
+				"enableAction1": false,
+				"enableAction2": false,
+				"enableAction3": false,
+				"enableAction4": false,
+				"enableAction5": false,
+				"action1Text": "",
+				"action1Type": "Transparent",
+				"action2Text": "",
+				"action2Type": "Transparent",
+				"action3Text": "",
+				"action3Type": "Transparent",
+				"action4Text": "",
+				"action4Type": "Transparent",
+				"action5Text": "",
+				"action5Type": "Transparent"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "MATERIAL",
+				"label": "Material Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MATERIALGROUP",
+				"label": "Material Group",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MATERIALTYPE",
+				"label": "Material Type",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDER",
+				"label": "Purchasing Document Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDERITEM",
+				"label": "Item Number of Purchasing Document",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDERITEMCATEGORY",
+				"label": "Item category in purchasing document",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASEORDERITEMTEXT",
+				"label": "Short Text",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": false,
+				"enableSort": true,
+				"visible": true,
+				"name": "PURCHASEORDER",
+				"text": "Purchasing Document Number",
+				"fieldPos": 1
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": false,
+				"enableSort": true,
+				"visible": true,
+				"name": "PURCHASEORDERITEM",
+				"text": "Item Number of Purchasing Document",
+				"fieldPos": 2
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": false,
+				"enableSort": true,
+				"visible": true,
+				"name": "MATERIAL",
+				"text": "Material Number",
+				"fieldPos": 3
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": false,
+				"enableSort": true,
+				"visible": true,
+				"name": "PURCHASEORDERITEMTEXT",
+				"text": "Short Text",
+				"fieldPos": 4
+			}
+		],
+		"defaultVariant": {
+			"id": "8f5a46ee-3bd1-4cad-ad11-d60a0dbc6c58",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "purchaseorderitems_list",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "57f0cb8f-663c-49d8-9e57-6eee2f47c9bc",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.08.16.0118",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_list",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

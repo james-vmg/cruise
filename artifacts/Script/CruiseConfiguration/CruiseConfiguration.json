@@ -1,0 +1,27 @@
+{
+	"id": "6e63158b-bdd5-4bfc-8300-075d66929ee3",
+	"createdAt": "2024-07-10T13:07:36.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "e4b2e725-3cc5-4f1a-af57-70efbdfaacc0",
+			"name": "globalvariables",
+			"contextname": "globalvariables"
+		}
+	],
+	"apis": [],
+	"name": "CruiseConfiguration",
+	"ver": "24.07.11.0810",
+	"description": "Cruise setting and defaults",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": true,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "89572514-3078-4fb8-9ca9-a2faa620ba15",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

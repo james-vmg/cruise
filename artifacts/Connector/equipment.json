@@ -1,0 +1,21 @@
+{
+	"id": "e9401f34-2fd9-4c9f-b859-17fce5c888c0",
+	"createdAt": "2024-06-20T14:17:44.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"scriptSel": "e73c02b4-668a-453a-8021-b9e78097c2e9",
+		"scriptRun": "c1316ef1-8538-4715-aece-adc01f8ce872",
+		"hasDocumentation": true,
+		"previewable": true
+	},
+	"documentation": {
+		"content": "<h1>Cruise Acceleration: Equipment<br></h1><p>This connector provides the mechanism for integrating with the CRUISE Equipment APIs. Should you enhance the API you would need to adjust the field catalog in the associated server script.&nbsp;</p><p>It is also possible to overide the field catalog in this connector should you have a specific need.</p><p><br></p><blockquote><p>Created: June 2024 | VMG Labs<br></p></blockquote>"
+	},
+	"name": "equipment",
+	"description": "cruise equipment",
+	"group": null,
+	"type": "S",
+	"ver": "24.09.17.0112",
+	"disabled": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

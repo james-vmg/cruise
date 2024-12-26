@@ -1,0 +1,19 @@
+{
+	"id": "2da59e55-7f3a-4a72-91bc-db29b329557b",
+	"createdAt": "2024-08-02T08:00:05.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"previewable": true,
+		"scriptSel": "6eda5920-a914-436e-9b51-43343b82e07c",
+		"scriptRun": "99566840-c15f-45b7-a18a-d0f9dca2f253",
+		"hasDocumentation": false
+	},
+	"documentation": {},
+	"name": "fleet",
+	"description": "Fleet Management Connector",
+	"group": null,
+	"type": "S",
+	"ver": "24.09.17.0106",
+	"disabled": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

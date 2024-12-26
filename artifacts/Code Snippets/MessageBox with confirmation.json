@@ -1,0 +1,28 @@
+{
+	"id": "6784938c-cc6f-430b-8bb9-0dfca88de264",
+	"createdAt": "2024-07-28T16:39:54.000Z",
+	"createdBy": "admin",
+	"metadata": [],
+	"name": "MessageBox with confirmation",
+	"description": "Programatic Message Box",
+	"group": "Marketplace",
+	"content": [
+		"==OBJECT STRING==",
+		"jQuery.sap.require(\"sap.m.MessageBox\");",
+		"    sap.m.MessageBox.confirm(",
+		"        \"Are you sure?\\n\\nTextTextText\", {",
+		"            actions: [\"Yes\", \"Cancel\"],",
+		"            onClose: function(sAction) {",
+		"                if (sAction === \"Yes\") {",
+		"                    DoHappyStuff();",
+		"                } else {",
+		"                    return;",
+		"                }",
+		"            }",
+		"        }",
+		"    );"
+	],
+	"enableIDE": true,
+	"enableServerScript": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

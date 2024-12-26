@@ -1,0 +1,19 @@
+{
+	"id": "adfee73a-eb8f-45d8-a628-b442a55e3794",
+	"createdAt": "2024-08-14T13:57:31.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"scriptSel": "351ca89a-9294-4a7d-90e5-dfee6c8c4c74",
+		"scriptRun": "0f175e55-cf68-47c4-a1cc-a3e39eafa21e",
+		"hasDocumentation": false,
+		"overriddenFieldCatalog": false
+	},
+	"documentation": {},
+	"name": "purchaseOrder",
+	"description": "Connector for Adaptive Framework Purchase Order Apps",
+	"group": null,
+	"type": "S",
+	"ver": "24.09.17.0226",
+	"disabled": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

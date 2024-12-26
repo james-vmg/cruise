@@ -1,0 +1,2 @@
+modelpageOrgUnitDetailChange.setData(modelpageOrgUnitDetail.oData);
+App.to(pageOrgUnitDetailChange);

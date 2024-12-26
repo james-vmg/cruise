@@ -1,0 +1,374 @@
+{
+	"id": "681cf3f7-013f-4218-9fc3-35069240dae3",
+	"createdAt": "2024-07-01T11:59:27.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "3702b550-2640-40b6-e504-a261c58df2ec",
+					"fieldName": "CruisePlant",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "1a9186d9-ae6a-400d-9de0-f9a96f5f56f7",
+							"fieldName": "CruisePlantJS",
+							"fieldParent": "3702b550-2640-40b6-e504-a261c58df2ec",
+							"fieldType": "neptune.folder",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "ebcc4914-46db-429c-dbf9-5566df4ebb86",
+									"fieldName": "CruisePlantDataJS",
+									"fieldParent": "1a9186d9-ae6a-400d-9de0-f9a96f5f56f7",
+									"fieldType": "neptune.Script",
+									"script": "file://script/neptune.Script/CruisePlantJS/CruisePlantDataJS.js",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "ba5ceed2-822e-499d-b5b7-5ceaf102d575",
+							"fieldName": "CruisePlantAPIs",
+							"fieldParent": "3702b550-2640-40b6-e504-a261c58df2ec",
+							"fieldType": "neptune.folder",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "4a061965-b5cd-4363-f4b9-ff4f62701775",
+									"fieldName": "CRUISEplantSearch",
+									"fieldParent": "ba5ceed2-822e-499d-b5b7-5ceaf102d575",
+									"fieldType": "neptune.restapi",
+									"script": "",
+									"customComponent": false,
+									"restSource": "c1de7d77-044a-43a0-8209-50295dbbcf26",
+									"restOperation": "8c95c40d-2c39-4688-9eac-c7e23026e07f",
+									"request": [],
+									"response": [
+										{
+											"status": "200",
+											"dataId": "1a3d9f1a-64d9-4a41-b3f8-207439049cbe",
+											"modelFieldNo": "d4ef3ac5-080d-4070-f270-6fd23d829c93"
+										}
+									],
+									"attributes": [
+										{
+											"attribute": "ajaxSuccess",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/neptune.restapi/CRUISEplantSearch/ajaxSuccess.js",
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "9cbf08da-0af0-41c6-f279-d3d8edcdd352",
+							"fieldName": "CruisePlantData",
+							"fieldParent": "3702b550-2640-40b6-e504-a261c58df2ec",
+							"fieldType": "neptune.folder",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "d4ef3ac5-080d-4070-f270-6fd23d829c93",
+									"fieldName": "CruisePlants",
+									"fieldParent": "9cbf08da-0af0-41c6-f279-d3d8edcdd352",
+									"fieldType": "neptune.model",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "plant>postSearchResponse",
+									"bindingType": "h",
+									"bindingSource": "API",
+									"bindingParentID": "c1de7d77-044a-43a0-8209-50295dbbcf26",
+									"bindingPathID": "1a3d9f1a-64d9-4a41-b3f8-207439049cbe",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "cacheInitLoadFinished",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/neptune.model/CruisePlants/cacheInitLoadFinished.script",
+											"translation": []
+										},
+										{
+											"attribute": "setCacheType",
+											"grouping": "Model",
+											"value": "IndexedDB",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "setEnableCache",
+											"grouping": "Model",
+											"value": "true",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "setInitLoad",
+											"grouping": "Model",
+											"value": "cache",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "b0c55dc0-f094-4a06-90f9-895fa81c4263",
+									"fieldName": "CruiseSelectDialogPlants",
+									"fieldParent": "9cbf08da-0af0-41c6-f279-d3d8edcdd352",
+									"fieldType": "sap.m.SelectDialog",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "Generic Array",
+									"bindingType": "h",
+									"bindingSource": "P9",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "liveChange",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.SelectDialog/CruiseSelectDialogPlants/liveChange.script",
+											"translation": []
+										},
+										{
+											"attribute": "confirm",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.SelectDialog/CruiseSelectDialogPlants/confirm.js",
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "5133578c-666f-4a99-93c9-22f7629aed06",
+											"fieldName": "StandardListItemCruisePlant",
+											"fieldParent": "b0c55dc0-f094-4a06-90f9-895fa81c4263",
+											"fieldType": "sap.m.StandardListItem",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "title",
+													"grouping": "Properties",
+													"value": "{PLANTNAME}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "info",
+													"grouping": "Properties",
+													"value": "{PLANT}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "db3502b4-6997-492c-8d55-3a84660ebfff",
+							"fieldName": "CruisePlantSampleUI",
+							"fieldParent": "3702b550-2640-40b6-e504-a261c58df2ec",
+							"fieldType": "neptune.folder",
+							"description": "Delete in target app as needed",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "808fd76e-50bc-4e85-9de4-0eb8d760b9ed",
+									"fieldName": "InputPlant",
+									"fieldParent": "db3502b4-6997-492c-8d55-3a84660ebfff",
+									"fieldType": "sap.m.Input",
+									"script": "",
+									"customComponent": false,
+									"disabled": true,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "showValueHelp",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "valueHelpRequest",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.Input/InputPlant/valueHelpRequest.js",
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "3460161c-1af4-4981-ca03-ecdfa112d46c",
+									"fieldName": "SelectPlant",
+									"fieldParent": "db3502b4-6997-492c-8d55-3a84660ebfff",
+									"fieldType": "sap.m.Select",
+									"script": "",
+									"customComponent": false,
+									"disabled": true,
+									"bindingType": "h",
+									"modelPath": "CruisePlants>/result/MT_PLANT",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "selectedKey",
+											"grouping": "Properties",
+											"value": "{/result/MS_EQUIPMENT/PLANT}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "f85637e2-6e1e-4654-9d5b-7229cd95e0d5",
+											"fieldName": "ListItem",
+											"fieldParent": "3460161c-1af4-4981-ca03-ecdfa112d46c",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{CruisePlants>PLANTNAME}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "{CruisePlants>PLANT}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": [
+				{
+					"fieldNo": "9fa1a5d2-2325-4850-af2b-795c88fc8098",
+					"fieldName": "CruisePlantReadMe",
+					"fieldParent": 99998,
+					"fieldType": "neptune.Text",
+					"script": "file://script/neptune.Text/CruisePlantReadMe.txt",
+					"customComponent": false,
+					"filePath": "cruiseplantreadme",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		}
+	],
+	"componentInterface": [],
+	"ver": "24.07.02.1205",
+	"application": "cruise_plants_bb",
+	"title": "Plant Master Data",
+	"description": "Plant",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "C",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [
+		{
+			"id": "c1de7d77-044a-43a0-8209-50295dbbcf26",
+			"name": "plant",
+			"ver": "24.06.27.0934"
+		}
+	],
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

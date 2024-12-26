@@ -1,0 +1,2 @@
+BusyDialogUpdating.close();
+ButtonRefreshKeys.firePress();

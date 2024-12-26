@@ -1,0 +1,20 @@
+{
+	"id": "57f0cb8f-663c-49d8-9e57-6eee2f47c9bc",
+	"createdAt": "2024-08-15T02:29:55.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"scriptSel": "19d72415-a21c-46c6-b32d-4f0f5ff3d330",
+		"scriptRun": "28bafa43-ccfe-4df6-8227-8cc7c6f4250e",
+		"hasDocumentation": false
+	},
+	"documentation": {
+		"content": ""
+	},
+	"name": "purchaseOrderItems",
+	"description": "Purchase Order Items",
+	"group": null,
+	"type": "S",
+	"ver": "24.09.17.0251",
+	"disabled": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

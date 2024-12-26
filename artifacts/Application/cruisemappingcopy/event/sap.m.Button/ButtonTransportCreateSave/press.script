@@ -1,0 +1,12 @@
+
+let newTransport = modelDialogTransportCreate.oData;
+
+var options = {
+    parameters: {
+        "$select": "", // Optional 
+       "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
+              "IV_DESC": newTransport.Description // Required 
+    }
+};
+
+apiCreateTransport(options);

@@ -1,0 +1,6 @@
+let mappingHead = modelpageMappingHeadDetail.oData.result.MS_MAPPING_H;
+modelDialogMappingDetail.setData({
+    "CRUISE_KEY": mappingHead.CRUISE_KEY,
+    "CDSVIEW": mappingHead.CDSVIEW,
+});
+DialogMappingDetail.open();
