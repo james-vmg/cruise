@@ -7502,6 +7502,33 @@
 							"data": []
 						},
 						{
+							"fieldNo": "34f8f75a-f3b2-4c3e-dc9e-a7ea8a9f5229",
+							"fieldName": "BusyDialogCreatingGeneric",
+							"fieldParent": "75e4024e-6bba-4b37-d7cf-e076ccb16b49",
+							"fieldType": "sap.m.BusyDialog",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Creating",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Creating ...",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
 							"fieldNo": "b566e68a-730f-4f95-b840-69984c938f18",
 							"fieldName": "BusyDialogDeleting",
 							"fieldParent": "75e4024e-6bba-4b37-d7cf-e076ccb16b49",
@@ -7522,6 +7549,33 @@
 									"attribute": "text",
 									"grouping": "Properties",
 									"value": "Deleting Mapping Record",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "51c8e03e-8999-41f7-8081-51bf497ea7ca",
+							"fieldName": "BusyDialogDeletingGeneric",
+							"fieldParent": "75e4024e-6bba-4b37-d7cf-e076ccb16b49",
+							"fieldType": "sap.m.BusyDialog",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Deleting",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Deleting ...",
 									"script": "",
 									"translation": []
 								}
@@ -8109,6 +8163,14 @@
 											"script": "file://event/neptune.restapi/DeleteABAPEntities/ajaxSuccess.js",
 											"language": "javascript",
 											"translation": []
+										},
+										{
+											"attribute": "ajaxError",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/neptune.restapi/DeleteABAPEntities/ajaxError.js",
+											"language": "javascript",
+											"translation": []
 										}
 									],
 									"data": []
@@ -8130,6 +8192,14 @@
 											"grouping": "Events",
 											"value": "Anonymous Function",
 											"script": "file://event/neptune.restapi/CreateABAPEntities/ajaxSuccess.js",
+											"language": "javascript",
+											"translation": []
+										},
+										{
+											"attribute": "ajaxError",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/neptune.restapi/CreateABAPEntities/ajaxError.js",
 											"language": "javascript",
 											"translation": []
 										}
@@ -8168,6 +8238,14 @@
 											"script": "file://event/neptune.restapi/DeleteAPI/ajaxSuccess.js",
 											"language": "javascript",
 											"translation": []
+										},
+										{
+											"attribute": "ajaxError",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/neptune.restapi/DeleteAPI/ajaxError.js",
+											"language": "javascript",
+											"translation": []
 										}
 									],
 									"data": []
@@ -8189,6 +8267,14 @@
 											"grouping": "Events",
 											"value": "Anonymous Function",
 											"script": "file://event/neptune.restapi/CreateAPI/ajaxSuccess.js",
+											"language": "javascript",
+											"translation": []
+										},
+										{
+											"attribute": "ajaxError",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/neptune.restapi/CreateAPI/ajaxError.js",
 											"language": "javascript",
 											"translation": []
 										}
@@ -8453,6 +8539,26 @@
 							"data": []
 						},
 						{
+							"fieldNo": "12714109-0aae-4a05-da94-4bd44b51e171",
+							"fieldName": "txtTranslateCreateErrorGeneric",
+							"fieldParent": "bd59adbb-39ef-4cbc-d1b8-14287354b5fb",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Error Creating ABAP Entities - please check manually in SAP",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
 							"fieldNo": "a0fdb526-cdce-4232-93b2-30a7ab67ead3",
 							"fieldName": "txtTranslateCreateSuccess",
 							"fieldParent": "bd59adbb-39ef-4cbc-d1b8-14287354b5fb",
@@ -8486,6 +8592,26 @@
 									"attribute": "text",
 									"grouping": "Properties",
 									"value": "Error Deleting Mapping Detail",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "318350f2-9072-4707-d891-e0470f27b0e8",
+							"fieldName": "txtTranslateDeleteErrorGeneric",
+							"fieldParent": "bd59adbb-39ef-4cbc-d1b8-14287354b5fb",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Error Deleting ABAP Entities - please check manually in SAP",
 									"script": "",
 									"translation": []
 								}
@@ -9043,7 +9169,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.12.02.0118",
+	"ver": "25.01.15.0316",
 	"application": "cruisemapping",
 	"title": "",
 	"description": "",
@@ -9118,7 +9244,7 @@
 		{
 			"id": "0b7581eb-ab98-403c-8203-9d3933cd8fed",
 			"name": "CRUISE_RESTAPI",
-			"ver": "24.10.13.1443"
+			"ver": "24.12.29.2126"
 		}
 	],
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"

@@ -5,4 +5,5 @@ if (xhr.responseJSON.result.MV_ERROR){
     return;
 }
 sap.m.MessageToast.show(txtTranslateDeleteSuccess.getText());
+buttonBackMappingList.firePress();
 fireMappingHeadSearch();

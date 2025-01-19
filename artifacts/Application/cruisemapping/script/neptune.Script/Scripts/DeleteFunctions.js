@@ -1,4 +1,5 @@
  function deleteAPI(APIName, Status) {
+    
     var options = {
         parameters: {
             $select: "", // Optional
@@ -7,7 +8,7 @@
             IV_TRANSPORT: Status.ABAP_TRKORR
         },
     };
-
+    BusyDialogDeletingGeneric.open();
     apiDeleteAPI(options);
 }
 function DeleteABAPEntities(DPCName, Status) {
@@ -20,11 +21,11 @@ function DeleteABAPEntities(DPCName, Status) {
             IV_TRANSPORT: Status.ABAP_TRKORR
         },
     };
-
+    BusyDialogDeletingGeneric.open();
     apiDeleteABAPEntities(options);
 }
 function deleteStructure(StructName, Status) {
-    var options = {
+   let options = {
         parameters: {
             $select: "", // Optional
             "sap-client": sap.n.CRUISE.globalVariables.sapclient || "800", // Required
@@ -33,7 +34,7 @@ function deleteStructure(StructName, Status) {
             IV_TRANSPORT: Status.ABAP_TRKORR
         },
     };
-
+    BusyDialogDeletingGeneric.open();
     apiDeleteABAPEntities(options);
 }
 function deleteTableType(TableTypeName, Status) {
@@ -46,7 +47,7 @@ function deleteTableType(TableTypeName, Status) {
             IV_TRANSPORT: Status.ABAP_TRKORR
         },
     };
-
+    BusyDialogDeletingGeneric.open();
     apiDeleteABAPEntities(options);
 }
 function deletePackage(PackageName, Status) {
@@ -59,6 +60,6 @@ function deletePackage(PackageName, Status) {
             IV_TRANSPORT: Status.ABAP_TRKORR
         },
     };
-
+    BusyDialogDeletingGeneric.open();
     apiDeleteABAPEntities(options);
 }

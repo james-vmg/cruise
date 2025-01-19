@@ -2065,6 +2065,46 @@
 												}
 											],
 											"data": []
+										},
+										{
+											"fieldNo": "3c10f1b9-4c45-4176-fe59-9d60d108cd0b",
+											"fieldName": "lblSFEmployeeDetailresultMS_LINEMANAGER",
+											"fieldParent": "efe57921-25d6-4f5f-8480-d14dff9c4b85",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Line Manager",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "3c5c77b6-86ef-41ed-9b31-739dd98bbcfd",
+											"fieldName": "txtSFEmployeeDetailresultMS_LINEMANAGER",
+											"fieldParent": "efe57921-25d6-4f5f-8480-d14dff9c4b85",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{/result/MS_EMPLOYEE/LINEMANAGER}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
 										}
 									]
 								}
@@ -2491,7 +2531,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.12.11.1113",
+	"ver": "25.01.08.1401",
 	"application": "employee_split",
 	"title": "",
 	"description": "",
@@ -2536,7 +2576,7 @@
 		{
 			"id": "9b880d57-9d96-49ce-91a2-aaf65d401066",
 			"name": "EMPLOYEE",
-			"ver": "24.12.11.1013"
+			"ver": "25.01.08.1258"
 		}
 	],
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"

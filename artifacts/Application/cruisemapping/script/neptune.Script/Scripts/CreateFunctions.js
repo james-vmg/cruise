@@ -15,7 +15,7 @@ function createPackage(status) {
             IV_TRANSPORT: status.ABAP_TRKORR,
         },
     };
-
+    BusyDialogCreatingGeneric.open();
     apiCreateABAPEntities(options);
 }
 function createStructure(status) {
@@ -35,7 +35,7 @@ function createStructure(status) {
             IV_TRANSPORT: status.ABAP_TRKORR,
         },
     };
-
+    BusyDialogCreatingGeneric.open();
     apiCreateABAPEntities(options);
 }
 function createTableType(status) {
@@ -55,7 +55,7 @@ function createTableType(status) {
             IV_TRANSPORT: status.ABAP_TRKORR,
         },
     };
-
+    BusyDialogCreatingGeneric.open();
     apiCreateABAPEntities(options);
 }
 function CreateDPC(status) {
@@ -75,7 +75,7 @@ function CreateDPC(status) {
             IV_TRANSPORT: status.ABAP_TRKORR,
         },
     };
-
+    BusyDialogCreatingGeneric.open();
     apiCreateABAPEntities(options);
 }
 function createAPI(status) {
@@ -90,5 +90,6 @@ function createAPI(status) {
         },
     };
 
+    BusyDialogCreatingGeneric.open();
     apiCreateAPI(options);
 }

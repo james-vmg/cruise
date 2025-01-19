@@ -176,6 +176,15 @@
 					"required": true,
 					"inPath": false,
 					"type": "string"
+				},
+				{
+					"name": "IV_TRANSPORT",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
 				}
 			],
 			"endpoints": [],
@@ -1377,7 +1386,7 @@
 	"documentation": [],
 	"name": "CRUISE_RESTAPI",
 	"endpoint": "http://vhcalabaci.saportals.com:50700/neptune/api/cruiserestapi",
-	"ver": "24.10.13.1443",
+	"ver": "24.12.29.2126",
 	"version": "1.0",
 	"description": null,
 	"mediaType": null,
