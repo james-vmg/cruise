@@ -11,12 +11,16 @@
 	"configMessage": {
 		"type": "None"
 	},
+	"lightGroupLayouts": null,
+	"darkGroupLayouts": null,
+	"lightTileLayouts": null,
+	"darkTileLayouts": null,
 	"title": "Purchasing",
 	"subTitle": null,
+	"menuText": null,
 	"description": null,
-	"titleAlignment": null,
-	"enableFullScreen": null,
-	"hideHeader": null,
+	"enableFullScreen": false,
+	"hideHeader": false,
 	"backgroundType": "cards",
 	"backgroundColor": "",
 	"backgroundShade": null,
@@ -61,21 +65,45 @@
 	"imageMobileSize": null,
 	"hideFromMenu": false,
 	"roleTag": null,
-	"cockpitTileGroup": null,
+	"cockpitTileGroup": false,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"openClickTile": false,
+	"groupLayoutLight": null,
+	"groupLayoutDark": null,
+	"tileLayoutLight": null,
+	"tileLayoutDark": null,
+	"cardWidth": null,
+	"cardHeight": null,
+	"tileBackgroundHeight": null,
+	"imageHeightMedia": null,
+	"imageTabletHeightMedia": null,
+	"imageMobileHeightMedia": null,
+	"imageDark": null,
+	"imageTabletDark": null,
+	"imageMobileDark": null,
+	"imageDarkHeightMedia": null,
+	"imageTabletDarkHeightMedia": null,
+	"imageMobileDarkHeightMedia": null,
+	"forceTileAttributes": false,
+	"forceGroupAttributes": false,
+	"imageDarkNone": false,
+	"imageTabletDarkNone": false,
+	"imageMobileDarkNone": false,
+	"oneGroupLayout": false,
+	"oneTileLayout": false,
 	"roles": [],
 	"tiles": [
 		{
 			"id": "e6a9cf65-6eb9-445a-bdb6-eddda970cc95",
 			"name": "Purchase Orders Adaptive Designer",
 			"title": "Purchase Orders Adaptive Framework",
-			"ver": "24.08.17.1538"
+			"ver": "25.02.14.0413"
 		},
 		{
 			"id": "9fe22c2e-5afc-4c19-b3bc-c22a597ae58b",
 			"name": "Purchase Orders",
 			"title": "Purchase Orders",
-			"ver": "24.08.17.1539"
+			"ver": "25.02.05.0235"
 		}
 	],
 	"tilegroups": []

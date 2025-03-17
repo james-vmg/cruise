@@ -1,26 +1,28 @@
 {
-	"id": "424ca336-699d-451f-b3e4-028412bbf960",
-	"createdAt": "2024-08-31T18:05:55.000Z",
+	"id": "c40408c3-b929-4a8d-9bc9-ac17aca7075d",
+	"createdAt": "2025-02-13T04:03:33.000Z",
 	"createdBy": "admin",
 	"translation": [],
 	"tilesOrder": [],
 	"tilegroupsOrder": [
 		"2a9c25df-090f-4b86-9458-b35792c9f65c",
-		"ad0602f0-4ef2-4ad1-bb75-da113ac5d8d8",
+		"92cbd011-e222-4d75-9c00-7eb006f02e98",
 		"2acb6057-9d5f-4148-9e3a-ce68c812fc87",
 		"f4354d4d-6a97-4acc-b0d8-44e65abc397e",
 		"d74cbe21-eec4-4882-9cce-6eb1a02624c7",
 		"484358d9-2a13-416b-97ca-06060db70b1e"
 	],
-	"configMessage": {
-		"type": "None"
-	},
+	"configMessage": {},
+	"lightGroupLayouts": [],
+	"darkGroupLayouts": [],
+	"lightTileLayouts": [],
+	"darkTileLayouts": [],
 	"title": "Cruise Framework",
 	"subTitle": null,
+	"menuText": null,
 	"description": null,
-	"titleAlignment": null,
-	"enableFullScreen": null,
-	"hideHeader": null,
+	"enableFullScreen": false,
+	"hideHeader": false,
 	"backgroundType": "cards",
 	"backgroundColor": "",
 	"backgroundShade": null,
@@ -34,7 +36,7 @@
 	"enableShadeCalc": false,
 	"numTiles": null,
 	"enableMessage": false,
-	"ver": "24.11.13.1407",
+	"ver": "25.02.20.0312",
 	"headColor": null,
 	"headTxtClr": null,
 	"subheadTxtClr": null,
@@ -65,8 +67,32 @@
 	"imageMobileSize": null,
 	"hideFromMenu": false,
 	"roleTag": null,
-	"cockpitTileGroup": null,
+	"cockpitTileGroup": false,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"openClickTile": false,
+	"groupLayoutLight": null,
+	"groupLayoutDark": null,
+	"tileLayoutLight": null,
+	"tileLayoutDark": null,
+	"cardWidth": null,
+	"cardHeight": null,
+	"tileBackgroundHeight": null,
+	"imageHeightMedia": null,
+	"imageTabletHeightMedia": null,
+	"imageMobileHeightMedia": null,
+	"imageDark": null,
+	"imageTabletDark": null,
+	"imageMobileDark": null,
+	"imageDarkHeightMedia": null,
+	"imageTabletDarkHeightMedia": null,
+	"imageMobileDarkHeightMedia": null,
+	"forceTileAttributes": false,
+	"forceGroupAttributes": false,
+	"imageDarkNone": false,
+	"imageTabletDarkNone": false,
+	"imageMobileDarkNone": false,
+	"oneGroupLayout": false,
+	"oneTileLayout": false,
 	"roles": [],
 	"tiles": [],
 	"tilegroups": [
@@ -80,13 +106,13 @@
 			"id": "d74cbe21-eec4-4882-9cce-6eb1a02624c7",
 			"name": "Cruise Administration",
 			"title": "Cruise Administration",
-			"ver": "24.11.27.1121"
+			"ver": "25.02.25.1325"
 		},
 		{
-			"id": "ad0602f0-4ef2-4ad1-bb75-da113ac5d8d8",
-			"name": "Cruise Fleet Demo",
+			"id": "92cbd011-e222-4d75-9c00-7eb006f02e98",
+			"name": "Cruise Fleet",
 			"title": "Fleet Management",
-			"ver": "24.09.18.0913"
+			"ver": "25.02.20.0312"
 		},
 		{
 			"id": "484358d9-2a13-416b-97ca-06060db70b1e",
@@ -104,7 +130,7 @@
 			"id": "2a9c25df-090f-4b86-9458-b35792c9f65c",
 			"name": "Cruise Equipment",
 			"title": "Equipment Management",
-			"ver": "24.08.31.1803"
+			"ver": "25.02.13.0316"
 		}
 	]
 }

@@ -1572,7 +1572,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.11.1234",
+	"ver": "25.02.04.0249",
 	"application": "functionallocation",
 	"title": "",
 	"description": "",
@@ -1613,12 +1613,12 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"apis": [
 		{
 			"id": "72b44d28-76c3-4251-8542-2ed6d51a9c4b",
 			"name": "FUNCTIONALLOCATION",
 			"ver": "24.11.10.2143"
 		}
-	],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	]
 }

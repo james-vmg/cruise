@@ -2,7 +2,8 @@ async function update(opts, body, fieldCatalog, keyStruct, structName) {
     let keyField = keyStruct[0];
     let response = {};
     let mainRec = await globals.Filters.filterParams(body, fieldCatalog);
-    opts.parameters = { IV_PARAMS: JSON.stringify(mainRec) };
+   // opts.parameters = { IV_PARAMS: JSON.stringify(mainRec) };
+    opts.body = {[structName] :  mainRec} ;
     try {
         // Send api request.
         if (typeof mainRec[keyField] !== "undefined") { 

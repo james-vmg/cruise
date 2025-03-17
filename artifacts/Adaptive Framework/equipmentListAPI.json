@@ -46,7 +46,8 @@
 			"form": {
 				"enableCompact": false,
 				"headerExpanded": true,
-				"headerPreserveState": false
+				"headerPreserveState": false,
+				"enableSearchWildcard": false
 			},
 			"table": {
 				"enablePagination": true,
@@ -675,10 +676,10 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.07.08.2227",
+	"ver": "25.03.07.1508",
 	"disabled": false,
 	"appType": "A",
-	"application": "planet9_adaptive_list",
+	"application": "neptunedxp_adaptive_list",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"roles": [],
 	"scriptSelObj": null,

@@ -45,7 +45,13 @@
 				"dynamicTitle": "",
 				"dynamicSubTitle": "",
 				"title": "Purchase Order Item",
-				"avatarIcon": "sap-icon://cart-4"
+				"avatarIcon": "sap-icon://cart-4",
+				"confirmationCheckCreate": false,
+				"confirmationCheckUpdate": false,
+				"titleConfirmCreate": "Create entry",
+				"textConfirmCreate": "Are you sure you want to create this entry?",
+				"titleConfirmUpdate": "Update entry",
+				"textConfirmUpdate": "Are you sure you want to update this entry?"
 			},
 			"form": {
 				"enableCompact": false,
@@ -181,10 +187,10 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.08.16.0130",
+	"ver": "25.03.07.1507",
 	"disabled": false,
 	"appType": "A",
-	"application": "planet9_adaptive_edit",
+	"application": "neptunedxp_adaptive_edit",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"roles": [],
 	"scriptSelObj": null,

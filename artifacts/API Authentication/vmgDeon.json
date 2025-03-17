@@ -1,0 +1,26 @@
+{
+	"id": "03f4ea66-9bf4-4c84-aaa2-8ba82b10e68d",
+	"createdAt": "2025-03-06T10:12:27.000Z",
+	"createdBy": "deon",
+	"headers": [],
+	"details": {
+		"subject": {},
+		"headers": [],
+		"password": "426c0812e35f62d026883da76434",
+		"secret": "",
+		"username": "deon"
+	},
+	"azureRelayDetails": {
+		"ns": "",
+		"hcName": "",
+		"apName": "",
+		"apKey": ""
+	},
+	"name": "vmgDeon",
+	"description": "Deon's Basic SAP Authentication",
+	"type": "basic",
+	"useCloudConnector": false,
+	"cloudConnectorType": null,
+	"ver": "25.03.06.1013",
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+}

@@ -59,7 +59,13 @@
 						}
 					]
 				},
-				"dynamicTitle": "DESCRIPTION"
+				"dynamicTitle": "DESCRIPTION",
+				"confirmationCheckCreate": false,
+				"confirmationCheckUpdate": false,
+				"titleConfirmCreate": "Create entry",
+				"textConfirmCreate": "Are you sure you want to create this entry?",
+				"titleConfirmUpdate": "Update entry",
+				"textConfirmUpdate": "Are you sure you want to update this entry?"
 			},
 			"form": {
 				"enableCompact": true,
@@ -69,6 +75,12 @@
 			"table": {}
 		},
 		"fieldCatalog": [
+			{
+				"name": "PRIMARY_FUEL",
+				"label": "Consumable Type of Primary Fuel",
+				"type": "text",
+				"usage": "BOTH"
+			},
 			{
 				"name": "DESCRIPTION",
 				"label": "Description of Technical Object",
@@ -91,12 +103,6 @@
 				"name": "EQUIPMENTCATEGORY",
 				"label": "Equipment category",
 				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "EXPIRY_DATE",
-				"label": "Validity end date",
-				"type": "date",
 				"usage": "BOTH"
 			},
 			{
@@ -124,14 +130,14 @@
 				"usage": "BOTH"
 			},
 			{
-				"name": "PRIMARY_FUEL",
-				"label": "Consumable Type of Primary Fuel",
-				"type": "text",
+				"name": "VALIDITYENDDATE",
+				"label": "Valid To Date",
+				"type": "date",
 				"usage": "BOTH"
 			},
 			{
-				"name": "VALIDITYENDDATE",
-				"label": "Valid To Date",
+				"name": "EXPIRY_DATE",
+				"label": "Validity end date",
 				"type": "date",
 				"usage": "BOTH"
 			},
@@ -214,10 +220,10 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.08.06.0705",
+	"ver": "25.03.07.1510",
 	"disabled": false,
 	"appType": "A",
-	"application": "planet9_adaptive_edit",
+	"application": "neptunedxp_adaptive_edit",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"roles": [],
 	"scriptSelObj": null,

@@ -6,14 +6,15 @@
 		"scriptSel": "351ca89a-9294-4a7d-90e5-dfee6c8c4c74",
 		"scriptRun": "0f175e55-cf68-47c4-a1cc-a3e39eafa21e",
 		"hasDocumentation": false,
-		"overriddenFieldCatalog": false
+		"overriddenFieldCatalog": false,
+		"previewable": true
 	},
 	"documentation": {},
 	"name": "purchaseOrder",
 	"description": "Connector for Adaptive Framework Purchase Order Apps",
 	"group": null,
 	"type": "S",
-	"ver": "24.09.17.0226",
+	"ver": "25.02.13.0238",
 	"disabled": false,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
 }

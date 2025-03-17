@@ -85,7 +85,13 @@
 					"destinationType": "F",
 					"openAs": "P",
 					"butType": "Default"
-				}
+				},
+				"confirmationCheckCreate": false,
+				"confirmationCheckUpdate": false,
+				"titleConfirmCreate": "Create entry",
+				"textConfirmCreate": "Are you sure you want to create this entry?",
+				"titleConfirmUpdate": "Update entry",
+				"textConfirmUpdate": "Are you sure you want to update this entry?"
 			},
 			"form": {
 				"enableCompact": true,
@@ -122,39 +128,21 @@
 		},
 		"fieldCatalog": [
 			{
-				"name": "AUTHORIZATIONGROUP",
-				"label": "Technical object authorization group",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
 				"name": "BATCH",
 				"label": "Batch Number",
 				"type": "text",
 				"usage": "BOTH"
 			},
 			{
-				"name": "CONSTRUCTIONMONTH",
-				"label": "Month of construction",
+				"name": "EQUIPUSAGEPERIODSEQUENCENUMBER",
+				"label": "Consecutive numbering of EquipUsagePeriods on same day",
 				"type": "text",
 				"usage": "BOTH"
 			},
 			{
-				"name": "CONSTRUCTIONYEAR",
-				"label": "Year of construction",
+				"name": "MANUFACTURERCOUNTRY",
+				"label": "Country of manufacture",
 				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "CREATEDBYUSER",
-				"label": "Name of Person Who Created the Object",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "CREATIONDATE",
-				"label": "Date on Which Record Was Created",
-				"type": "date",
 				"usage": "BOTH"
 			},
 			{
@@ -167,6 +155,18 @@
 				"name": "CUSTOMER",
 				"label": "Customer to Whom Serial Number was Delivered",
 				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LASTCHANGEDATE",
+				"label": "Date of Last Change",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CREATIONDATE",
+				"label": "Date on Which Record Was Created",
+				"type": "date",
 				"usage": "BOTH"
 			},
 			{
@@ -194,24 +194,6 @@
 				"usage": "BOTH"
 			},
 			{
-				"name": "EQUIPUSAGEPERIODSEQUENCENUMBER",
-				"label": "Consecutive numbering of EquipUsagePeriods on same day",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "GROSSWEIGHT",
-				"label": "Weight of object",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "GROSSWEIGHTUNIT",
-				"label": "Unit of weight",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
 				"name": "HASEQUIPMENTDATA",
 				"label": "Equipment data exists",
 				"type": "text",
@@ -224,38 +206,14 @@
 				"usage": "BOTH"
 			},
 			{
-				"name": "LANGUAGE",
-				"label": "Language Key",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "LASTCHANGEDATE",
-				"label": "Date of Last Change",
-				"type": "date",
-				"usage": "BOTH"
-			},
-			{
 				"name": "LASTCHANGEDATETIME",
 				"label": "LASTCHANGEDATETIME",
 				"type": "text",
 				"usage": "BOTH"
 			},
 			{
-				"name": "LASTCHANGEDBYUSER",
-				"label": "Name of person who changed object",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "MAINTOBJECTINTERNALID",
-				"label": "Object number",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "MANUFACTURERCOUNTRY",
-				"label": "Country of manufacture",
+				"name": "LANGUAGE",
+				"label": "Language Key",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -284,14 +242,38 @@
 				"usage": "BOTH"
 			},
 			{
-				"name": "OPERATIONSTARTDATE",
-				"label": "Start-up Date of the Technical Object",
-				"type": "date",
+				"name": "CONSTRUCTIONMONTH",
+				"label": "Month of construction",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CREATEDBYUSER",
+				"label": "Name of Person Who Created the Object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LASTCHANGEDBYUSER",
+				"label": "Name of person who changed object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MAINTOBJECTINTERNALID",
+				"label": "Object number",
+				"type": "text",
 				"usage": "BOTH"
 			},
 			{
 				"name": "PLANT",
 				"label": "Plant",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UNIQUEITEMIDENTIFIERRESPPLANT",
+				"label": "Plant Responsible for UII",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -308,14 +290,26 @@
 				"usage": "BOTH"
 			},
 			{
+				"name": "OPERATIONSTARTDATE",
+				"label": "Start-up Date of the Technical Object",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
 				"name": "STORAGELOCATION",
 				"label": "Storage Location",
 				"type": "text",
 				"usage": "BOTH"
 			},
 			{
-				"name": "SUPPLIER",
-				"label": "Vendor number",
+				"name": "UNIQUEITEMIDENTIFIERSTRUCTYPE",
+				"label": "Structure Type of UII",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "AUTHORIZATIONGROUP",
+				"label": "Technical object authorization group",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -332,14 +326,8 @@
 				"usage": "BOTH"
 			},
 			{
-				"name": "UNIQUEITEMIDENTIFIERRESPPLANT",
-				"label": "Plant Responsible for UII",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "UNIQUEITEMIDENTIFIERSTRUCTYPE",
-				"label": "Structure Type of UII",
+				"name": "GROSSWEIGHTUNIT",
+				"label": "Unit of weight",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -347,6 +335,24 @@
 				"name": "VALIDITYENDDATE",
 				"label": "Valid To Date",
 				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "SUPPLIER",
+				"label": "Vendor number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "GROSSWEIGHT",
+				"label": "Weight of object",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CONSTRUCTIONYEAR",
+				"label": "Year of construction",
+				"type": "text",
 				"usage": "BOTH"
 			}
 		],
@@ -443,10 +449,10 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.09.16.1137",
+	"ver": "25.03.07.1509",
 	"disabled": false,
 	"appType": "A",
-	"application": "planet9_adaptive_edit",
+	"application": "neptunedxp_adaptive_edit",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"roles": [],
 	"scriptSelObj": null,

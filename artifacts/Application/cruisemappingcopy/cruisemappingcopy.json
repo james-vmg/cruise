@@ -9085,6 +9085,7 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"apis": [
 		{
 			"id": "de016acd-06eb-444c-9d9e-c03f8395292a",
@@ -9121,6 +9122,5 @@
 			"name": "CRUISE_RESTAPI",
 			"ver": "24.12.29.2126"
 		}
-	],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	]
 }

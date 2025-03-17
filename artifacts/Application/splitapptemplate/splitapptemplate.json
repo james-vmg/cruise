@@ -2878,7 +2878,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.07.30.0344",
+	"ver": "25.02.04.0249",
 	"application": "splitapptemplate",
 	"title": "",
 	"description": "",
@@ -2919,6 +2919,6 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
-	"apis": [],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"apis": []
 }

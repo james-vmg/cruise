@@ -637,7 +637,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.13.1409",
+	"ver": "25.02.04.0249",
 	"application": "employee",
 	"title": "",
 	"description": "",
@@ -678,12 +678,12 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"apis": [
 		{
 			"id": "9b880d57-9d96-49ce-91a2-aaf65d401066",
 			"name": "EMPLOYEE",
 			"ver": "25.01.08.1258"
 		}
-	],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	]
 }

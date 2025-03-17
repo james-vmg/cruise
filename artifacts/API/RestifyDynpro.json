@@ -1,0 +1,233 @@
+{
+	"id": "c9da2979-2bd0-42b8-8250-850bc389fece",
+	"createdAt": "2025-03-15T18:12:53.000Z",
+	"createdBy": "james",
+	"auth": [
+		{
+			"role": "DEF",
+			"apiAuth": "47e30929-4309-4946-8519-afa72dee8911",
+			"authName": "vmgJames",
+			"authDesc": "",
+			"id": "d7819119-11b5-4df0-dfc0-78f7e6adc082"
+		}
+	],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "a52173a5-1f54-4a2e-b866-b0ff6649a1a8",
+			"path": "/createDPC",
+			"method": "POST",
+			"responses": [
+				{
+					"status": "200",
+					"description": "Status 200",
+					"headers": [],
+					"content": [
+						{
+							"name": "postcreateDPCResponse",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"status": "404",
+					"description": "Status 404",
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"items": [
+								{
+									"id": "5eede090-468d-40f3-af1f-650d28db6401",
+									"children": [],
+									"name": "ERROR_CODE",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Error Code"
+								},
+								{
+									"id": "777dd2eb-7431-48d6-a693-04e9fb7d8615",
+									"children": [],
+									"name": "ERROR_TEXT",
+									"objectType": "string",
+									"parent": "",
+									"isParent": false,
+									"required": false,
+									"maxLength": "",
+									"minLength": "",
+									"description": "Description of the error"
+								}
+							]
+						}
+					]
+				}
+			],
+			"content": [],
+			"headers": [],
+			"parameters": [
+				{
+					"name": "$select",
+					"description": "Select fieldnames to be returned. Separated by comma",
+					"inPath": false,
+					"type": "string"
+				},
+				{
+					"name": "sap-client",
+					"description": "SAP Client",
+					"required": true,
+					"inPath": false,
+					"example": "800",
+					"type": "string",
+					"default": "800"
+				},
+				{
+					"name": "IV_PROG",
+					"inPath": false,
+					"required": true
+				}
+			],
+			"endpoints": [],
+			"endpoint": ""
+		}
+	],
+	"definitions": [
+		{
+			"id": "d45e05b6-c205-4969-b2d8-e6dadc9e3546",
+			"name": "dataRequest",
+			"description": "Key Value Structure",
+			"type": "object",
+			"properties": [
+				{
+					"id": "5b0906bd-190a-41b2-9088-5252d6f6f44b",
+					"children": [],
+					"name": "KEY",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Name of dataset"
+				},
+				{
+					"id": "58f2b35e-9da9-4473-91ef-3f00449ea957",
+					"children": [],
+					"name": "VALUE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": true,
+					"maxLength": "",
+					"minLength": "",
+					"description": "JSON String of dataset"
+				}
+			]
+		},
+		{
+			"id": "1b1a11ee-4d12-4399-8239-1a80829d1d7a",
+			"name": "errorResponse",
+			"description": "Error object returned from SAP",
+			"type": "object",
+			"properties": [
+				{
+					"id": "d1a9322a-2f11-4ee7-a6a9-efe4c40ac725",
+					"children": [],
+					"name": "ERROR_CODE",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Error Code"
+				},
+				{
+					"id": "8ff2e456-9876-45dc-ae30-b832ae70ae32",
+					"children": [],
+					"name": "ERROR_TEXT",
+					"objectType": "string",
+					"parent": "",
+					"isParent": false,
+					"required": false,
+					"maxLength": "",
+					"minLength": "",
+					"description": "Description of the error"
+				}
+			]
+		},
+		{
+			"id": "a36f9403-d0af-4510-9bf3-854dffeb2799",
+			"name": "postcreateDPCResponse",
+			"type": "object",
+			"properties": [
+				{
+					"id": "18355fa2-47d8-4bba-8032-64b01cb67d41",
+					"children": [
+						{
+							"id": "efdb5a7f-7a45-4ae1-8348-0f8ade262fbd",
+							"children": [],
+							"name": "GV_CLASSNAME",
+							"objectType": "string",
+							"parent": "18355fa2-47d8-4bba-8032-64b01cb67d41",
+							"isParent": false,
+							"required": false,
+							"maxLength": "30",
+							"minLength": "",
+							"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+							"description": "Object Type Name"
+						}
+					],
+					"name": "result",
+					"objectType": "object",
+					"parent": "",
+					"isParent": true,
+					"required": false,
+					"maxLength": "",
+					"minLength": ""
+				},
+				{
+					"id": "efdb5a7f-7a45-4ae1-8348-0f8ade262fbd",
+					"children": [],
+					"name": "GV_CLASSNAME",
+					"objectType": "string",
+					"parent": "18355fa2-47d8-4bba-8032-64b01cb67d41",
+					"isParent": false,
+					"required": false,
+					"maxLength": "30",
+					"minLength": "",
+					"pattern": "^[^a-zéèåæãâäõöôûüøç]*$",
+					"description": "Object Type Name"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "RestifyDynpro",
+	"endpoint": "http://vhcalabaci.saportals.com:50700/neptune/api/generatedpc",
+	"ver": "25.03.15.1939",
+	"version": "1.0",
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": null,
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11",
+	"apiFormat": 1,
+	"roles": []
+}

@@ -26,12 +26,11 @@
 		}
 	],
 	"name": "metadataScript",
-	"ver": "24.09.17.0119",
+	"ver": "25.02.20.0308",
 	"description": null,
 	"folder": "",
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
-	"transpiledContent": null,
 	"lastRunSuccessful": false,
 	"isTypescript": false,
 	"language": "javascript",

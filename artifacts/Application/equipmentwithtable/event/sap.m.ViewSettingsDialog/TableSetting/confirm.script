@@ -1,0 +1,16 @@
+let paging = modelpageEquipmentList.oData;
+let selectedItemName = TableSetting.getSelectedSortItem();
+let sortItems = TableSetting.getSortItems();
+let selectedItem = sortItems.find((obj) => obj["sId"] === selectedItemName);
+let selectedKey = selectedItem.getKey();
+
+if (paging.SERVER_PAGINATION) {
+    let direction = TableSetting.getSortDescending() ? "DESCENDING" : "ASCENDING";
+    let sortObjects = [{ FIELDNAME: selectedKey, DIRECTION: direction }];
+    modelMOSorting.oData = sortObjects;
+    fireEquipmentSearch();
+} else {
+    const oSorter = new sap.ui.model.Sorter(selectedKey, TableSetting.getSortDescending(), false);
+    const binding = TableEquipment.getBinding("items");
+    binding.sort(oSorter);
+}

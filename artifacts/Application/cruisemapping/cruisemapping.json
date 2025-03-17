@@ -2662,6 +2662,46 @@
 															]
 														},
 														{
+															"fieldNo": "08e4aca9-bcc4-4fe5-c9c1-040d1e99f23b",
+															"fieldName": "colTableDetailsChangeWORKINGFIELD",
+															"fieldParent": "a0441e6b-5430-4148-f01c-f006f977cbf3",
+															"fieldType": "sap.m.Column",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": [
+																{
+																	"fieldNo": "7860e0dc-8b4c-46d7-ff95-59c3ee5283c4",
+																	"fieldName": "colHTableDetailsChangeWORKINGFIELD",
+																	"fieldParent": "08e4aca9-bcc4-4fe5-c9c1-040d1e99f23b",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "Working Field",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "tooltip",
+																			"grouping": "Properties",
+																			"value": "Non-data field - populated only by algorithm",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
 															"fieldNo": "83c65272-85c6-481e-96f6-e174fa5e859d",
 															"fieldName": "colItemTableDetailsChange",
 															"fieldParent": "a0441e6b-5430-4148-f01c-f006f977cbf3",
@@ -2952,6 +2992,27 @@
 																			"attribute": "selected",
 																			"grouping": "Properties",
 																			"value": "{FILTER}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "adafb94c-b6ca-41d7-8570-f258c17ae8ad",
+																	"fieldName": "txtTableDetailsChangeWORKINGFIELD",
+																	"fieldParent": "83c65272-85c6-481e-96f6-e174fa5e859d",
+																	"fieldType": "sap.m.CheckBox",
+																	"script": "",
+																	"customComponent": false,
+																	"bindingType": "h",
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "selected",
+																			"grouping": "Properties",
+																			"value": "{WORKINGFIELD}",
 																			"script": "",
 																			"translation": []
 																		}
@@ -7337,6 +7398,54 @@
 												}
 											],
 											"data": []
+										},
+										{
+											"fieldNo": "535624aa-d82e-47d9-f705-16ed920df9e1",
+											"fieldName": "lblSimpleFormresultMS_MAPPING_DWORKINGFIELD",
+											"fieldParent": "11b2118c-3fd7-456b-a2dd-837e8596fc9b",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Working Field",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "tooltip",
+													"grouping": "Properties",
+													"value": "Non-Database Field. Value determined by algorithm only.",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "47d90016-df4f-4945-aa62-7c360b2dcda6",
+											"fieldName": "inSimpleFormresultMS_MAPPING_DWORKINGFIELD",
+											"fieldParent": "11b2118c-3fd7-456b-a2dd-837e8596fc9b",
+											"fieldType": "sap.m.CheckBox",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "selected",
+													"grouping": "Properties",
+													"value": "{/WORKINGFIELD}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
 										}
 									]
 								}
@@ -9169,7 +9278,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "25.01.15.0316",
+	"ver": "25.03.03.1402",
 	"application": "cruisemapping",
 	"title": "",
 	"description": "",
@@ -9210,6 +9319,7 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"apis": [
 		{
 			"id": "de016acd-06eb-444c-9d9e-c03f8395292a",
@@ -9246,6 +9356,5 @@
 			"name": "CRUISE_RESTAPI",
 			"ver": "24.12.29.2126"
 		}
-	],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	]
 }

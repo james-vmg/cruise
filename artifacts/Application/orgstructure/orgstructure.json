@@ -1913,7 +1913,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.13.1403",
+	"ver": "25.02.04.0336",
 	"application": "orgstructure",
 	"title": "",
 	"description": "",
@@ -1954,6 +1954,7 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"apis": [
 		{
 			"id": "c1de7d77-044a-43a0-8209-50295dbbcf26",
@@ -1965,6 +1966,5 @@
 			"name": "Org Structure",
 			"ver": "24.11.05.1318"
 		}
-	],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	]
 }

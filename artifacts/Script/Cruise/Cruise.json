@@ -1,7 +1,7 @@
 {
-	"id": "fa3beec7-59ea-4f8a-8d83-a014698f7c6b",
-	"createdAt": "2024-11-05T19:24:29.000Z",
-	"createdBy": "admin",
+	"id": "798ad2b5-d79a-47e5-ad9c-76d7ece8af3e",
+	"createdAt": "2025-03-06T10:21:32.000Z",
+	"createdBy": "deon",
 	"globalScripts": [
 		{
 			"id": "6e63158b-bdd5-4bfc-8300-075d66929ee3",
@@ -9,44 +9,28 @@
 			"contextname": "CruiseConfiguration"
 		},
 		{
-			"id": "4f2b83c9-0536-4105-a145-5e05cb0c3e2b",
-			"name": "employee_deon - Delete",
-			"contextname": "Delete"
-		},
-		{
-			"id": "04bf1304-7020-4901-8416-0b11da110807",
-			"name": "employee_deon - Read",
+			"id": "c65f9fbb-1c4b-4464-b34a-860d88cac5a0",
+			"name": "cruise_paystub - Read",
 			"contextname": "Read"
 		},
 		{
-			"id": "045e68c4-766c-460b-94b1-bcca65de54a5",
-			"name": "employee_deon - Search",
+			"id": "27ba922f-d1c1-436c-85f1-b8f39ed02f3d",
+			"name": "cruise_paystub - Search",
 			"contextname": "Search"
-		},
-		{
-			"id": "bae2aa61-301f-49ad-ab65-b92489d14bd1",
-			"name": "employee_deon - Update",
-			"contextname": "Update"
-		},
-		{
-			"id": "751f5a3f-ad1d-4772-910f-849ec7b6771d",
-			"name": "employee_deon - metaData",
-			"contextname": "metaData"
 		}
 	],
 	"externalModules": [],
 	"entitySets": [],
 	"apis": [],
 	"name": "Cruise",
-	"ver": "24.11.05.1938",
+	"ver": "25.03.06.1128",
 	"description": "Cruise",
 	"folder": "",
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
-	"transpiledContent": null,
 	"lastRunSuccessful": false,
 	"isTypescript": false,
 	"language": "javascript",
-	"jsscriptGroup": "891f977a-4905-4a70-abfc-003cdc780ca4",
+	"jsscriptGroup": "5409192e-3e81-45bc-82df-ef014b20d5ea",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
 }

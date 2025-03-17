@@ -1319,6 +1319,7 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"apis": [
 		{
 			"id": "e1ecdd65-3ac6-4fd2-987f-b64a436dbf01",
@@ -1350,6 +1351,5 @@
 			"name": "TIME_ZONES",
 			"ver": "24.07.03.1952"
 		}
-	],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	]
 }

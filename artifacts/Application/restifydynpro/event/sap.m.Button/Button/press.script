@@ -1,0 +1,15 @@
+let prog = InputProgram.getValue();
+
+if (prog > "") {
+    var options = {
+        parameters: {
+  //          $select: "", // Optional
+            "sap-client": "800", // Required
+            IV_PROG: prog, // Optional
+        },
+    };
+
+    apiCreateRestAPI(options);
+} else {
+    return;
+}

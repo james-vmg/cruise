@@ -6268,6 +6268,7 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"apis": [
 		{
 			"id": "c1de7d77-044a-43a0-8209-50295dbbcf26",
@@ -6279,6 +6280,5 @@
 			"name": "Equipment",
 			"ver": "24.09.13.0301"
 		}
-	],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	]
 }

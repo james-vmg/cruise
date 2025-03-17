@@ -13,7 +13,7 @@
 	"description": "Fleet Management Connector",
 	"group": null,
 	"type": "S",
-	"ver": "24.09.17.0106",
+	"ver": "25.02.20.0251",
 	"disabled": false,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
 }

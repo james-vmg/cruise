@@ -1,5 +1,4 @@
 const getMeta = async function () {
-    log.info("Meta")
     let fieldCatalog = [],
         structName = "",
         tableName = "",

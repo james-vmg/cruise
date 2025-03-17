@@ -47,13 +47,10 @@
 					"openAs": "P",
 					"butType": "Accept",
 					"destinationTargetF": "f1d3d73a-457e-407b-89ab-c886806732bb",
-					"keyField": [
-						{
-							"fieldName": "PURCHASEORDER",
-							"key": "PURCHASEORDER",
-							"value": ""
-						}
-					]
+					"keyField": [],
+					"fieldType": "Navigation",
+					"displayResponse": false,
+					"dialogHeader": true
 				},
 				"title": "Purchase Orders",
 				"avatarIcon": "sap-icon://fa-solid/shopping-cart"
@@ -301,10 +298,10 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.09.17.0301",
+	"ver": "25.03.07.1501",
 	"disabled": false,
 	"appType": "A",
-	"application": "planet9_adaptive_list",
+	"application": "neptunedxp_adaptive_list",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"roles": [],
 	"scriptSelObj": null,

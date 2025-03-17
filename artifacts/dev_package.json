@@ -3,147 +3,125 @@
 	"createdAt": "2024-06-11T14:12:42.000Z",
 	"createdBy": "admin",
 	"git": {
-		"remote": "https://github.com/james-vmg/cruise"
+		"remote": "https://github.com/james-vmg/cruise",
+		"branch": "main"
 	},
 	"name": "Cruise",
 	"description": "Cruise Development Package",
-	"ver": "24.12.26.1827",
+	"ver": "25.03.07.1625",
 	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
 	"apps": [
 		{
 			"id": "fe43b9e6-f6f5-459e-aefd-7d958ceb84d8",
 			"application": "pagination",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "ef790076-0bfd-454f-ba6b-70f7c5ff5f1f",
 			"application": "purchaseorders",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "e768477d-654b-49e1-923e-571f73ee6020",
 			"application": "cruisemapping",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "e4c47109-b38d-4f8d-be3f-77716e89f23d",
 			"application": "userparameters",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "ca076f01-d69e-485d-aac2-8f66d455ec39",
 			"application": "globalvariables",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "9df316a6-bfc7-4675-b50c-31db3fe3ab1b",
 			"application": "templates_simpleapp",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "9019d8a3-f4c0-47c3-aa69-7ebdbc72a330",
 			"application": "cruisemappingcopy",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
+		},
+		{
+			"id": "83c3556c-5c77-4c5e-a27b-7b42a5159295",
+			"application": "restifydynpro",
+			"title": "",
+			"description": ""
 		},
 		{
 			"id": "82664b7e-0846-4130-b73a-2429c8f1f06c",
 			"application": "splitapptemplate",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "7a42d923-7e90-43db-a302-9d70a7123971",
 			"application": "employee",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
+		},
+		{
+			"id": "6f219c34-ded3-46fd-9523-2926d5594647",
+			"application": "paystub",
+			"title": "",
+			"description": ""
 		},
 		{
 			"id": "681cf3f7-013f-4218-9fc3-35069240dae3",
 			"application": "cruise_plants_bb",
 			"title": "Plant Master Data",
-			"description": "Plant",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": "Plant"
 		},
 		{
 			"id": "42c6c86d-0d93-47b1-b958-3f4ae920f6de",
 			"application": "functionallocation",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "31352821-208a-4428-832a-f9255c094649",
 			"application": "employee_split",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "24d09175-a3b2-4730-a71c-176a04082101",
 			"application": "equipment",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "109d2767-4689-4301-bebe-3794cabb20f6",
 			"application": "orgstructure",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
 		},
 		{
 			"id": "0ed063c4-ea78-4b5a-9ce2-bd61d929a9b8",
 			"application": "cruise_pagingbar",
 			"title": "",
-			"description": "",
-			"package": {
-				"id": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
-			}
+			"description": ""
+		},
+		{
+			"id": "0a315704-564c-4c46-8950-62fffb721b20",
+			"application": "equipmentwithtable",
+			"title": "",
+			"description": ""
 		}
 	],
 	"api": [
@@ -172,6 +150,12 @@
 			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
 		},
 		{
+			"id": "d9353a98-d57e-46ee-bb4d-271cf0bd5371",
+			"name": "Paystub",
+			"description": "Cruise Paystub",
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
 			"id": "d7cf8741-a3e5-499b-aa8f-24a755658791",
 			"name": "CruiseMappingKeys",
 			"description": null,
@@ -190,6 +174,12 @@
 			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
 		},
 		{
+			"id": "c9da2979-2bd0-42b8-8250-850bc389fece",
+			"name": "RestifyDynpro",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
 			"id": "c1de7d77-044a-43a0-8209-50295dbbcf26",
 			"name": "plant",
 			"description": null,
@@ -204,6 +194,12 @@
 		{
 			"id": "b613c4e6-1b6b-4a28-95eb-9a20c55d8938",
 			"name": "DATE_FORMATS",
+			"description": null,
+			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
+		},
+		{
+			"id": "abe55548-391f-4870-ba73-f8e58a800037",
+			"name": "EMPLOYEE_ORGAS",
 			"description": null,
 			"apiGroup": "debc080f-650e-4db0-8446-b6c36ccfdd11"
 		},
@@ -363,6 +359,11 @@
 			"description": null
 		},
 		{
+			"id": "c65f9fbb-1c4b-4464-b34a-860d88cac5a0",
+			"name": "Read",
+			"description": "Read Paystub"
+		},
+		{
 			"id": "c2944029-5047-4190-847c-325e9ca556c4",
 			"name": "Delete",
 			"description": null
@@ -466,6 +467,16 @@
 			"id": "81092e04-ec5e-4d9f-ada4-413fdf4a2379",
 			"name": "Read",
 			"description": "Call the Read API"
+		},
+		{
+			"id": "798ad2b5-d79a-47e5-ad9c-76d7ece8af3e",
+			"name": "Cruise",
+			"description": "Cruise"
+		},
+		{
+			"id": "7594bda3-5973-4cf1-8864-a76b408bfc9e",
+			"name": "metaData",
+			"description": "MetaData"
 		},
 		{
 			"id": "751f5a3f-ad1d-4772-910f-849ec7b6771d",
@@ -578,6 +589,11 @@
 			"description": "Main Orchestrator"
 		},
 		{
+			"id": "27ba922f-d1c1-436c-85f1-b8f39ed02f3d",
+			"name": "Search",
+			"description": "Search Paystub"
+		},
+		{
 			"id": "229e137a-02dd-49cd-b872-8899fdfeb39d",
 			"name": "metaData",
 			"description": null
@@ -641,6 +657,11 @@
 			"id": "041b1c83-59e7-4abd-8d43-bc1485a9f8e6",
 			"name": "plantMetadata",
 			"description": "plant meta data script"
+		},
+		{
+			"id": "00e82a69-180f-48d3-8d49-a4b81b79c9ca",
+			"name": "connectorMetadata",
+			"description": "Connector Metadata"
 		}
 	],
 	"jsscript_group": [
@@ -673,6 +694,11 @@
 			"id": "891f977a-4905-4a70-abfc-003cdc780ca4",
 			"name": "employee_deon",
 			"description": "Employee Deon"
+		},
+		{
+			"id": "5409192e-3e81-45bc-82df-ef014b20d5ea",
+			"name": "cruise_paystub",
+			"description": "Cruise Employee Paystub"
 		},
 		{
 			"id": "535746ca-330d-4181-be89-5870c7541d24",
@@ -713,58 +739,58 @@
 			"id": "fb9f6c1d-bd95-4155-a6f0-7b39f74cab02",
 			"name": "equipmentListAPI",
 			"description": "",
-			"application": "planet9_adaptive_list"
+			"application": "neptunedxp_adaptive_list"
 		},
 		{
 			"id": "f79bf608-5b0c-48b4-bef0-6d6be4d8771a",
 			"name": "purchaseorderitems_list",
 			"description": "",
-			"application": "planet9_adaptive_list"
+			"application": "neptunedxp_adaptive_list"
 		},
 		{
 			"id": "f6945003-5525-448e-b37f-98fa424380db",
 			"name": "equipment_list",
 			"description": "Equipment List",
-			"application": "planet9_adaptive_list"
+			"application": "neptunedxp_adaptive_list"
 		},
 		{
 			"id": "dee8c1fc-f938-4066-9403-bad3f68b9056",
 			"name": "purchaseOrderItem_edit",
 			"description": "",
-			"application": "planet9_adaptive_edit"
+			"application": "neptunedxp_adaptive_edit"
 		},
 		{
 			"id": "c2fdad13-ea13-43e7-8ed9-bea0ec9542f2",
 			"name": "equipment_edit",
 			"description": "Equipment Detail",
-			"application": "planet9_adaptive_edit"
+			"application": "neptunedxp_adaptive_edit"
 		},
 		{
 			"id": "b338adfe-1bed-4e0a-9ce3-ae742b89dd1a",
 			"name": "fleet_edit",
 			"description": "Fleet Object Edit Form",
-			"application": "planet9_adaptive_edit"
+			"application": "neptunedxp_adaptive_edit"
 		},
 		{
 			"id": "9117e76f-3999-4fcd-b871-048074626c2d",
 			"name": "purchaseOrder_list",
 			"description": "",
-			"application": "planet9_adaptive_list"
-		},
-		{
-			"id": "80c79131-f79a-40de-af89-0c67dcaa86c6",
-			"name": "cruiseKeysEdit",
-			"description": "",
-			"application": "planet9_adaptive_edit"
+			"application": "neptunedxp_adaptive_list"
 		},
 		{
 			"id": "79c26fda-4f1d-404c-af0f-2efc8447ef52",
 			"name": "fleet_list",
 			"description": "",
-			"application": "planet9_adaptive_list"
+			"application": "neptunedxp_adaptive_list"
 		}
 	],
-	"api_authentication": [],
+	"api_authentication": [
+		{
+			"id": "03f4ea66-9bf4-4c84-aaa2-8ba82b10e68d",
+			"name": "vmgDeon",
+			"description": "Deon's Basic SAP Authentication"
+		}
+	],
 	"api_group": [
 		{
 			"id": "debc080f-650e-4db0-8446-b6c36ccfdd11",
@@ -819,11 +845,6 @@
 			"name": "Fleet Adaptive List"
 		},
 		{
-			"id": "3c20f651-77ad-4f73-909e-2e214546eefb",
-			"description": "Maintain Mapping between CDS View Names and ECC and generate class and APIs",
-			"name": "Maintain Mapping Parameters - Copy"
-		},
-		{
 			"id": "32f7997f-ebce-4aa0-b761-7f2c17d0ca29",
 			"description": "Keep your master data in SAP, but engage your users with enhanced features",
 			"name": "Equipment Adaptive List"
@@ -834,6 +855,7 @@
 			"name": "Equipment"
 		}
 	],
+	"tile_layout": [],
 	"category": [
 		{
 			"id": "f4354d4d-6a97-4acc-b0d8-44e65abc397e",
@@ -846,19 +868,14 @@
 			"name": "Cruise Administration"
 		},
 		{
-			"id": "a457e931-8cf8-4014-aadd-244fda0e4634",
+			"id": "c40408c3-b929-4a8d-9bc9-ac17aca7075d",
 			"description": null,
-			"name": "Cruise Administration - Copy"
+			"name": "Cruise Framework"
 		},
 		{
 			"id": "484358d9-2a13-416b-97ca-06060db70b1e",
 			"description": null,
 			"name": "Cruise User"
-		},
-		{
-			"id": "424ca336-699d-451f-b3e4-028412bbf960",
-			"description": null,
-			"name": "Cruise Framework"
 		},
 		{
 			"id": "2acb6057-9d5f-4148-9e3a-ce68c812fc87",
@@ -871,15 +888,27 @@
 			"name": "Cruise Equipment"
 		}
 	],
+	"tilegroup_layout": [],
 	"launchpad": [
 		{
-			"id": "ecf49c42-d62f-48f4-be86-feea405b0dfe",
-			"name": "VMG Cruise Demo",
+			"id": "a6a39e12-3535-4ab5-afc4-ac87f840455a",
+			"name": "Cruise",
 			"description": null
 		}
 	],
+	"launchpad_layout": [],
 	"certificates": [],
 	"role": [
+		{
+			"id": "fe82755a-6e78-46ed-854b-0ef08797c40d",
+			"name": "CockpitSuperAdmin",
+			"description": null
+		},
+		{
+			"id": "c5ef4a73-8448-499a-bb0f-a080e88a3eb3",
+			"name": "Cruise Development",
+			"description": "Access to modify Artifacts within the Cruise Package"
+		},
 		{
 			"id": "04a11f29-b278-4eb0-90f0-5fe5afe114f1",
 			"name": "Cruise Admin",
@@ -943,5 +972,6 @@
 		}
 	],
 	"wf_determination": [],
-	"wf_taskaction": []
+	"wf_taskaction": [],
+	"theme_ui5": []
 }

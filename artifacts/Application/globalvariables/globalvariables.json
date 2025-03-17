@@ -1299,12 +1299,12 @@
 	"printWidth": null,
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"apis": [
 		{
 			"id": "5b660f07-45cf-40f5-bd9b-b7a7a44b120d",
 			"name": "globalvariables",
 			"ver": "24.07.10.1422"
 		}
-	],
-	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
+	]
 }

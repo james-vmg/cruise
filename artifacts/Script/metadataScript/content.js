@@ -1,5 +1,6 @@
 try {
-    let metaData = await globals.metaData.getMeta();
+    
+    let metaData = await globals.metaData.getMeta(req);
     // Set the result and complete the script
     result.data = metaData.fieldCatalog;
     complete();

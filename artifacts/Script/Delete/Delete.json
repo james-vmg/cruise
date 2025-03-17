@@ -1,29 +1,26 @@
 {
-	"id": "4f2b83c9-0536-4105-a145-5e05cb0c3e2b",
-	"createdAt": "2024-11-05T19:29:41.000Z",
+	"id": "8bd0e2fa-2443-4108-9216-55082b295a5c",
+	"createdAt": "2024-10-10T12:46:09.000Z",
 	"createdBy": "admin",
-	"globalScripts": [],
-	"externalModules": [],
-	"entitySets": [],
-	"apis": [
+	"globalScripts": [
 		{
-			"id": "e3347700-ba13-4ec2-a0a0-761d56cf574d",
-			"parent": "157868a2-c79f-4a10-bc69-9c1a69988126",
-			"name": "/Delete",
-			"contextname": "Delete",
-			"method": "DELETE"
+			"id": "8bd0e2fa-2443-4108-9216-55082b295a5c",
+			"name": "cruise_job - Delete",
+			"contextname": "Delete"
 		}
 	],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
 	"name": "Delete",
-	"ver": "24.11.05.1930",
+	"ver": "24.10.16.1337",
 	"description": "Delete",
 	"folder": "",
 	"content": "file:///content.js",
 	"useAsGlobalScript": true,
-	"transpiledContent": null,
 	"lastRunSuccessful": false,
 	"isTypescript": false,
 	"language": "javascript",
-	"jsscriptGroup": "891f977a-4905-4a70-abfc-003cdc780ca4",
+	"jsscriptGroup": "a1ca28dd-33a1-4774-8ef2-2c20d316664e",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
 }

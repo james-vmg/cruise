@@ -1,11 +1,11 @@
 {
-	"id": "d5acd975-9120-4d4b-902c-d5c64f2e82a7",
-	"createdAt": "2024-10-08T17:21:34.000Z",
-	"createdBy": "admin",
+	"id": "00e82a69-180f-48d3-8d49-a4b81b79c9ca",
+	"createdAt": "2025-03-06T10:20:35.000Z",
+	"createdBy": "deon",
 	"globalScripts": [
 		{
-			"id": "229e137a-02dd-49cd-b872-8899fdfeb39d",
-			"name": "cruise_employee - metaData",
+			"id": "7594bda3-5973-4cf1-8864-a76b408bfc9e",
+			"name": "cruise_paystub - metaData",
 			"contextname": "metaData"
 		}
 	],
@@ -13,15 +13,14 @@
 	"entitySets": [],
 	"apis": [],
 	"name": "connectorMetadata",
-	"ver": "24.10.08.1759",
-	"description": null,
+	"ver": "25.03.06.1127",
+	"description": "Connector Metadata",
 	"folder": "",
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
-	"transpiledContent": null,
 	"lastRunSuccessful": false,
 	"isTypescript": false,
 	"language": "javascript",
-	"jsscriptGroup": "1158ed89-e00c-422e-848a-b3ef3666bc55",
+	"jsscriptGroup": "5409192e-3e81-45bc-82df-ef014b20d5ea",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
 }

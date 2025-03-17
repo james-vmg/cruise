@@ -1,11 +1,11 @@
 {
-	"id": "e58849e9-6b16-44c1-9e28-f394187d09e3",
-	"createdAt": "2024-11-05T19:48:52.000Z",
+	"id": "a14dc4c3-5ba3-4ec2-8000-7a1005d55476",
+	"createdAt": "2024-09-17T03:57:26.000Z",
 	"createdBy": "admin",
 	"globalScripts": [
 		{
-			"id": "751f5a3f-ad1d-4772-910f-849ec7b6771d",
-			"name": "employee_deon - metaData",
+			"id": "32cd9be9-25d7-4b0a-82d6-745ea4ad5001",
+			"name": "cruise_company - metaData",
 			"contextname": "metaData"
 		}
 	],
@@ -13,15 +13,14 @@
 	"entitySets": [],
 	"apis": [],
 	"name": "connectorMeta",
-	"ver": "24.11.05.2223",
+	"ver": "24.09.17.0358",
 	"description": null,
 	"folder": "",
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
-	"transpiledContent": null,
 	"lastRunSuccessful": false,
 	"isTypescript": false,
 	"language": "javascript",
-	"jsscriptGroup": "891f977a-4905-4a70-abfc-003cdc780ca4",
+	"jsscriptGroup": "320a47c8-2902-49e5-9f39-0d5a523bec96",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
 }
