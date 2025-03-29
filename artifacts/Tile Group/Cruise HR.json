@@ -11,10 +11,8 @@
 	"configMessage": {
 		"type": "None"
 	},
-	"lightGroupLayouts": null,
-	"darkGroupLayouts": null,
-	"lightTileLayouts": null,
-	"darkTileLayouts": null,
+	"navbarGroupOrder": null,
+	"sidebarGroupOrder": null,
 	"title": "H4S4 Management",
 	"subTitle": null,
 	"menuText": null,
@@ -89,8 +87,12 @@
 	"imageDarkNone": false,
 	"imageTabletDarkNone": false,
 	"imageMobileDarkNone": false,
-	"oneGroupLayout": false,
-	"oneTileLayout": false,
+	"noInheritGroupLayout": false,
+	"noInheritTileLayout": false,
+	"navbarWidth": null,
+	"sidebarWidth": null,
+	"navbarFit": null,
+	"sidebarFit": null,
 	"roles": [
 		{
 			"id": "04a11f29-b278-4eb0-90f0-5fe5afe114f1",
@@ -98,6 +100,10 @@
 			"ver": "24.07.06.2147"
 		}
 	],
+	"lightGroupLayouts": [],
+	"darkGroupLayouts": [],
+	"lightTileLayouts": [],
+	"darkTileLayouts": [],
 	"tiles": [
 		{
 			"id": "b5484d9f-7f67-42ad-b91b-577bda05b3dd",
@@ -112,5 +118,7 @@
 			"ver": "24.11.13.1406"
 		}
 	],
-	"tilegroups": []
+	"tilegroups": [],
+	"navbarGroups": [],
+	"sidebarGroups": []
 }

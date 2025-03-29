@@ -118,6 +118,7 @@
 	"title": "VMG Cruise Demo",
 	"description": null,
 	"startApp": null,
+	"launchpadFooter": null,
 	"startWebApp": null,
 	"customLogo": "/media/root/VMGIcons/Logo%2032x56.png",
 	"launchpadApp": "",
@@ -163,6 +164,7 @@
 	"passwordResetEmail": null,
 	"activationCodeEmail": null,
 	"noSubmenuHover": false,
+	"defaultLanguage": null,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"cat": [
 		{

@@ -11,10 +11,8 @@
 	"configMessage": {
 		"type": "None"
 	},
-	"lightGroupLayouts": [],
-	"darkGroupLayouts": [],
-	"lightTileLayouts": [],
-	"darkTileLayouts": [],
+	"navbarGroupOrder": null,
+	"sidebarGroupOrder": null,
 	"title": "Cruise Administration",
 	"subTitle": null,
 	"menuText": null,
@@ -89,8 +87,12 @@
 	"imageDarkNone": false,
 	"imageTabletDarkNone": false,
 	"imageMobileDarkNone": false,
-	"oneGroupLayout": false,
-	"oneTileLayout": false,
+	"noInheritGroupLayout": false,
+	"noInheritTileLayout": false,
+	"navbarWidth": null,
+	"sidebarWidth": null,
+	"navbarFit": null,
+	"sidebarFit": null,
 	"roles": [
 		{
 			"id": "04a11f29-b278-4eb0-90f0-5fe5afe114f1",
@@ -98,6 +100,10 @@
 			"ver": "24.07.06.2147"
 		}
 	],
+	"lightGroupLayouts": [],
+	"darkGroupLayouts": [],
+	"lightTileLayouts": [],
+	"darkTileLayouts": [],
 	"tiles": [
 		{
 			"id": "f4e0a0bd-91fa-41cb-b190-4fab32707245",
@@ -112,5 +118,7 @@
 			"ver": "25.02.25.1324"
 		}
 	],
-	"tilegroups": []
+	"tilegroups": [],
+	"navbarGroups": [],
+	"sidebarGroups": []
 }

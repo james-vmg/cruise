@@ -2,8 +2,6 @@
 	"id": "f4e0a0bd-91fa-41cb-b190-4fab32707245",
 	"createdAt": "2024-07-30T02:29:05.000Z",
 	"createdBy": "admin",
-	"lightTileLayouts": null,
-	"darkTileLayouts": null,
 	"translation": [],
 	"storeItem": {},
 	"settings": null,
@@ -85,7 +83,8 @@
 	"cockpitTile": true,
 	"cardImageDarkNone": false,
 	"imageDarkNone": false,
-	"oneTileLayout": false,
+	"noInheritTileLayout": false,
+	"imageType": null,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"roles": [
 		{
@@ -93,5 +92,7 @@
 			"name": "Cruise Admin",
 			"ver": "24.07.06.2147"
 		}
-	]
+	],
+	"lightTileLayouts": [],
+	"darkTileLayouts": []
 }

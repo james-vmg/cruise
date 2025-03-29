@@ -11,10 +11,8 @@
 	"configMessage": {
 		"type": "None"
 	},
-	"lightGroupLayouts": null,
-	"darkGroupLayouts": null,
-	"lightTileLayouts": null,
-	"darkTileLayouts": null,
+	"navbarGroupOrder": null,
+	"sidebarGroupOrder": null,
 	"title": "Purchasing",
 	"subTitle": null,
 	"menuText": null,
@@ -89,9 +87,17 @@
 	"imageDarkNone": false,
 	"imageTabletDarkNone": false,
 	"imageMobileDarkNone": false,
-	"oneGroupLayout": false,
-	"oneTileLayout": false,
+	"noInheritGroupLayout": false,
+	"noInheritTileLayout": false,
+	"navbarWidth": null,
+	"sidebarWidth": null,
+	"navbarFit": null,
+	"sidebarFit": null,
 	"roles": [],
+	"lightGroupLayouts": [],
+	"darkGroupLayouts": [],
+	"lightTileLayouts": [],
+	"darkTileLayouts": [],
 	"tiles": [
 		{
 			"id": "e6a9cf65-6eb9-445a-bdb6-eddda970cc95",
@@ -106,5 +112,7 @@
 			"ver": "25.02.05.0235"
 		}
 	],
-	"tilegroups": []
+	"tilegroups": [],
+	"navbarGroups": [],
+	"sidebarGroups": []
 }

@@ -47,7 +47,13 @@
 					"openAs": "P",
 					"butType": "Accept",
 					"destinationTargetF": "f1d3d73a-457e-407b-89ab-c886806732bb",
-					"keyField": [],
+					"keyField": [
+						{
+							"fieldName": "PURCHASEORDER",
+							"key": "PURCHASEORDER",
+							"value": ""
+						}
+					],
 					"fieldType": "Navigation",
 					"displayResponse": false,
 					"dialogHeader": true
@@ -58,7 +64,8 @@
 			"form": {
 				"enableCompact": false,
 				"headerExpanded": true,
-				"headerPreserveState": false
+				"headerPreserveState": false,
+				"enableSearchWildcard": false
 			},
 			"table": {
 				"enablePagination": true,
@@ -95,20 +102,20 @@
 				"usage": "BOTH"
 			},
 			{
-				"name": "CORRESPNCEXTERNALREFERENCE",
-				"label": "Your Reference",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "CREATEDBYUSER",
-				"label": "Name of Person Who Created the Object",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
 				"name": "CREATIONDATE",
 				"label": "Date on Which Record Was Created",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PURCHASINGDOCUMENTDELETIONCODE",
+				"label": "Deletion indicator in purchasing document",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "VALIDITYENDDATE",
+				"label": "End of Validity Period",
 				"type": "date",
 				"usage": "BOTH"
 			},
@@ -119,8 +126,8 @@
 				"usage": "BOTH"
 			},
 			{
-				"name": "PAYMENTTERMS",
-				"label": "Terms of Payment Key",
+				"name": "CREATEDBYUSER",
+				"label": "Name of Person Who Created the Object",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -133,12 +140,6 @@
 			{
 				"name": "PURCHASEORDERTYPE",
 				"label": "Purchasing Document Type",
-				"type": "text",
-				"usage": "BOTH"
-			},
-			{
-				"name": "PURCHASINGDOCUMENTDELETIONCODE",
-				"label": "Deletion indicator in purchasing document",
 				"type": "text",
 				"usage": "BOTH"
 			},
@@ -167,21 +168,27 @@
 				"usage": "BOTH"
 			},
 			{
+				"name": "VALIDITYSTARTDATE",
+				"label": "Start of Validity Period",
+				"type": "date",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PAYMENTTERMS",
+				"label": "Terms of Payment Key",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
 				"name": "SUPPLIER",
 				"label": "Vendor's account number",
 				"type": "text",
 				"usage": "BOTH"
 			},
 			{
-				"name": "VALIDITYENDDATE",
-				"label": "End of Validity Period",
-				"type": "date",
-				"usage": "BOTH"
-			},
-			{
-				"name": "VALIDITYSTARTDATE",
-				"label": "Start of Validity Period",
-				"type": "date",
+				"name": "CORRESPNCEXTERNALREFERENCE",
+				"label": "Your Reference",
+				"type": "text",
 				"usage": "BOTH"
 			}
 		],
@@ -288,6 +295,38 @@
 			"val": [],
 			"inclusions": {},
 			"exclusions": {}
+		},
+		"translation": {
+			"EN": {
+				"report": {
+					"title": "",
+					"subTitle": "",
+					"textButtonClose": "",
+					"textButtonCreate": "",
+					"textButtonExport": "",
+					"textButtonImport": "",
+					"textButtonMultiSelect": "",
+					"textButtonRun": "",
+					"searchLabel": "",
+					"searchPlaceholder": "",
+					"requiredFieldsToast": "",
+					"textConfirmDelete": "",
+					"titleConfirmDelete": "",
+					"odataValueList": ""
+				},
+				"form": {},
+				"table": {
+					"headerText": "",
+					"footerText": "",
+					"noDataText": "",
+					"action1Tooltip": "",
+					"action2Tooltip": "",
+					"action3Tooltip": "",
+					"action4Tooltip": "",
+					"action5Tooltip": ""
+				},
+				"fieldCatalog": {}
+			}
 		}
 	},
 	"name": "purchaseOrder_list",
@@ -298,7 +337,7 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "25.03.07.1501",
+	"ver": "25.03.19.0130",
 	"disabled": false,
 	"appType": "A",
 	"application": "neptunedxp_adaptive_list",

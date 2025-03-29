@@ -2,8 +2,6 @@
 	"id": "6efe818c-1c27-4a6d-89c5-8415d49d8215",
 	"createdAt": "2024-11-13T14:06:18.000Z",
 	"createdBy": "admin",
-	"lightTileLayouts": null,
-	"darkTileLayouts": null,
 	"translation": [],
 	"storeItem": {},
 	"settings": null,
@@ -85,7 +83,10 @@
 	"cockpitTile": false,
 	"cardImageDarkNone": false,
 	"imageDarkNone": false,
-	"oneTileLayout": false,
+	"noInheritTileLayout": false,
+	"imageType": null,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
-	"roles": []
+	"roles": [],
+	"lightTileLayouts": [],
+	"darkTileLayouts": []
 }

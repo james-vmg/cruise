@@ -12,10 +12,8 @@
 	"configMessage": {
 		"type": "None"
 	},
-	"lightGroupLayouts": [],
-	"darkGroupLayouts": [],
-	"lightTileLayouts": [],
-	"darkTileLayouts": [],
+	"navbarGroupOrder": null,
+	"sidebarGroupOrder": null,
 	"title": "Equipment Management",
 	"subTitle": null,
 	"menuText": null,
@@ -90,9 +88,17 @@
 	"imageDarkNone": false,
 	"imageTabletDarkNone": false,
 	"imageMobileDarkNone": false,
-	"oneGroupLayout": false,
-	"oneTileLayout": false,
+	"noInheritGroupLayout": false,
+	"noInheritTileLayout": false,
+	"navbarWidth": null,
+	"sidebarWidth": null,
+	"navbarFit": null,
+	"sidebarFit": null,
 	"roles": [],
+	"lightGroupLayouts": [],
+	"darkGroupLayouts": [],
+	"lightTileLayouts": [],
+	"darkTileLayouts": [],
 	"tiles": [
 		{
 			"id": "f10ead36-fd21-42f0-bd49-686a34e4ecb6",
@@ -113,5 +119,7 @@
 			"ver": "24.06.27.0819"
 		}
 	],
-	"tilegroups": []
+	"tilegroups": [],
+	"navbarGroups": [],
+	"sidebarGroups": []
 }

@@ -13,10 +13,8 @@
 		"484358d9-2a13-416b-97ca-06060db70b1e"
 	],
 	"configMessage": {},
-	"lightGroupLayouts": [],
-	"darkGroupLayouts": [],
-	"lightTileLayouts": [],
-	"darkTileLayouts": [],
+	"navbarGroupOrder": null,
+	"sidebarGroupOrder": null,
 	"title": "Cruise Framework",
 	"subTitle": null,
 	"menuText": null,
@@ -91,9 +89,17 @@
 	"imageDarkNone": false,
 	"imageTabletDarkNone": false,
 	"imageMobileDarkNone": false,
-	"oneGroupLayout": false,
-	"oneTileLayout": false,
+	"noInheritGroupLayout": false,
+	"noInheritTileLayout": false,
+	"navbarWidth": null,
+	"sidebarWidth": null,
+	"navbarFit": null,
+	"sidebarFit": null,
 	"roles": [],
+	"lightGroupLayouts": [],
+	"darkGroupLayouts": [],
+	"lightTileLayouts": [],
+	"darkTileLayouts": [],
 	"tiles": [],
 	"tilegroups": [
 		{
@@ -132,5 +138,7 @@
 			"title": "Equipment Management",
 			"ver": "25.02.13.0316"
 		}
-	]
+	],
+	"navbarGroups": [],
+	"sidebarGroups": []
 }

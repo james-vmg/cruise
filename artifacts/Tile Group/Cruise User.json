@@ -10,10 +10,8 @@
 	"configMessage": {
 		"type": "None"
 	},
-	"lightGroupLayouts": null,
-	"darkGroupLayouts": null,
-	"lightTileLayouts": null,
-	"darkTileLayouts": null,
+	"navbarGroupOrder": null,
+	"sidebarGroupOrder": null,
 	"title": "Cruise User Defaults",
 	"subTitle": null,
 	"menuText": null,
@@ -88,8 +86,12 @@
 	"imageDarkNone": false,
 	"imageTabletDarkNone": false,
 	"imageMobileDarkNone": false,
-	"oneGroupLayout": false,
-	"oneTileLayout": false,
+	"noInheritGroupLayout": false,
+	"noInheritTileLayout": false,
+	"navbarWidth": null,
+	"sidebarWidth": null,
+	"navbarFit": null,
+	"sidebarFit": null,
 	"roles": [
 		{
 			"id": "04a11f29-b278-4eb0-90f0-5fe5afe114f1",
@@ -97,6 +99,10 @@
 			"ver": "24.07.06.2147"
 		}
 	],
+	"lightGroupLayouts": [],
+	"darkGroupLayouts": [],
+	"lightTileLayouts": [],
+	"darkTileLayouts": [],
 	"tiles": [
 		{
 			"id": "f972a00d-cf1b-4921-bace-e9b0797af2ac",
@@ -105,5 +111,7 @@
 			"ver": "24.06.27.0807"
 		}
 	],
-	"tilegroups": []
+	"tilegroups": [],
+	"navbarGroups": [],
+	"sidebarGroups": []
 }

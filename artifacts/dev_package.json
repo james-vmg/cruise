@@ -8,12 +8,27 @@
 	},
 	"name": "Cruise",
 	"description": "Cruise Development Package",
-	"ver": "25.03.07.1625",
+	"ver": "25.03.19.0212",
 	"enableCICD": true,
 	"internalReadOnly": false,
 	"oeVersion": null,
 	"excludeTemplateFiles": false,
-	"roles": [],
+	"roles": [
+		{
+			"id": "c5ef4a73-8448-499a-bb0f-a080e88a3eb3",
+			"createdAt": "2025-03-07T16:12:10.000Z",
+			"updatedAt": "2025-03-07T16:20:41.373Z",
+			"createdBy": "james",
+			"changedBy": "james",
+			"name": "Cruise Development",
+			"description": "Access to modify Artifacts within the Cruise Package",
+			"ver": "25.03.07.1620",
+			"isGlobalAdmin": false,
+			"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+			"verb": "EDIT"
+		}
+	],
+	"accessLevel": "EDIT",
 	"apps": [
 		{
 			"id": "fe43b9e6-f6f5-459e-aefd-7d958ceb84d8",
@@ -973,5 +988,6 @@
 	],
 	"wf_determination": [],
 	"wf_taskaction": [],
-	"theme_ui5": []
+	"theme_ui5": [],
+	"webapp": []
 }
