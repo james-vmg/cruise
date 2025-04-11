@@ -126,7 +126,11 @@
 	"ui5Version": "1.108",
 	"ui5Url": null,
 	"ui5Theme": "sap_horizon",
-	"header": "<script src=\"https://cdn.bootcdn.net/ajax/libs/xlsx/0.18.5/xlsx.full.min.js\"></script>",
+	"header": [
+		"==OBJECT STRING==",
+		"<script src=\"https://cdn.bootcdn.net/ajax/libs/xlsx/0.18.5/xlsx.full.min.js\"></script>\r",
+		"<script src=\"https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js\"></script>"
+	],
 	"customTheme": null,
 	"isExternal": false,
 	"emailPattern": null,
@@ -148,7 +152,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "25.02.13.0427",
+	"ver": "25.04.10.0059",
 	"pwa_enable": true,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,

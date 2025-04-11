@@ -1,0 +1,15 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+<div id="app">
+  <h1>{{ message }}</h1>
+  <button @click="message = 'You clicked me!'">Click Me</button>
+</div>
+
+<script>
+  Vue.createApp({
+    data() {
+      return {
+        message: 'Hello from Vue!'
+      }
+    }
+  }).mount('#app');
+</script>

@@ -4,7 +4,7 @@
 	"createdBy": "admin",
 	"name": "CockpitSuperAdmin",
 	"description": null,
-	"ver": "25.02.04.0404",
+	"ver": "25.04.09.0343",
 	"isGlobalAdmin": false,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 	"acl": [
@@ -119,6 +119,10 @@
 		{
 			"id": "security_E",
 			"name": "Security"
+		},
+		{
+			"id": "runwebapp_E",
+			"name": "Web App Manager"
 		},
 		{
 			"id": "runtranslation_E",

@@ -1,0 +1,31 @@
+{
+	"id": "226e82fc-4d87-425b-b1fb-4b31f5a25f13",
+	"createdAt": "2025-04-09T03:44:25.000Z",
+	"createdBy": "james",
+	"settings": {
+		"mainFilePath": "/index.html"
+	},
+	"name": "sampleWebApp",
+	"type": "react",
+	"description": null,
+	"onlyRuntime": false,
+	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
+	"roles": [],
+	"runtime": {
+		"id": "226e82fc-4d87-425b-b1fb-4b31f5a25f13",
+		"createdAt": "2025-04-09T03:44:25.000Z",
+		"page": "file:///index.html",
+		"name": "sampleWebApp",
+		"ver": null,
+		"publicAccess": false,
+		"assets": [
+			{
+				"runtimeId": "226e82fc-4d87-425b-b1fb-4b31f5a25f13",
+				"path": "/index.html",
+				"createdAt": "2025-04-09T03:44:57.000Z",
+				"updatedAt": "2025-04-09T03:44:57.000Z",
+				"source": "PHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vdnVlQDMvZGlzdC92dWUuZ2xvYmFsLmpzIj48L3NjcmlwdD4NCjxkaXYgaWQ9ImFwcCI+DQogIDxoMT57eyBtZXNzYWdlIH19PC9oMT4NCiAgPGJ1dHRvbiBAY2xpY2s9Im1lc3NhZ2UgPSAnWW91IGNsaWNrZWQgbWUhJyI+Q2xpY2sgTWU8L2J1dHRvbj4NCjwvZGl2Pg0KDQo8c2NyaXB0Pg0KICBWdWUuY3JlYXRlQXBwKHsNCiAgICBkYXRhKCkgew0KICAgICAgcmV0dXJuIHsNCiAgICAgICAgbWVzc2FnZTogJ0hlbGxvIGZyb20gVnVlIScNCiAgICAgIH0NCiAgICB9DQogIH0pLm1vdW50KCcjYXBwJyk7DQo8L3NjcmlwdD4NCg=="
+			}
+		]
+	}
+}

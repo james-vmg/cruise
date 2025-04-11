@@ -4,8 +4,17 @@
 	"createdBy": "admin",
 	"name": "Cruise Admin",
 	"description": "Admin Functions for Cruise",
-	"ver": "24.07.06.2147",
+	"ver": "25.04.09.0343",
 	"isGlobalAdmin": false,
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
-	"acl": []
+	"acl": [
+		{
+			"id": "runwebapp_E",
+			"name": "Web App Manager"
+		},
+		{
+			"id": "administration_E",
+			"name": "Administration"
+		}
+	]
 }

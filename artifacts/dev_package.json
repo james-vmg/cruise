@@ -8,7 +8,7 @@
 	},
 	"name": "Cruise",
 	"description": "Cruise Development Package",
-	"ver": "25.03.19.0212",
+	"ver": "25.04.11.0335",
 	"enableCICD": true,
 	"internalReadOnly": false,
 	"oeVersion": null,
@@ -17,12 +17,12 @@
 		{
 			"id": "c5ef4a73-8448-499a-bb0f-a080e88a3eb3",
 			"createdAt": "2025-03-07T16:12:10.000Z",
-			"updatedAt": "2025-03-07T16:20:41.373Z",
+			"updatedAt": "2025-04-09T03:43:44.173Z",
 			"createdBy": "james",
 			"changedBy": "james",
 			"name": "Cruise Development",
 			"description": "Access to modify Artifacts within the Cruise Package",
-			"ver": "25.03.07.1620",
+			"ver": "25.04.09.0343",
 			"isGlobalAdmin": false,
 			"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d",
 			"verb": "EDIT"
@@ -860,6 +860,11 @@
 			"name": "Fleet Adaptive List"
 		},
 		{
+			"id": "38847949-45ee-41ca-a3c5-9af62e6279ed",
+			"description": null,
+			"name": "Sample Web App"
+		},
+		{
 			"id": "32f7997f-ebce-4aa0-b761-7f2c17d0ca29",
 			"description": "Keep your master data in SAP, but engage your users with enhanced features",
 			"name": "Equipment Adaptive List"
@@ -989,5 +994,11 @@
 	"wf_determination": [],
 	"wf_taskaction": [],
 	"theme_ui5": [],
-	"webapp": []
+	"webapp": [
+		{
+			"id": "226e82fc-4d87-425b-b1fb-4b31f5a25f13",
+			"name": "sampleWebApp",
+			"description": null
+		}
+	]
 }
