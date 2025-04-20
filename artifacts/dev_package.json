@@ -862,7 +862,7 @@
 		{
 			"id": "38847949-45ee-41ca-a3c5-9af62e6279ed",
 			"description": null,
-			"name": "Sample Web App"
+			"name": "BYOA Equipment"
 		},
 		{
 			"id": "32f7997f-ebce-4aa0-b761-7f2c17d0ca29",
@@ -875,7 +875,16 @@
 			"name": "Equipment"
 		}
 	],
-	"tile_layout": [],
+	"tile_layout": [
+		{
+			"id": "de9c279b-a57a-4acf-9df2-aa3ca0bd666d",
+			"NAME": "Cruise Light"
+		},
+		{
+			"id": "31923caf-1628-4e61-89a2-f323ca8eb6d7",
+			"NAME": "Cruise Dark"
+		}
+	],
 	"category": [
 		{
 			"id": "f4354d4d-6a97-4acc-b0d8-44e65abc397e",
@@ -908,7 +917,16 @@
 			"name": "Cruise Equipment"
 		}
 	],
-	"tilegroup_layout": [],
+	"tilegroup_layout": [
+		{
+			"id": "dd2997a9-5429-47be-8fa5-c86ab599af4a",
+			"NAME": "Cruise Dark"
+		},
+		{
+			"id": "37fe7349-386f-4516-8ac2-fa0ca27b9760",
+			"NAME": "Cruise Light"
+		}
+	],
 	"launchpad": [
 		{
 			"id": "a6a39e12-3535-4ab5-afc4-ac87f840455a",
@@ -916,7 +934,18 @@
 			"description": null
 		}
 	],
-	"launchpad_layout": [],
+	"launchpad_layout": [
+		{
+			"id": "5e67eaaa-c26a-4bdc-a709-1b72546d3c5a",
+			"NAME": "Cruise Light",
+			"DESCR": null
+		},
+		{
+			"id": "224d5a32-6e69-4638-bda5-9b65aff47c4d",
+			"NAME": "Cruise Dark",
+			"DESCR": null
+		}
+	],
 	"certificates": [],
 	"role": [
 		{
@@ -996,8 +1025,8 @@
 	"theme_ui5": [],
 	"webapp": [
 		{
-			"id": "226e82fc-4d87-425b-b1fb-4b31f5a25f13",
-			"name": "sampleWebApp",
+			"id": "11eb3f2d-fc7d-4415-b0f2-4a203e158597",
+			"name": "11eb3f2d-fc7d-4415-b0f2-4a203e158597",
 			"description": null
 		}
 	]

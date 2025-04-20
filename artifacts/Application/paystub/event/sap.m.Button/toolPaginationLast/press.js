@@ -1,3 +1,3 @@
-modelpageEmployeeList.oData.CURRENTPAGE = modelpageEmployeeList.oData.TOTALPAGES;
+modelpagePaystubList.oData.CURRENTPAGE = modelpagePaystubList.oData.TOTALPAGES;
 
-fireEmployeeSearch();
+firePaystubSearch();

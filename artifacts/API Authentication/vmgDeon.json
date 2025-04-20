@@ -6,7 +6,7 @@
 	"details": {
 		"subject": {},
 		"headers": [],
-		"password": "426c0812e35f62d026883da76434",
+		"password": "464f1418fe4112896ec2",
 		"secret": "",
 		"username": "deon"
 	},
@@ -21,6 +21,6 @@
 	"type": "basic",
 	"useCloudConnector": false,
 	"cloudConnectorType": null,
-	"ver": "25.03.06.1013",
+	"ver": "25.04.17.0953",
 	"package": "a976c3e0-971c-434d-848c-28e99fa5bf0d"
 }

@@ -1,3 +1,3 @@
-if (typeof EMPLOYEENUMBER === "undefined" || EMPLOYEENUMBER === null || EMPLOYEENUMBER === "") { return; }  
-var formattedText = "Personnel Number:" + EMPLOYEENUMBER; 
+if (typeof STARTDATE === "undefined" || STARTDATE === null || STARTDATE === "") { return; }  
+var formattedText = "Start Date:" + STARTDATE; 
 return formattedText;
